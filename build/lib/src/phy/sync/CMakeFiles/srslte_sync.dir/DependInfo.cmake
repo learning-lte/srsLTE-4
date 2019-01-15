@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/ite/srsLTE/lib/src/phy/sync/cfo.c" "/home/ite/srsLTE/build/lib/src/phy/sync/CMakeFiles/srslte_sync.dir/cfo.c.o"
-  "/home/ite/srsLTE/lib/src/phy/sync/cp.c" "/home/ite/srsLTE/build/lib/src/phy/sync/CMakeFiles/srslte_sync.dir/cp.c.o"
-  "/home/ite/srsLTE/lib/src/phy/sync/find_sss.c" "/home/ite/srsLTE/build/lib/src/phy/sync/CMakeFiles/srslte_sync.dir/find_sss.c.o"
-  "/home/ite/srsLTE/lib/src/phy/sync/gen_sss.c" "/home/ite/srsLTE/build/lib/src/phy/sync/CMakeFiles/srslte_sync.dir/gen_sss.c.o"
-  "/home/ite/srsLTE/lib/src/phy/sync/pss.c" "/home/ite/srsLTE/build/lib/src/phy/sync/CMakeFiles/srslte_sync.dir/pss.c.o"
-  "/home/ite/srsLTE/lib/src/phy/sync/sfo.c" "/home/ite/srsLTE/build/lib/src/phy/sync/CMakeFiles/srslte_sync.dir/sfo.c.o"
-  "/home/ite/srsLTE/lib/src/phy/sync/sss.c" "/home/ite/srsLTE/build/lib/src/phy/sync/CMakeFiles/srslte_sync.dir/sss.c.o"
-  "/home/ite/srsLTE/lib/src/phy/sync/sync.c" "/home/ite/srsLTE/build/lib/src/phy/sync/CMakeFiles/srslte_sync.dir/sync.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/sync/cfo.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/sync/CMakeFiles/srslte_sync.dir/cfo.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/sync/cp.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/sync/CMakeFiles/srslte_sync.dir/cp.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/sync/find_sss.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/sync/CMakeFiles/srslte_sync.dir/find_sss.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/sync/gen_sss.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/sync/CMakeFiles/srslte_sync.dir/gen_sss.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/sync/pss.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/sync/CMakeFiles/srslte_sync.dir/pss.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/sync/sfo.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/sync/CMakeFiles/srslte_sync.dir/sfo.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/sync/sss.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/sync/CMakeFiles/srslte_sync.dir/sss.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/sync/sync.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/sync/CMakeFiles/srslte_sync.dir/sync.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -19,10 +19,12 @@ set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_TARGET_DEFINITIONS_C
   "ENABLE_GUI"
   "HAVE_MBEDTLS"
+  "HAVE_PCSC"
   )
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "/usr/include/PCSC"
   "/usr/local/include"
   "lib/include"
   "../lib/include"

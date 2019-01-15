@@ -474,7 +474,7 @@ srslte/interfaces/ue_interfaces.h
 srslte/common/security.h
 ../srsue/hdr/upper/srslte/common/security.h
 
-/home/ite/srsLTE/srsue/src/main.cc
+/home/umbc/Dropbox/srsLTE/srsue/src/main.cc
 unistd.h
 -
 stdio.h
@@ -496,25 +496,25 @@ boost/program_options.hpp
 boost/program_options/parsers.hpp
 -
 srsue/hdr/ue.h
-/home/ite/srsLTE/srsue/src/srsue/hdr/ue.h
+/home/umbc/Dropbox/srsLTE/srsue/src/srsue/hdr/ue.h
 srslte/common/config_file.h
-/home/ite/srsLTE/srsue/src/srslte/common/config_file.h
+/home/umbc/Dropbox/srsLTE/srsue/src/srslte/common/config_file.h
 srslte/common/crash_handler.h
-/home/ite/srsLTE/srsue/src/srslte/common/crash_handler.h
+/home/umbc/Dropbox/srsLTE/srsue/src/srslte/common/crash_handler.h
 srslte/srslte.h
-/home/ite/srsLTE/srsue/src/srslte/srslte.h
+/home/umbc/Dropbox/srsLTE/srsue/src/srslte/srslte.h
 srsue/hdr/metrics_stdout.h
-/home/ite/srsLTE/srsue/src/srsue/hdr/metrics_stdout.h
+/home/umbc/Dropbox/srsLTE/srsue/src/srsue/hdr/metrics_stdout.h
 srsue/hdr/metrics_csv.h
-/home/ite/srsLTE/srsue/src/srsue/hdr/metrics_csv.h
+/home/umbc/Dropbox/srsLTE/srsue/src/srsue/hdr/metrics_csv.h
 srslte/common/metrics_hub.h
-/home/ite/srsLTE/srsue/src/srslte/common/metrics_hub.h
+/home/umbc/Dropbox/srsLTE/srsue/src/srslte/common/metrics_hub.h
 srslte/version.h
-/home/ite/srsLTE/srsue/src/srslte/version.h
+/home/umbc/Dropbox/srsLTE/srsue/src/srslte/version.h
 
-/home/ite/srsLTE/srsue/src/metrics_csv.cc
+/home/umbc/Dropbox/srsLTE/srsue/src/metrics_csv.cc
 srsue/hdr/metrics_csv.h
-/home/ite/srsLTE/srsue/src/srsue/hdr/metrics_csv.h
+/home/umbc/Dropbox/srsLTE/srsue/src/srsue/hdr/metrics_csv.h
 unistd.h
 -
 sstream
@@ -532,9 +532,9 @@ iostream
 stdio.h
 -
 
-/home/ite/srsLTE/srsue/src/metrics_stdout.cc
+/home/umbc/Dropbox/srsLTE/srsue/src/metrics_stdout.cc
 srsue/hdr/metrics_stdout.h
-/home/ite/srsLTE/srsue/src/srsue/hdr/metrics_stdout.h
+/home/umbc/Dropbox/srsLTE/srsue/src/srsue/hdr/metrics_stdout.h
 unistd.h
 -
 sstream
@@ -552,11 +552,11 @@ iostream
 stdio.h
 -
 
-/home/ite/srsLTE/srsue/src/ue.cc
+/home/umbc/Dropbox/srsLTE/srsue/src/ue.cc
 srsue/hdr/ue.h
-/home/ite/srsLTE/srsue/src/srsue/hdr/ue.h
+/home/umbc/Dropbox/srsLTE/srsue/src/srsue/hdr/ue.h
 srslte/srslte.h
-/home/ite/srsLTE/srsue/src/srslte/srslte.h
+/home/umbc/Dropbox/srsLTE/srsue/src/srslte/srslte.h
 pthread.h
 -
 iostream
@@ -568,15 +568,15 @@ algorithm
 iterator
 -
 
-/home/ite/srsLTE/srsue/src/ue_base.cc
+/home/umbc/Dropbox/srsLTE/srsue/src/ue_base.cc
 srsue/hdr/ue_base.h
-/home/ite/srsLTE/srsue/src/srsue/hdr/ue_base.h
+/home/umbc/Dropbox/srsLTE/srsue/src/srsue/hdr/ue_base.h
 srsue/hdr/ue.h
-/home/ite/srsLTE/srsue/src/srsue/hdr/ue.h
+/home/umbc/Dropbox/srsLTE/srsue/src/srsue/hdr/ue.h
 srslte/srslte.h
-/home/ite/srsLTE/srsue/src/srslte/srslte.h
+/home/umbc/Dropbox/srsLTE/srsue/src/srslte/srslte.h
 srslte/build_info.h
-/home/ite/srsLTE/srsue/src/srslte/build_info.h
+/home/umbc/Dropbox/srsLTE/srsue/src/srslte/build_info.h
 pthread.h
 -
 iostream

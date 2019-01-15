@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/fec/cbsegm.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/cbsegm.c
 strings.h
 -
 math.h
 -
 srslte/phy/fec/turbodecoder_gen.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_gen.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_gen.h
 srslte/phy/fec/cbsegm.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/cbsegm.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/cbsegm.h
 srslte/phy/utils/debug.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/utils/debug.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/utils/debug.h
 
-/home/ite/srsLTE/lib/src/phy/fec/convcoder.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/convcoder.c
 stdlib.h
 -
 stdio.h
@@ -28,11 +28,11 @@ stdint.h
 math.h
 -
 srslte/phy/fec/convcoder.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/convcoder.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/convcoder.h
 parity.h
-/home/ite/srsLTE/lib/src/phy/fec/parity.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/parity.h
 
-/home/ite/srsLTE/lib/src/phy/fec/crc.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/crc.c
 stdio.h
 -
 stdlib.h
@@ -40,19 +40,19 @@ stdlib.h
 string.h
 -
 srslte/phy/utils/bit.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/utils/bit.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/utils/bit.h
 srslte/phy/fec/crc.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/crc.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/crc.h
 
-/home/ite/srsLTE/lib/src/phy/fec/parity.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/parity.c
 stdio.h
 -
 stdint.h
 -
 
-/home/ite/srsLTE/lib/src/phy/fec/parity.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/parity.h
 
-/home/ite/srsLTE/lib/src/phy/fec/rm_conv.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/rm_conv.c
 string.h
 -
 stdio.h
@@ -60,9 +60,9 @@ stdio.h
 stdint.h
 -
 srslte/phy/fec/rm_conv.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/rm_conv.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/rm_conv.h
 
-/home/ite/srsLTE/lib/src/phy/fec/rm_turbo.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/rm_turbo.c
 string.h
 -
 stdio.h
@@ -76,19 +76,19 @@ stdlib.h
 stdint.h
 -
 srslte/phy/fec/rm_turbo.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/rm_turbo.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/rm_turbo.h
 srslte/phy/utils/bit.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/utils/bit.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/utils/bit.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/utils/vector.h
 srslte/phy/fec/cbsegm.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/cbsegm.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/cbsegm.h
 x86intrin.h
 -
 x86intrin.h
 -
 
-/home/ite/srsLTE/lib/src/phy/fec/softbuffer.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/softbuffer.c
 stdint.h
 -
 stdio.h
@@ -106,21 +106,21 @@ assert.h
 math.h
 -
 srslte/phy/common/phy_common.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/common/phy_common.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/common/phy_common.h
 srslte/phy/phch/ra.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/phch/ra.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/phch/ra.h
 srslte/phy/fec/turbodecoder_gen.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_gen.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_gen.h
 srslte/phy/fec/rm_turbo.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/rm_turbo.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/rm_turbo.h
 srslte/phy/fec/softbuffer.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/softbuffer.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/softbuffer.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/utils/vector.h
 srslte/phy/utils/debug.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/utils/debug.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/utils/debug.h
 
-/home/ite/srsLTE/lib/src/phy/fec/tc_interl_lte.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/tc_interl_lte.c
 stdio.h
 -
 stdlib.h
@@ -128,17 +128,17 @@ stdlib.h
 stdint.h
 -
 srslte/phy/common/phy_common.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/common/phy_common.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/common/phy_common.h
 srslte/phy/fec/tc_interl.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/tc_interl.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/tc_interl.h
 srslte/phy/fec/turbocoder.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbocoder.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbocoder.h
 srslte/phy/fec/cbsegm.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/cbsegm.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/cbsegm.h
 srslte/phy/utils/debug.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/utils/debug.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/utils/debug.h
 
-/home/ite/srsLTE/lib/src/phy/fec/tc_interl_umts.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/tc_interl_umts.c
 stdio.h
 -
 stdlib.h
@@ -148,9 +148,9 @@ strings.h
 stdint.h
 -
 srslte/phy/fec/tc_interl.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/tc_interl.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/tc_interl.h
 
-/home/ite/srsLTE/lib/src/phy/fec/turbocoder.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/turbocoder.c
 stdio.h
 -
 stdint.h
@@ -162,15 +162,15 @@ stdlib.h
 srslte/phy/fec/crc.h
 -
 srslte/phy/fec/cbsegm.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/cbsegm.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/cbsegm.h
 srslte/phy/fec/turbocoder.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbocoder.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbocoder.h
 srslte/phy/utils/bit.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/utils/bit.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/utils/bit.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/utils/vector.h
 
-/home/ite/srsLTE/lib/src/phy/fec/turbodecoder.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/turbodecoder.c
 stdint.h
 -
 stdlib.h
@@ -182,27 +182,27 @@ strings.h
 srslte/srslte.h
 -
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/utils/vector.h
 srslte/phy/fec/turbodecoder.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder.h
 srslte/phy/fec/turbodecoder_gen.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_gen.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_gen.h
 srslte/phy/fec/turbodecoder_sse.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_sse.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_sse.h
 srslte/phy/fec/turbodecoder_win.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_win.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_win.h
 srslte/phy/fec/turbodecoder_win.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_win.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_win.h
 srslte/phy/fec/turbodecoder_win.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_win.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_win.h
 srslte/phy/fec/turbodecoder_win.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_win.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_win.h
 srslte/phy/fec/turbodecoder_iter.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_iter.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_iter.h
 srslte/phy/fec/turbodecoder_iter.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_iter.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_iter.h
 
-/home/ite/srsLTE/lib/src/phy/fec/turbodecoder_gen.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/turbodecoder_gen.c
 stdio.h
 -
 stdlib.h
@@ -216,11 +216,11 @@ strings.h
 math.h
 -
 srslte/phy/fec/turbodecoder_gen.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_gen.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_gen.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/utils/vector.h
 
-/home/ite/srsLTE/lib/src/phy/fec/turbodecoder_sse.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/turbodecoder_sse.c
 stdio.h
 -
 stdlib.h
@@ -234,9 +234,9 @@ strings.h
 math.h
 -
 srslte/phy/fec/turbodecoder_sse.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_sse.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/turbodecoder_sse.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/utils/vector.h
 inttypes.h
 -
 smmintrin.h
@@ -244,7 +244,7 @@ smmintrin.h
 srslte/phy/fec/turbodecoder_sse.h
 -
 
-/home/ite/srsLTE/lib/src/phy/fec/viterbi.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/viterbi.c
 stdlib.h
 -
 stdio.h
@@ -256,19 +256,19 @@ math.h
 string.h
 -
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/utils/vector.h
 srslte/phy/fec/viterbi.h
-/home/ite/srsLTE/lib/src/phy/fec/srslte/phy/fec/viterbi.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/srslte/phy/fec/viterbi.h
 parity.h
-/home/ite/srsLTE/lib/src/phy/fec/parity.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/parity.h
 viterbi37.h
-/home/ite/srsLTE/lib/src/phy/fec/viterbi37.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/viterbi37.h
 
-/home/ite/srsLTE/lib/src/phy/fec/viterbi37.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/viterbi37.h
 stdbool.h
 -
 
-/home/ite/srsLTE/lib/src/phy/fec/viterbi37_avx2.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/viterbi37_avx2.c
 stdio.h
 -
 stdint.h
@@ -280,7 +280,7 @@ memory.h
 limits.h
 -
 parity.h
-/home/ite/srsLTE/lib/src/phy/fec/parity.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/parity.h
 emmintrin.h
 -
 tmmintrin.h
@@ -290,7 +290,7 @@ immintrin.h
 emmintrin.h
 -
 
-/home/ite/srsLTE/lib/src/phy/fec/viterbi37_avx2_16bit.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/viterbi37_avx2_16bit.c
 stdio.h
 -
 stdint.h
@@ -302,7 +302,7 @@ memory.h
 limits.h
 -
 parity.h
-/home/ite/srsLTE/lib/src/phy/fec/parity.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/parity.h
 emmintrin.h
 -
 tmmintrin.h
@@ -312,7 +312,7 @@ immintrin.h
 emmintrin.h
 -
 
-/home/ite/srsLTE/lib/src/phy/fec/viterbi37_neon.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/viterbi37_neon.c
 stdio.h
 -
 stdint.h
@@ -324,11 +324,11 @@ memory.h
 limits.h
 -
 parity.h
-/home/ite/srsLTE/lib/src/phy/fec/parity.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/parity.h
 arm_neon.h
 -
 
-/home/ite/srsLTE/lib/src/phy/fec/viterbi37_port.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/viterbi37_port.c
 stdio.h
 -
 stdlib.h
@@ -338,13 +338,13 @@ stdint.h
 memory.h
 -
 viterbi37.h
-/home/ite/srsLTE/lib/src/phy/fec/viterbi37.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/viterbi37.h
 parity.h
-/home/ite/srsLTE/lib/src/phy/fec/parity.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/parity.h
 limits.h
 -
 
-/home/ite/srsLTE/lib/src/phy/fec/viterbi37_sse.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/viterbi37_sse.c
 stdio.h
 -
 stdint.h
@@ -356,7 +356,7 @@ memory.h
 limits.h
 -
 parity.h
-/home/ite/srsLTE/lib/src/phy/fec/parity.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/parity.h
 emmintrin.h
 -
 

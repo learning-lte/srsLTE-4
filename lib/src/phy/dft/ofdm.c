@@ -36,8 +36,9 @@
 #include "srslte/phy/dft/ofdm.h"
 #include "srslte/phy/utils/debug.h"
 #include "srslte/phy/utils/vector.h"
-//#include "srslte/phy/io/filesink.h"
+#include "srslte/phy/io/filesink.h"
 
+srslte_filesink_t raw_fsink = {.f=NULL};
 /* Uncomment next line for avoiding Guru DFT call */
 //#define AVOID_GURU
 
@@ -356,6 +357,8 @@ int srslte_ofdm_tx_set_prb(srslte_ofdm_t *q, srslte_cp_t cp, uint32_t nof_prb) {
 
 void srslte_ofdm_rx_free(srslte_ofdm_t *q) {
   srslte_ofdm_free_(q);
+  srslte_filesink_free(&raw_fsink);
+  printf("free before_equ.txt\n");
 }
 /* Shifts the signal after the iFFT or before the FFT. 
  * Freq_shift is relative to inter-carrier spacing.
@@ -401,6 +404,12 @@ void srslte_ofdm_rx_slot_ng(srslte_ofdm_t *q, cf_t *input, cf_t *output) {
  */
 void srslte_ofdm_rx_slot(srslte_ofdm_t *q, int slot_in_sf) {
   cf_t *output = q->out_buffer + slot_in_sf * q->nof_re * q->nof_symbols;
+  if(!raw_fsink.f){
+      printf("initiating file sink before_equ.txt\n");
+      srslte_filesink_init(&raw_fsink, "before_equ.txt", SRSLTE_COMPLEX_FLOAT);
+      printf("initiated file sink\n");
+//      srslte_filesink_free(&raw_fsink);
+  }
 
 #ifdef AVOID_GURU
   srslte_ofdm_rx_slot_ng(q, q->in_buffer + slot_in_sf * q->slot_sz, q->out_buffer + slot_in_sf * q->nof_re * q->nof_symbols);
@@ -419,6 +428,7 @@ void srslte_ofdm_rx_slot(srslte_ofdm_t *q, int slot_in_sf) {
       srslte_vec_sc_prod_cfc(output, norm, output, q->nof_re);
     }
 
+//    printf("raw_fsink.f: %d", (int)raw_fsink.f);
     if(raw_fsink.f) {
         srslte_filesink_write_with_symbol_no(&raw_fsink, (void *)(output), sizeof(cf_t) * q->nof_re / 2 + sizeof(cf_t) * q->nof_re / 2,i);
     }

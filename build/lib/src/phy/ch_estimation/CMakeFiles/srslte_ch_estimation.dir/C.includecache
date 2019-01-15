@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/ch_estimation/chest_common.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/chest_common.c
 stdio.h
 -
 stdlib.h
@@ -20,13 +20,13 @@ complex.h
 math.h
 -
 srslte/phy/ch_estimation/chest_common.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/srslte/phy/ch_estimation/chest_common.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/srslte/phy/ch_estimation/chest_common.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/srslte/phy/utils/vector.h
 srslte/phy/utils/convolution.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/srslte/phy/utils/convolution.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/srslte/phy/utils/convolution.h
 
-/home/ite/srsLTE/lib/src/phy/ch_estimation/chest_dl.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/chest_dl.c
 stdio.h
 -
 stdlib.h
@@ -44,15 +44,15 @@ srslte/phy/common/phy_common.h
 srslte/srslte.h
 -
 srslte/config.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/srslte/config.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/srslte/config.h
 srslte/phy/ch_estimation/chest_dl.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/srslte/phy/ch_estimation/chest_dl.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/srslte/phy/ch_estimation/chest_dl.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/srslte/phy/utils/vector.h
 srslte/phy/utils/convolution.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/srslte/phy/utils/convolution.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/srslte/phy/utils/convolution.h
 
-/home/ite/srsLTE/lib/src/phy/ch_estimation/chest_ul.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/chest_ul.c
 stdio.h
 -
 stdlib.h
@@ -70,17 +70,17 @@ srslte/srslte.h
 srslte/phy/common/phy_common.h
 -
 srslte/config.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/srslte/config.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/srslte/config.h
 srslte/phy/dft/dft_precoding.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/srslte/phy/dft/dft_precoding.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/srslte/phy/dft/dft_precoding.h
 srslte/phy/ch_estimation/chest_ul.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/srslte/phy/ch_estimation/chest_ul.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/srslte/phy/ch_estimation/chest_ul.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/srslte/phy/utils/vector.h
 srslte/phy/utils/convolution.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/srslte/phy/utils/convolution.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/srslte/phy/utils/convolution.h
 
-/home/ite/srsLTE/lib/src/phy/ch_estimation/refsignal_dl.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/refsignal_dl.c
 math.h
 -
 string.h
@@ -92,17 +92,17 @@ stdlib.h
 complex.h
 -
 srslte/phy/common/phy_common.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/srslte/phy/common/phy_common.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/srslte/phy/common/phy_common.h
 srslte/phy/ch_estimation/refsignal_dl.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/srslte/phy/ch_estimation/refsignal_dl.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/srslte/phy/ch_estimation/refsignal_dl.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/srslte/phy/utils/vector.h
 srslte/phy/utils/debug.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/srslte/phy/utils/debug.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/srslte/phy/utils/debug.h
 srslte/phy/common/sequence.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/srslte/phy/common/sequence.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/srslte/phy/common/sequence.h
 
-/home/ite/srsLTE/lib/src/phy/ch_estimation/refsignal_ul.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/refsignal_ul.c
 math.h
 -
 string.h
@@ -116,21 +116,21 @@ complex.h
 srslte/phy/common/phy_common.h
 -
 srslte/phy/common/phy_common.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/srslte/phy/common/phy_common.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/srslte/phy/common/phy_common.h
 srslte/phy/ch_estimation/refsignal_ul.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/srslte/phy/ch_estimation/refsignal_ul.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/srslte/phy/ch_estimation/refsignal_ul.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/srslte/phy/utils/vector.h
 srslte/phy/utils/debug.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/srslte/phy/utils/debug.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/srslte/phy/utils/debug.h
 srslte/phy/common/sequence.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/srslte/phy/common/sequence.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/srslte/phy/common/sequence.h
 srslte/phy/dft/dft_precoding.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/srslte/phy/dft/dft_precoding.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/srslte/phy/dft/dft_precoding.h
 ul_rs_tables.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/ul_rs_tables.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/ul_rs_tables.h
 
-/home/ite/srsLTE/lib/src/phy/ch_estimation/ul_rs_tables.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/ul_rs_tables.h
 stdint.h
 -
 

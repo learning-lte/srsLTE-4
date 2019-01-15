@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/srsue/test/upper/rrc_reconfig_test.cc
+/home/umbc/Dropbox/srsLTE/srsue/test/upper/rrc_reconfig_test.cc
 iostream
 -
 srslte/srslte.h
 -
 srslte/common/log_filter.h
-/home/ite/srsLTE/srsue/test/upper/srslte/common/log_filter.h
+/home/umbc/Dropbox/srsLTE/srsue/test/upper/srslte/common/log_filter.h
 srslte/asn1/liblte_rrc.h
-/home/ite/srsLTE/srsue/test/upper/srslte/asn1/liblte_rrc.h
+/home/umbc/Dropbox/srsLTE/srsue/test/upper/srslte/asn1/liblte_rrc.h
 srslte/asn1/liblte_mme.h
-/home/ite/srsLTE/srsue/test/upper/srslte/asn1/liblte_mme.h
+/home/umbc/Dropbox/srsLTE/srsue/test/upper/srslte/asn1/liblte_mme.h
 
 /usr/local/include/srslte/asn1/liblte_common.h
 stdint.h

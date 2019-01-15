@@ -124,9 +124,9 @@ srslte/interfaces/ue_interfaces.h
 srslte/common/security.h
 ../srsue/hdr/upper/srslte/common/security.h
 
-/home/ite/srsLTE/srsue/src/upper/gw.cc
+/home/umbc/Dropbox/srsLTE/srsue/src/upper/gw.cc
 srsue/hdr/upper/gw.h
-/home/ite/srsLTE/srsue/src/upper/srsue/hdr/upper/gw.h
+/home/umbc/Dropbox/srsLTE/srsue/src/upper/srsue/hdr/upper/gw.h
 errno.h
 -
 unistd.h
@@ -146,7 +146,7 @@ sys/ioctl.h
 sys/socket.h
 -
 
-/home/ite/srsLTE/srsue/src/upper/nas.cc
+/home/umbc/Dropbox/srsLTE/srsue/src/upper/nas.cc
 unistd.h
 -
 iostream
@@ -160,15 +160,25 @@ sstream
 srslte/asn1/liblte_mme.h
 -
 srslte/asn1/liblte_rrc.h
-/home/ite/srsLTE/srsue/src/upper/srslte/asn1/liblte_rrc.h
+/home/umbc/Dropbox/srsLTE/srsue/src/upper/srslte/asn1/liblte_rrc.h
 srsue/hdr/upper/nas.h
-/home/ite/srsLTE/srsue/src/upper/srsue/hdr/upper/nas.h
+/home/umbc/Dropbox/srsLTE/srsue/src/upper/srsue/hdr/upper/nas.h
 srslte/common/security.h
-/home/ite/srsLTE/srsue/src/upper/srslte/common/security.h
+/home/umbc/Dropbox/srsLTE/srsue/src/upper/srslte/common/security.h
 srslte/common/bcd_helpers.h
-/home/ite/srsLTE/srsue/src/upper/srslte/common/bcd_helpers.h
+/home/umbc/Dropbox/srsLTE/srsue/src/upper/srslte/common/bcd_helpers.h
 
-/home/ite/srsLTE/srsue/src/upper/rrc.cc
+/home/umbc/Dropbox/srsLTE/srsue/src/upper/pcsc_usim.cc
+sstream
+-
+srsue/hdr/upper/pcsc_usim.h
+-
+srslte/common/bcd_helpers.h
+/home/umbc/Dropbox/srsLTE/srsue/src/upper/srslte/common/bcd_helpers.h
+string.h
+/home/umbc/Dropbox/srsLTE/srsue/src/upper/string.h
+
+/home/umbc/Dropbox/srsLTE/srsue/src/upper/rrc.cc
 unistd.h
 -
 iostream
@@ -184,28 +194,40 @@ inttypes.h
 srslte/asn1/liblte_rrc.h
 -
 srsue/hdr/upper/rrc.h
-/home/ite/srsLTE/srsue/src/upper/srsue/hdr/upper/rrc.h
+/home/umbc/Dropbox/srsLTE/srsue/src/upper/srsue/hdr/upper/rrc.h
 srslte/asn1/liblte_rrc.h
-/home/ite/srsLTE/srsue/src/upper/srslte/asn1/liblte_rrc.h
+/home/umbc/Dropbox/srsLTE/srsue/src/upper/srslte/asn1/liblte_rrc.h
 srslte/common/security.h
-/home/ite/srsLTE/srsue/src/upper/srslte/common/security.h
+/home/umbc/Dropbox/srsLTE/srsue/src/upper/srslte/common/security.h
 srslte/common/bcd_helpers.h
-/home/ite/srsLTE/srsue/src/upper/srslte/common/bcd_helpers.h
+/home/umbc/Dropbox/srsLTE/srsue/src/upper/srslte/common/bcd_helpers.h
 
-/home/ite/srsLTE/srsue/src/upper/usim.cc
+/home/umbc/Dropbox/srsLTE/srsue/src/upper/usim.cc
 sstream
 -
 srsue/hdr/upper/usim.h
-/home/ite/srsLTE/srsue/src/upper/srsue/hdr/upper/usim.h
+/home/umbc/Dropbox/srsLTE/srsue/src/upper/srsue/hdr/upper/usim.h
 srslte/common/bcd_helpers.h
-/home/ite/srsLTE/srsue/src/upper/srslte/common/bcd_helpers.h
+/home/umbc/Dropbox/srsLTE/srsue/src/upper/srslte/common/bcd_helpers.h
 
-/home/ite/srsLTE/srsue/src/upper/usim_base.cc
+/home/umbc/Dropbox/srsLTE/srsue/src/upper/usim_base.cc
 srsue/hdr/upper/usim_base.h
 -
 srsue/hdr/upper/usim.h
 -
 srsue/hdr/upper/pcsc_usim.h
+-
+
+/usr/include/PCSC/pcsclite.h
+wintypes.h
+-
+
+/usr/include/PCSC/winscard.h
+pcsclite.h
+-
+
+/usr/include/PCSC/wintypes.h
+stdint.h
 -
 
 /usr/local/include/srslte/asn1/liblte_common.h

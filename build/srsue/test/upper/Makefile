@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ite/srsLTE
+CMAKE_SOURCE_DIR = /home/umbc/Dropbox/srsLTE
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ite/srsLTE/build
+CMAKE_BINARY_DIR = /home/umbc/Dropbox/srsLTE/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -70,13 +70,24 @@ test/fast: test
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/ite/srsLTE/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/umbc/Dropbox/srsLTE/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
 package/fast: package
 
 .PHONY : package/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # Special rule for the target install
 install: preinstall
@@ -90,16 +101,16 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target install/strip
-install/strip/fast: install/strip
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
 
-.PHONY : install/strip/fast
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -110,6 +121,17 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -122,32 +144,10 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/ite/srsLTE/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ite/srsLTE/build/CPackSourceConfig.cmake
+	cd /home/umbc/Dropbox/srsLTE/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/umbc/Dropbox/srsLTE/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -157,14 +157,14 @@ package_source/fast: package_source
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ite/srsLTE/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ite/srsLTE/build/CMakeFiles /home/ite/srsLTE/build/srsue/test/upper/CMakeFiles/progress.marks
-	cd /home/ite/srsLTE/build && $(MAKE) -f CMakeFiles/Makefile2 srsue/test/upper/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ite/srsLTE/build/CMakeFiles 0
+	cd /home/umbc/Dropbox/srsLTE/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/umbc/Dropbox/srsLTE/build/CMakeFiles /home/umbc/Dropbox/srsLTE/build/srsue/test/upper/CMakeFiles/progress.marks
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f CMakeFiles/Makefile2 srsue/test/upper/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/umbc/Dropbox/srsLTE/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ite/srsLTE/build && $(MAKE) -f CMakeFiles/Makefile2 srsue/test/upper/clean
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f CMakeFiles/Makefile2 srsue/test/upper/clean
 .PHONY : clean
 
 # The main clean target
@@ -174,52 +174,37 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ite/srsLTE/build && $(MAKE) -f CMakeFiles/Makefile2 srsue/test/upper/preinstall
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f CMakeFiles/Makefile2 srsue/test/upper/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ite/srsLTE/build && $(MAKE) -f CMakeFiles/Makefile2 srsue/test/upper/preinstall
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f CMakeFiles/Makefile2 srsue/test/upper/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ite/srsLTE/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/umbc/Dropbox/srsLTE/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-srsue/test/upper/CMakeFiles/nas_test.dir/rule:
-	cd /home/ite/srsLTE/build && $(MAKE) -f CMakeFiles/Makefile2 srsue/test/upper/CMakeFiles/nas_test.dir/rule
-.PHONY : srsue/test/upper/CMakeFiles/nas_test.dir/rule
+srsue/test/upper/CMakeFiles/pcsc_usim_test.dir/rule:
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f CMakeFiles/Makefile2 srsue/test/upper/CMakeFiles/pcsc_usim_test.dir/rule
+.PHONY : srsue/test/upper/CMakeFiles/pcsc_usim_test.dir/rule
 
 # Convenience name for target.
-nas_test: srsue/test/upper/CMakeFiles/nas_test.dir/rule
+pcsc_usim_test: srsue/test/upper/CMakeFiles/pcsc_usim_test.dir/rule
 
-.PHONY : nas_test
+.PHONY : pcsc_usim_test
 
 # fast build rule for target.
-nas_test/fast:
-	cd /home/ite/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/nas_test.dir/build.make srsue/test/upper/CMakeFiles/nas_test.dir/build
-.PHONY : nas_test/fast
-
-# Convenience name for target.
-srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/rule:
-	cd /home/ite/srsLTE/build && $(MAKE) -f CMakeFiles/Makefile2 srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/rule
-.PHONY : srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/rule
-
-# Convenience name for target.
-rrc_reconfig_test: srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/rule
-
-.PHONY : rrc_reconfig_test
-
-# fast build rule for target.
-rrc_reconfig_test/fast:
-	cd /home/ite/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/build.make srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/build
-.PHONY : rrc_reconfig_test/fast
+pcsc_usim_test/fast:
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/pcsc_usim_test.dir/build.make srsue/test/upper/CMakeFiles/pcsc_usim_test.dir/build
+.PHONY : pcsc_usim_test/fast
 
 # Convenience name for target.
 srsue/test/upper/CMakeFiles/usim_test.dir/rule:
-	cd /home/ite/srsLTE/build && $(MAKE) -f CMakeFiles/Makefile2 srsue/test/upper/CMakeFiles/usim_test.dir/rule
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f CMakeFiles/Makefile2 srsue/test/upper/CMakeFiles/usim_test.dir/rule
 .PHONY : srsue/test/upper/CMakeFiles/usim_test.dir/rule
 
 # Convenience name for target.
@@ -229,8 +214,38 @@ usim_test: srsue/test/upper/CMakeFiles/usim_test.dir/rule
 
 # fast build rule for target.
 usim_test/fast:
-	cd /home/ite/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/usim_test.dir/build.make srsue/test/upper/CMakeFiles/usim_test.dir/build
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/usim_test.dir/build.make srsue/test/upper/CMakeFiles/usim_test.dir/build
 .PHONY : usim_test/fast
+
+# Convenience name for target.
+srsue/test/upper/CMakeFiles/nas_test.dir/rule:
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f CMakeFiles/Makefile2 srsue/test/upper/CMakeFiles/nas_test.dir/rule
+.PHONY : srsue/test/upper/CMakeFiles/nas_test.dir/rule
+
+# Convenience name for target.
+nas_test: srsue/test/upper/CMakeFiles/nas_test.dir/rule
+
+.PHONY : nas_test
+
+# fast build rule for target.
+nas_test/fast:
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/nas_test.dir/build.make srsue/test/upper/CMakeFiles/nas_test.dir/build
+.PHONY : nas_test/fast
+
+# Convenience name for target.
+srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/rule:
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f CMakeFiles/Makefile2 srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/rule
+.PHONY : srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/rule
+
+# Convenience name for target.
+rrc_reconfig_test: srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/rule
+
+.PHONY : rrc_reconfig_test
+
+# fast build rule for target.
+rrc_reconfig_test/fast:
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/build.make srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/build
+.PHONY : rrc_reconfig_test/fast
 
 nas_test.o: nas_test.cc.o
 
@@ -238,7 +253,7 @@ nas_test.o: nas_test.cc.o
 
 # target to build an object file
 nas_test.cc.o:
-	cd /home/ite/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/nas_test.dir/build.make srsue/test/upper/CMakeFiles/nas_test.dir/nas_test.cc.o
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/nas_test.dir/build.make srsue/test/upper/CMakeFiles/nas_test.dir/nas_test.cc.o
 .PHONY : nas_test.cc.o
 
 nas_test.i: nas_test.cc.i
@@ -247,7 +262,7 @@ nas_test.i: nas_test.cc.i
 
 # target to preprocess a source file
 nas_test.cc.i:
-	cd /home/ite/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/nas_test.dir/build.make srsue/test/upper/CMakeFiles/nas_test.dir/nas_test.cc.i
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/nas_test.dir/build.make srsue/test/upper/CMakeFiles/nas_test.dir/nas_test.cc.i
 .PHONY : nas_test.cc.i
 
 nas_test.s: nas_test.cc.s
@@ -256,8 +271,35 @@ nas_test.s: nas_test.cc.s
 
 # target to generate assembly for a file
 nas_test.cc.s:
-	cd /home/ite/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/nas_test.dir/build.make srsue/test/upper/CMakeFiles/nas_test.dir/nas_test.cc.s
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/nas_test.dir/build.make srsue/test/upper/CMakeFiles/nas_test.dir/nas_test.cc.s
 .PHONY : nas_test.cc.s
+
+pcsc_usim_test.o: pcsc_usim_test.cc.o
+
+.PHONY : pcsc_usim_test.o
+
+# target to build an object file
+pcsc_usim_test.cc.o:
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/pcsc_usim_test.dir/build.make srsue/test/upper/CMakeFiles/pcsc_usim_test.dir/pcsc_usim_test.cc.o
+.PHONY : pcsc_usim_test.cc.o
+
+pcsc_usim_test.i: pcsc_usim_test.cc.i
+
+.PHONY : pcsc_usim_test.i
+
+# target to preprocess a source file
+pcsc_usim_test.cc.i:
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/pcsc_usim_test.dir/build.make srsue/test/upper/CMakeFiles/pcsc_usim_test.dir/pcsc_usim_test.cc.i
+.PHONY : pcsc_usim_test.cc.i
+
+pcsc_usim_test.s: pcsc_usim_test.cc.s
+
+.PHONY : pcsc_usim_test.s
+
+# target to generate assembly for a file
+pcsc_usim_test.cc.s:
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/pcsc_usim_test.dir/build.make srsue/test/upper/CMakeFiles/pcsc_usim_test.dir/pcsc_usim_test.cc.s
+.PHONY : pcsc_usim_test.cc.s
 
 rrc_reconfig_test.o: rrc_reconfig_test.cc.o
 
@@ -265,7 +307,7 @@ rrc_reconfig_test.o: rrc_reconfig_test.cc.o
 
 # target to build an object file
 rrc_reconfig_test.cc.o:
-	cd /home/ite/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/build.make srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/rrc_reconfig_test.cc.o
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/build.make srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/rrc_reconfig_test.cc.o
 .PHONY : rrc_reconfig_test.cc.o
 
 rrc_reconfig_test.i: rrc_reconfig_test.cc.i
@@ -274,7 +316,7 @@ rrc_reconfig_test.i: rrc_reconfig_test.cc.i
 
 # target to preprocess a source file
 rrc_reconfig_test.cc.i:
-	cd /home/ite/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/build.make srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/rrc_reconfig_test.cc.i
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/build.make srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/rrc_reconfig_test.cc.i
 .PHONY : rrc_reconfig_test.cc.i
 
 rrc_reconfig_test.s: rrc_reconfig_test.cc.s
@@ -283,7 +325,7 @@ rrc_reconfig_test.s: rrc_reconfig_test.cc.s
 
 # target to generate assembly for a file
 rrc_reconfig_test.cc.s:
-	cd /home/ite/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/build.make srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/rrc_reconfig_test.cc.s
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/build.make srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/rrc_reconfig_test.cc.s
 .PHONY : rrc_reconfig_test.cc.s
 
 usim_test.o: usim_test.cc.o
@@ -292,7 +334,7 @@ usim_test.o: usim_test.cc.o
 
 # target to build an object file
 usim_test.cc.o:
-	cd /home/ite/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/usim_test.dir/build.make srsue/test/upper/CMakeFiles/usim_test.dir/usim_test.cc.o
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/usim_test.dir/build.make srsue/test/upper/CMakeFiles/usim_test.dir/usim_test.cc.o
 .PHONY : usim_test.cc.o
 
 usim_test.i: usim_test.cc.i
@@ -301,7 +343,7 @@ usim_test.i: usim_test.cc.i
 
 # target to preprocess a source file
 usim_test.cc.i:
-	cd /home/ite/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/usim_test.dir/build.make srsue/test/upper/CMakeFiles/usim_test.dir/usim_test.cc.i
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/usim_test.dir/build.make srsue/test/upper/CMakeFiles/usim_test.dir/usim_test.cc.i
 .PHONY : usim_test.cc.i
 
 usim_test.s: usim_test.cc.s
@@ -310,7 +352,7 @@ usim_test.s: usim_test.cc.s
 
 # target to generate assembly for a file
 usim_test.cc.s:
-	cd /home/ite/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/usim_test.dir/build.make srsue/test/upper/CMakeFiles/usim_test.dir/usim_test.cc.s
+	cd /home/umbc/Dropbox/srsLTE/build && $(MAKE) -f srsue/test/upper/CMakeFiles/usim_test.dir/build.make srsue/test/upper/CMakeFiles/usim_test.dir/usim_test.cc.s
 .PHONY : usim_test.cc.s
 
 # Help Target
@@ -321,19 +363,23 @@ help:
 	@echo "... depend"
 	@echo "... test"
 	@echo "... package"
+	@echo "... edit_cache"
+	@echo "... pcsc_usim_test"
 	@echo "... install"
-	@echo "... install/strip"
-	@echo "... list_install_components"
-	@echo "... install/local"
-	@echo "... nas_test"
-	@echo "... rrc_reconfig_test"
 	@echo "... rebuild_cache"
 	@echo "... usim_test"
-	@echo "... edit_cache"
+	@echo "... list_install_components"
+	@echo "... install/strip"
+	@echo "... nas_test"
+	@echo "... rrc_reconfig_test"
+	@echo "... install/local"
 	@echo "... package_source"
 	@echo "... nas_test.o"
 	@echo "... nas_test.i"
 	@echo "... nas_test.s"
+	@echo "... pcsc_usim_test.o"
+	@echo "... pcsc_usim_test.i"
+	@echo "... pcsc_usim_test.s"
 	@echo "... rrc_reconfig_test.o"
 	@echo "... rrc_reconfig_test.i"
 	@echo "... rrc_reconfig_test.s"
@@ -351,6 +397,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ite/srsLTE/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/umbc/Dropbox/srsLTE/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

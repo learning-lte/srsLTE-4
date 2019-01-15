@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/radio/test/benchmark_radio.cc
+/home/umbc/Dropbox/srsLTE/lib/src/radio/test/benchmark_radio.cc
 unistd.h
 -
 signal.h
 -
 srslte/srslte.h
-/home/ite/srsLTE/lib/src/radio/test/srslte/srslte.h
+/home/umbc/Dropbox/srsLTE/lib/src/radio/test/srslte/srslte.h
 srslte/radio/radio_multi.h
-/home/ite/srsLTE/lib/src/radio/test/srslte/radio/radio_multi.h
+/home/umbc/Dropbox/srsLTE/lib/src/radio/test/srslte/radio/radio_multi.h
 
 /usr/local/include/srslte/common/trace.h
 stdio.h

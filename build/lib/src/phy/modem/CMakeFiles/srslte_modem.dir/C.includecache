@@ -6,31 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/modem/demod_hard.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/modem/demod_hard.c
 stdlib.h
 -
 strings.h
 -
 srslte/phy/modem/demod_hard.h
-/home/ite/srsLTE/lib/src/phy/modem/srslte/phy/modem/demod_hard.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/modem/srslte/phy/modem/demod_hard.h
 hard_demod_lte.h
-/home/ite/srsLTE/lib/src/phy/modem/hard_demod_lte.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/modem/hard_demod_lte.h
 
-/home/ite/srsLTE/lib/src/phy/modem/demod_soft.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/modem/demod_soft.c
 stdlib.h
 -
 strings.h
 -
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/modem/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/modem/srslte/phy/utils/vector.h
 srslte/phy/utils/bit.h
-/home/ite/srsLTE/lib/src/phy/modem/srslte/phy/utils/bit.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/modem/srslte/phy/utils/bit.h
 srslte/phy/modem/demod_soft.h
-/home/ite/srsLTE/lib/src/phy/modem/srslte/phy/modem/demod_soft.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/modem/srslte/phy/modem/demod_soft.h
 smmintrin.h
 -
 
-/home/ite/srsLTE/lib/src/phy/modem/hard_demod_lte.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/modem/hard_demod_lte.c
 stdint.h
 -
 complex.h
@@ -38,13 +38,13 @@ complex.h
 math.h
 -
 srslte/phy/modem/demod_hard.h
-/home/ite/srsLTE/lib/src/phy/modem/srslte/phy/modem/demod_hard.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/modem/srslte/phy/modem/demod_hard.h
 hard_demod_lte.h
-/home/ite/srsLTE/lib/src/phy/modem/hard_demod_lte.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/modem/hard_demod_lte.h
 
-/home/ite/srsLTE/lib/src/phy/modem/hard_demod_lte.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/modem/hard_demod_lte.h
 
-/home/ite/srsLTE/lib/src/phy/modem/lte_tables.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/modem/lte_tables.c
 stdbool.h
 -
 complex.h
@@ -54,13 +54,13 @@ stdint.h
 math.h
 -
 srslte/phy/modem/modem_table.h
-/home/ite/srsLTE/lib/src/phy/modem/srslte/phy/modem/modem_table.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/modem/srslte/phy/modem/modem_table.h
 lte_tables.h
-/home/ite/srsLTE/lib/src/phy/modem/lte_tables.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/modem/lte_tables.h
 
-/home/ite/srsLTE/lib/src/phy/modem/lte_tables.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/modem/lte_tables.h
 
-/home/ite/srsLTE/lib/src/phy/modem/mod.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/modem/mod.c
 stdlib.h
 -
 string.h
@@ -70,11 +70,11 @@ strings.h
 assert.h
 -
 srslte/phy/utils/bit.h
-/home/ite/srsLTE/lib/src/phy/modem/srslte/phy/utils/bit.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/modem/srslte/phy/utils/bit.h
 srslte/phy/modem/mod.h
-/home/ite/srsLTE/lib/src/phy/modem/srslte/phy/modem/mod.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/modem/srslte/phy/modem/mod.h
 
-/home/ite/srsLTE/lib/src/phy/modem/modem_table.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/modem/modem_table.c
 stdbool.h
 -
 complex.h
@@ -88,13 +88,13 @@ string.h
 strings.h
 -
 srslte/phy/common/phy_common.h
-/home/ite/srsLTE/lib/src/phy/modem/srslte/phy/common/phy_common.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/modem/srslte/phy/common/phy_common.h
 srslte/phy/modem/modem_table.h
-/home/ite/srsLTE/lib/src/phy/modem/srslte/phy/modem/modem_table.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/modem/srslte/phy/modem/modem_table.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/modem/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/modem/srslte/phy/utils/vector.h
 lte_tables.h
-/home/ite/srsLTE/lib/src/phy/modem/lte_tables.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/modem/lte_tables.h
 
 /usr/local/include/srslte/config.h
 

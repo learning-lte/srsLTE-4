@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/ite/srsLTE/lib/src/phy/common/phy_common.c" "/home/ite/srsLTE/build/lib/src/phy/common/CMakeFiles/srslte_phy_common.dir/phy_common.c.o"
-  "/home/ite/srsLTE/lib/src/phy/common/phy_logger.c" "/home/ite/srsLTE/build/lib/src/phy/common/CMakeFiles/srslte_phy_common.dir/phy_logger.c.o"
-  "/home/ite/srsLTE/lib/src/phy/common/sequence.c" "/home/ite/srsLTE/build/lib/src/phy/common/CMakeFiles/srslte_phy_common.dir/sequence.c.o"
-  "/home/ite/srsLTE/lib/src/phy/common/timestamp.c" "/home/ite/srsLTE/build/lib/src/phy/common/CMakeFiles/srslte_phy_common.dir/timestamp.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/common/phy_common.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/common/CMakeFiles/srslte_phy_common.dir/phy_common.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/common/phy_logger.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/common/CMakeFiles/srslte_phy_common.dir/phy_logger.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/common/sequence.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/common/CMakeFiles/srslte_phy_common.dir/sequence.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/common/timestamp.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/common/CMakeFiles/srslte_phy_common.dir/timestamp.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -15,10 +15,12 @@ set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_TARGET_DEFINITIONS_C
   "ENABLE_GUI"
   "HAVE_MBEDTLS"
+  "HAVE_PCSC"
   )
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "/usr/include/PCSC"
   "/usr/local/include"
   "lib/include"
   "../lib/include"

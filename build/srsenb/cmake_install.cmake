@@ -1,4 +1,4 @@
-# Install script for directory: /home/ite/srsLTE/srsenb
+# Install script for directory: /home/umbc/Dropbox/srsLTE/srsenb
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,25 +33,25 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/srslte" TYPE FILE FILES "/home/ite/srsLTE/srsenb/enb.conf.example")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/srslte" TYPE FILE FILES "/home/umbc/Dropbox/srsLTE/srsenb/enb.conf.example")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/srslte" TYPE FILE FILES "/home/ite/srsLTE/srsenb/drb.conf.example")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/srslte" TYPE FILE FILES "/home/umbc/Dropbox/srsLTE/srsenb/drb.conf.example")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/srslte" TYPE FILE FILES "/home/ite/srsLTE/srsenb/rr.conf.example")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/srslte" TYPE FILE FILES "/home/umbc/Dropbox/srsLTE/srsenb/rr.conf.example")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/srslte" TYPE FILE FILES "/home/ite/srsLTE/srsenb/sib.conf.example")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/srslte" TYPE FILE FILES "/home/umbc/Dropbox/srsLTE/srsenb/sib.conf.example")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ite/srsLTE/build/srsenb/src/cmake_install.cmake")
-  include("/home/ite/srsLTE/build/srsenb/test/cmake_install.cmake")
+  include("/home/umbc/Dropbox/srsLTE/build/srsenb/src/cmake_install.cmake")
+  include("/home/umbc/Dropbox/srsLTE/build/srsenb/test/cmake_install.cmake")
 
 endif()
 

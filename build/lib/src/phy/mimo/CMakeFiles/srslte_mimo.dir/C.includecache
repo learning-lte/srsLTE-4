@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/mimo/layermap.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/mimo/layermap.c
 stdio.h
 -
 assert.h
@@ -16,11 +16,11 @@ string.h
 srslte/phy/utils/vector.h
 -
 srslte/phy/common/phy_common.h
-/home/ite/srsLTE/lib/src/phy/mimo/srslte/phy/common/phy_common.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/mimo/srslte/phy/common/phy_common.h
 srslte/phy/mimo/layermap.h
-/home/ite/srsLTE/lib/src/phy/mimo/srslte/phy/mimo/layermap.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/mimo/srslte/phy/mimo/layermap.h
 
-/home/ite/srsLTE/lib/src/phy/mimo/precoding.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/mimo/precoding.c
 stdlib.h
 -
 complex.h
@@ -30,23 +30,23 @@ string.h
 math.h
 -
 srslte/phy/common/phy_common.h
-/home/ite/srsLTE/lib/src/phy/mimo/srslte/phy/common/phy_common.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/mimo/srslte/phy/common/phy_common.h
 srslte/phy/mimo/precoding.h
-/home/ite/srsLTE/lib/src/phy/mimo/srslte/phy/mimo/precoding.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/mimo/srslte/phy/mimo/precoding.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/mimo/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/mimo/srslte/phy/utils/vector.h
 srslte/phy/utils/debug.h
-/home/ite/srsLTE/lib/src/phy/mimo/srslte/phy/utils/debug.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/mimo/srslte/phy/utils/debug.h
 srslte/phy/utils/mat.h
-/home/ite/srsLTE/lib/src/phy/mimo/srslte/phy/utils/mat.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/mimo/srslte/phy/utils/mat.h
 srslte/phy/utils/simd.h
-/home/ite/srsLTE/lib/src/phy/mimo/srslte/phy/utils/simd.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/mimo/srslte/phy/utils/simd.h
 immintrin.h
 -
 immintrin.h
 -
 srslte/phy/utils/mat.h
-/home/ite/srsLTE/lib/src/phy/mimo/srslte/phy/utils/mat.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/mimo/srslte/phy/utils/mat.h
 
 /usr/local/include/srslte/config.h
 

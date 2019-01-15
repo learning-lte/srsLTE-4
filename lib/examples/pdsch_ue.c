@@ -375,9 +375,9 @@ int main(int argc, char **argv) {
   // prog_args is static for global access
   parse_args(&prog_args, argc, argv);
 
-  printf("initiating file sink %s\n", raw_file_name);
-  srslte_filesink_init(&raw_fsink, raw_file_name, SRSLTE_COMPLEX_FLOAT);
-  printf("initiated file sink\n");
+//  printf("initiating file sink %s\n", raw_file_name);
+//  srslte_filesink_init(&raw_fsink, raw_file_name, SRSLTE_COMPLEX_FLOAT);
+//  printf("initiated file sink\n");
   
 #ifndef DISABLE_GRAPHICS
   if(prog_args.mbsfn_area_id > -1) {
@@ -980,7 +980,7 @@ int main(int argc, char **argv) {
   }
 #endif
 
-  srslte_filesink_free(&raw_fsink);
+//  srslte_filesink_free(&raw_fsink);
   
   printf("\nBye\n");
   exit(0);

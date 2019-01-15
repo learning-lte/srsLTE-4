@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/channel/ch_awgn.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/channel/ch_awgn.c
 complex.h
 -
 stdlib.h
@@ -16,11 +16,11 @@ strings.h
 math.h
 -
 gauss.h
-/home/ite/srsLTE/lib/src/phy/channel/gauss.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/channel/gauss.h
 srslte/phy/channel/ch_awgn.h
-/home/ite/srsLTE/lib/src/phy/channel/srslte/phy/channel/ch_awgn.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/channel/srslte/phy/channel/ch_awgn.h
 
-/home/ite/srsLTE/lib/src/phy/channel/gauss.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/channel/gauss.c
 string.h
 -
 stdlib.h
@@ -28,7 +28,7 @@ stdlib.h
 math.h
 -
 
-/home/ite/srsLTE/lib/src/phy/channel/gauss.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/channel/gauss.h
 
 /usr/local/include/srslte/config.h
 

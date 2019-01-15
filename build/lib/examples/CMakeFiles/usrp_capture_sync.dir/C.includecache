@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/examples/usrp_capture_sync.c
+/home/umbc/Dropbox/srsLTE/lib/examples/usrp_capture_sync.c
 stdio.h
 -
 signal.h
@@ -26,9 +26,9 @@ time.h
 stdbool.h
 -
 srslte/srslte.h
-/home/ite/srsLTE/lib/examples/srslte/srslte.h
+/home/umbc/Dropbox/srsLTE/lib/examples/srslte/srslte.h
 srslte/phy/rf/rf.h
-/home/ite/srsLTE/lib/examples/srslte/phy/rf/rf.h
+/home/umbc/Dropbox/srsLTE/lib/examples/srslte/phy/rf/rf.h
 
 /usr/local/include/srslte/config.h
 

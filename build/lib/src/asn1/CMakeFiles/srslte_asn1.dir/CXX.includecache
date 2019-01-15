@@ -6,27 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/asn1/gtpc.cc
+/home/umbc/Dropbox/srsLTE/lib/src/asn1/gtpc.cc
 stdint.h
 -
 srslte/asn1/gtpc.h
-/home/ite/srsLTE/lib/src/asn1/srslte/asn1/gtpc.h
+/home/umbc/Dropbox/srsLTE/lib/src/asn1/srslte/asn1/gtpc.h
 srslte/common/common.h
-/home/ite/srsLTE/lib/src/asn1/srslte/common/common.h
+/home/umbc/Dropbox/srsLTE/lib/src/asn1/srslte/common/common.h
 
-/home/ite/srsLTE/lib/src/asn1/liblte_common.cc
+/home/umbc/Dropbox/srsLTE/lib/src/asn1/liblte_common.cc
 srslte/asn1/liblte_common.h
-/home/ite/srsLTE/lib/src/asn1/srslte/asn1/liblte_common.h
+/home/umbc/Dropbox/srsLTE/lib/src/asn1/srslte/asn1/liblte_common.h
 
-/home/ite/srsLTE/lib/src/asn1/liblte_mme.cc
+/home/umbc/Dropbox/srsLTE/lib/src/asn1/liblte_mme.cc
 srslte/asn1/liblte_mme.h
-/home/ite/srsLTE/lib/src/asn1/srslte/asn1/liblte_mme.h
+/home/umbc/Dropbox/srsLTE/lib/src/asn1/srslte/asn1/liblte_mme.h
 srslte/common/liblte_security.h
-/home/ite/srsLTE/lib/src/asn1/srslte/common/liblte_security.h
+/home/umbc/Dropbox/srsLTE/lib/src/asn1/srslte/common/liblte_security.h
 
-/home/ite/srsLTE/lib/src/asn1/liblte_rrc.cc
+/home/umbc/Dropbox/srsLTE/lib/src/asn1/liblte_rrc.cc
 srslte/asn1/liblte_rrc.h
-/home/ite/srsLTE/lib/src/asn1/srslte/asn1/liblte_rrc.h
+/home/umbc/Dropbox/srsLTE/lib/src/asn1/srslte/asn1/liblte_rrc.h
 stdlib.h
 -
 stdio.h
@@ -34,9 +34,9 @@ stdio.h
 stdarg.h
 -
 
-/home/ite/srsLTE/lib/src/asn1/liblte_s1ap.cc
+/home/umbc/Dropbox/srsLTE/lib/src/asn1/liblte_s1ap.cc
 srslte/asn1/liblte_s1ap.h
-/home/ite/srsLTE/lib/src/asn1/srslte/asn1/liblte_s1ap.h
+/home/umbc/Dropbox/srsLTE/lib/src/asn1/srslte/asn1/liblte_s1ap.h
 stdio.h
 -
 stdarg.h

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/test/common/test_eea1.cc
+/home/umbc/Dropbox/srsLTE/lib/test/common/test_eea1.cc
 stdlib.h
 -
 stdio.h
@@ -16,9 +16,9 @@ assert.h
 sys/time.h
 -
 srslte/srslte.h
-/home/ite/srsLTE/lib/test/common/srslte/srslte.h
+/home/umbc/Dropbox/srsLTE/lib/test/common/srslte/srslte.h
 srslte/common/liblte_security.h
-/home/ite/srsLTE/lib/test/common/srslte/common/liblte_security.h
+/home/umbc/Dropbox/srsLTE/lib/test/common/srslte/common/liblte_security.h
 
 /usr/local/include/srslte/asn1/liblte_common.h
 stdint.h

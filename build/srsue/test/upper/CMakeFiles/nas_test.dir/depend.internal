@@ -20,7 +20,7 @@ srsue/test/upper/CMakeFiles/nas_test.dir/nas_test.cc.o
  ../srsue/hdr/mac/ul_sps.h
  ../srsue/hdr/upper/rrc_common.h
  ../srsue/hdr/upper/usim_base.h
- /home/ite/srsLTE/srsue/test/upper/nas_test.cc
+ /home/umbc/Dropbox/srsLTE/srsue/test/upper/nas_test.cc
  /usr/local/include/srslte/asn1/liblte_common.h
  /usr/local/include/srslte/asn1/liblte_mme.h
  /usr/local/include/srslte/asn1/liblte_rrc.h

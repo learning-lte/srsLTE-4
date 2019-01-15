@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/utils/bit.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/bit.c
 string.h
 -
 stdint.h
@@ -24,11 +24,11 @@ stdlib.h
 immintrin.h
 -
 srslte/phy/utils/bit.h
-/home/ite/srsLTE/lib/src/phy/utils/srslte/phy/utils/bit.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/srslte/phy/utils/bit.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/utils/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/srslte/phy/utils/vector.h
 
-/home/ite/srsLTE/lib/src/phy/utils/cexptab.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/cexptab.c
 stdlib.h
 -
 math.h
@@ -40,9 +40,9 @@ assert.h
 complex.h
 -
 srslte/phy/utils/cexptab.h
-/home/ite/srsLTE/lib/src/phy/utils/srslte/phy/utils/cexptab.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/srslte/phy/utils/cexptab.h
 
-/home/ite/srsLTE/lib/src/phy/utils/convolution.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/convolution.c
 stdlib.h
 -
 string.h
@@ -50,23 +50,23 @@ string.h
 srslte/srslte.h
 -
 srslte/phy/dft/dft.h
-/home/ite/srsLTE/lib/src/phy/utils/srslte/phy/dft/dft.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/srslte/phy/dft/dft.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/utils/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/srslte/phy/utils/vector.h
 srslte/phy/utils/convolution.h
-/home/ite/srsLTE/lib/src/phy/utils/srslte/phy/utils/convolution.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/srslte/phy/utils/convolution.h
 
-/home/ite/srsLTE/lib/src/phy/utils/debug.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/debug.c
 stdlib.h
 -
 srslte/phy/utils/debug.h
-/home/ite/srsLTE/lib/src/phy/utils/srslte/phy/utils/debug.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/srslte/phy/utils/debug.h
 
-/home/ite/srsLTE/lib/src/phy/utils/filter.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/filter.c
 srslte/phy/utils/filter.h
-/home/ite/srsLTE/lib/src/phy/utils/srslte/phy/utils/filter.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/srslte/phy/utils/filter.h
 
-/home/ite/srsLTE/lib/src/phy/utils/mat.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/mat.c
 complex.h
 -
 math.h
@@ -74,23 +74,23 @@ math.h
 srslte/config.h
 -
 srslte/phy/utils/mat.h
-/home/ite/srsLTE/lib/src/phy/utils/srslte/phy/utils/mat.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/srslte/phy/utils/mat.h
 smmintrin.h
 -
 immintrin.h
 -
 
-/home/ite/srsLTE/lib/src/phy/utils/ringbuffer.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/ringbuffer.c
 string.h
 -
 stdlib.h
 -
 srslte/phy/utils/ringbuffer.h
-/home/ite/srsLTE/lib/src/phy/utils/srslte/phy/utils/ringbuffer.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/srslte/phy/utils/ringbuffer.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/utils/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/srslte/phy/utils/vector.h
 
-/home/ite/srsLTE/lib/src/phy/utils/vector.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/vector.c
 float.h
 -
 complex.h
@@ -102,13 +102,13 @@ stdlib.h
 string.h
 -
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/utils/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/srslte/phy/utils/vector.h
 srslte/phy/utils/vector_simd.h
-/home/ite/srsLTE/lib/src/phy/utils/srslte/phy/utils/vector_simd.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/srslte/phy/utils/vector_simd.h
 srslte/phy/utils/bit.h
-/home/ite/srsLTE/lib/src/phy/utils/srslte/phy/utils/bit.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/srslte/phy/utils/bit.h
 
-/home/ite/srsLTE/lib/src/phy/utils/vector_simd.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/vector_simd.c
 complex.h
 -
 math.h
@@ -124,9 +124,9 @@ stdio.h
 srslte/config.h
 -
 srslte/phy/utils/vector_simd.h
-/home/ite/srsLTE/lib/src/phy/utils/srslte/phy/utils/vector_simd.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/srslte/phy/utils/vector_simd.h
 srslte/phy/utils/simd.h
-/home/ite/srsLTE/lib/src/phy/utils/srslte/phy/utils/simd.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/utils/srslte/phy/utils/simd.h
 
 /usr/local/include/srslte/config.h
 

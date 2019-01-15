@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/examples/usrp_txrx.c
+/home/umbc/Dropbox/srsLTE/lib/examples/usrp_txrx.c
 stdio.h
 -
 stdlib.h
@@ -22,9 +22,9 @@ time.h
 complex.h
 -
 srslte/phy/rf/rf.h
-/home/ite/srsLTE/lib/examples/srslte/phy/rf/rf.h
+/home/umbc/Dropbox/srsLTE/lib/examples/srslte/phy/rf/rf.h
 srslte/srslte.h
-/home/ite/srsLTE/lib/examples/srslte/srslte.h
+/home/umbc/Dropbox/srsLTE/lib/examples/srslte/srslte.h
 
 /usr/local/include/srslte/config.h
 

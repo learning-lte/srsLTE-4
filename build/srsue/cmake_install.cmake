@@ -1,4 +1,4 @@
-# Install script for directory: /home/ite/srsLTE/srsue
+# Install script for directory: /home/umbc/Dropbox/srsLTE/srsue
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,13 +33,13 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/srslte" TYPE FILE FILES "/home/ite/srsLTE/srsue/ue.conf.example")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/srslte" TYPE FILE FILES "/home/umbc/Dropbox/srsLTE/srsue/ue.conf.example")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ite/srsLTE/build/srsue/src/cmake_install.cmake")
-  include("/home/ite/srsLTE/build/srsue/test/cmake_install.cmake")
+  include("/home/umbc/Dropbox/srsLTE/build/srsue/src/cmake_install.cmake")
+  include("/home/umbc/Dropbox/srsLTE/build/srsue/test/cmake_install.cmake")
 
 endif()
 

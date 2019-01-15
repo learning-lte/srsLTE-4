@@ -1,4 +1,4 @@
-# Install script for directory: /home/ite/srsLTE/lib/include/srslte
+# Install script for directory: /home/umbc/Dropbox/srsLTE/lib/include/srslte
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,6 +33,6 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/srslte" TYPE FILE FILES "/home/ite/srsLTE/build/lib/include/srslte/version.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/srslte" TYPE FILE FILES "/home/umbc/Dropbox/srsLTE/build/lib/include/srslte/version.h")
 endif()
 

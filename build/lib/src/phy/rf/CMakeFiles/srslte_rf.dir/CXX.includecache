@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/rf/uhd_c_api.cpp
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/uhd_c_api.cpp
 uhd.h
 -
 uhd/usrp/multi_usrp.hpp
 -
 srslte/phy/rf/rf.h
-/home/ite/srsLTE/lib/src/phy/rf/srslte/phy/rf/rf.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/srslte/phy/rf/rf.h
 uhd_c_api.h
-/home/ite/srsLTE/lib/src/phy/rf/uhd_c_api.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/uhd_c_api.h
 
-/home/ite/srsLTE/lib/src/phy/rf/uhd_c_api.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/uhd_c_api.h
 uhd.h
 -
 srslte/config.h
-/home/ite/srsLTE/lib/src/phy/rf/srslte/config.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/srslte/config.h
 srslte/phy/rf/rf.h
-/home/ite/srsLTE/lib/src/phy/rf/srslte/phy/rf/rf.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/srslte/phy/rf/rf.h
 
 /usr/local/include/srslte/config.h
 
@@ -69,8 +69,6 @@ uhd/usrp_clock/usrp_clock.h
 -
 uhd/utils/thread_priority.h
 -
-uhd/utils/log.h
--
 
 /usr/local/include/uhd/config.h
 iso646.h
@@ -113,6 +111,10 @@ boost/shared_ptr.hpp
 -
 boost/function.hpp
 -
+uhd/device_deprecated.ipp
+-
+
+/usr/local/include/uhd/device_deprecated.ipp
 
 /usr/local/include/uhd/error.h
 stdlib.h
@@ -155,8 +157,6 @@ uhd/exception.hpp
 -
 boost/foreach.hpp
 -
-boost/scoped_ptr.hpp
--
 vector
 -
 
@@ -197,8 +197,6 @@ vector
 -
 string
 -
-map
--
 
 /usr/local/include/uhd/types/dict.hpp
 uhd/config.hpp
@@ -227,7 +225,9 @@ uhd/config.hpp
 -
 uhd/utils/log.hpp
 -
-stdint.h
+uhd/utils/msg.hpp
+-
+boost/cstdint.hpp
 -
 boost/shared_ptr.hpp
 -
@@ -271,7 +271,7 @@ uhd/config.hpp
 -
 uhd/types/time_spec.hpp
 -
-stdint.h
+boost/cstdint.hpp
 -
 string
 -
@@ -317,8 +317,6 @@ string
 /usr/local/include/uhd/types/sensors.hpp
 uhd/config.hpp
 -
-map
--
 string
 -
 
@@ -327,7 +325,7 @@ uhd/config.hpp
 -
 boost/shared_ptr.hpp
 -
-stdint.h
+boost/cstdint.hpp
 -
 vector
 -
@@ -415,7 +413,7 @@ string
 /usr/local/include/uhd/usrp/dboard_id.hpp
 uhd/config.hpp
 -
-stdint.h
+boost/cstdint.hpp
 -
 boost/operators.hpp
 -
@@ -431,30 +429,14 @@ uhd/types/serial.hpp
 -
 uhd/types/time_spec.hpp
 -
-uhd/usrp/fe_connection.hpp
--
-uhd/usrp/gpio_defs.hpp
--
 boost/shared_ptr.hpp
 -
-stdint.h
--
-boost/thread/thread.hpp
+boost/cstdint.hpp
 -
 string
 -
 vector
 -
-
-/usr/local/include/uhd/usrp/fe_connection.hpp
-uhd/config.hpp
--
-boost/operators.hpp
--
-string
--
-
-/usr/local/include/uhd/usrp/gpio_defs.hpp
 
 /usr/local/include/uhd/usrp/mboard_eeprom.h
 uhd/config.h
@@ -467,7 +449,11 @@ string
 -
 
 /usr/local/include/uhd/usrp/mboard_eeprom.hpp
+uhd/config.hpp
+-
 uhd/types/dict.hpp
+-
+uhd/types/serial.hpp
 -
 string
 -
@@ -553,8 +539,6 @@ uhd/usrp/dboard_eeprom.h
 -
 uhd/usrp/subdev_spec.h
 -
-uhd/version.hpp
--
 stdbool.h
 -
 stdlib.h
@@ -580,16 +564,14 @@ stdint.h
 time.h
 -
 
-/usr/local/include/uhd/utils/log.h
-uhd/config.h
--
-
 /usr/local/include/uhd/utils/log.hpp
 uhd/config.hpp
 -
+uhd/utils/pimpl.hpp
+-
 boost/current_function.hpp
 -
-boost/thread/thread.hpp
+boost/format.hpp
 -
 ostream
 -
@@ -597,7 +579,17 @@ string
 -
 sstream
 -
-iostream
+
+/usr/local/include/uhd/utils/msg.hpp
+uhd/config.hpp
+-
+uhd/utils/pimpl.hpp
+-
+ostream
+-
+iomanip
+-
+string
 -
 
 /usr/local/include/uhd/utils/pimpl.hpp
@@ -610,11 +602,5 @@ boost/shared_ptr.hpp
 uhd/config.h
 -
 uhd/error.h
--
-
-/usr/local/include/uhd/version.hpp
-uhd/config.hpp
--
-string
 -
 

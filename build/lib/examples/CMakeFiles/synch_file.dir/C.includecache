@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/examples/synch_file.c
+/home/umbc/Dropbox/srsLTE/lib/examples/synch_file.c
 stdio.h
 -
 stdlib.h
@@ -18,7 +18,7 @@ unistd.h
 sys/time.h
 -
 srslte/srslte.h
-/home/ite/srsLTE/lib/examples/srslte/srslte.h
+/home/umbc/Dropbox/srsLTE/lib/examples/srslte/srslte.h
 
 /usr/local/include/srslte/config.h
 

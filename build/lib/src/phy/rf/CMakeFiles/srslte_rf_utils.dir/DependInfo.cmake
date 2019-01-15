@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/ite/srsLTE/lib/src/phy/rf/rf_utils.c" "/home/ite/srsLTE/build/lib/src/phy/rf/CMakeFiles/srslte_rf_utils.dir/rf_utils.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/rf_utils.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/rf/CMakeFiles/srslte_rf_utils.dir/rf_utils.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -13,10 +13,12 @@ set(CMAKE_TARGET_DEFINITIONS_C
   "ENABLE_GUI"
   "ENABLE_UHD"
   "HAVE_MBEDTLS"
+  "HAVE_PCSC"
   )
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "/usr/include/PCSC"
   "/usr/local/include"
   "lib/include"
   "../lib/include"
@@ -24,7 +26,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ite/srsLTE/build/lib/src/phy/CMakeFiles/srslte_phy.dir/DependInfo.cmake"
+  "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/CMakeFiles/srslte_phy.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

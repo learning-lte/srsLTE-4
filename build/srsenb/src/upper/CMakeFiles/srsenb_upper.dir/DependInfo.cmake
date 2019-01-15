@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ite/srsLTE/srsenb/src/upper/gtpu.cc" "/home/ite/srsLTE/build/srsenb/src/upper/CMakeFiles/srsenb_upper.dir/gtpu.cc.o"
-  "/home/ite/srsLTE/srsenb/src/upper/pdcp.cc" "/home/ite/srsLTE/build/srsenb/src/upper/CMakeFiles/srsenb_upper.dir/pdcp.cc.o"
-  "/home/ite/srsLTE/srsenb/src/upper/rlc.cc" "/home/ite/srsLTE/build/srsenb/src/upper/CMakeFiles/srsenb_upper.dir/rlc.cc.o"
-  "/home/ite/srsLTE/srsenb/src/upper/rrc.cc" "/home/ite/srsLTE/build/srsenb/src/upper/CMakeFiles/srsenb_upper.dir/rrc.cc.o"
-  "/home/ite/srsLTE/srsenb/src/upper/s1ap.cc" "/home/ite/srsLTE/build/srsenb/src/upper/CMakeFiles/srsenb_upper.dir/s1ap.cc.o"
+  "/home/umbc/Dropbox/srsLTE/srsenb/src/upper/gtpu.cc" "/home/umbc/Dropbox/srsLTE/build/srsenb/src/upper/CMakeFiles/srsenb_upper.dir/gtpu.cc.o"
+  "/home/umbc/Dropbox/srsLTE/srsenb/src/upper/pdcp.cc" "/home/umbc/Dropbox/srsLTE/build/srsenb/src/upper/CMakeFiles/srsenb_upper.dir/pdcp.cc.o"
+  "/home/umbc/Dropbox/srsLTE/srsenb/src/upper/rlc.cc" "/home/umbc/Dropbox/srsLTE/build/srsenb/src/upper/CMakeFiles/srsenb_upper.dir/rlc.cc.o"
+  "/home/umbc/Dropbox/srsLTE/srsenb/src/upper/rrc.cc" "/home/umbc/Dropbox/srsLTE/build/srsenb/src/upper/CMakeFiles/srsenb_upper.dir/rrc.cc.o"
+  "/home/umbc/Dropbox/srsLTE/srsenb/src/upper/s1ap.cc" "/home/umbc/Dropbox/srsLTE/build/srsenb/src/upper/CMakeFiles/srsenb_upper.dir/s1ap.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,10 +16,12 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "ENABLE_GUI"
   "HAVE_MBEDTLS"
+  "HAVE_PCSC"
   )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/include/PCSC"
   "/usr/local/include"
   "lib/include"
   "../lib/include"

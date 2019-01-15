@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ite/srsLTE/lib/src/upper/gtpu.cc" "/home/ite/srsLTE/build/lib/src/upper/CMakeFiles/srslte_upper.dir/gtpu.cc.o"
-  "/home/ite/srsLTE/lib/src/upper/pdcp.cc" "/home/ite/srsLTE/build/lib/src/upper/CMakeFiles/srslte_upper.dir/pdcp.cc.o"
-  "/home/ite/srsLTE/lib/src/upper/pdcp_entity.cc" "/home/ite/srsLTE/build/lib/src/upper/CMakeFiles/srslte_upper.dir/pdcp_entity.cc.o"
-  "/home/ite/srsLTE/lib/src/upper/rlc.cc" "/home/ite/srsLTE/build/lib/src/upper/CMakeFiles/srslte_upper.dir/rlc.cc.o"
-  "/home/ite/srsLTE/lib/src/upper/rlc_am.cc" "/home/ite/srsLTE/build/lib/src/upper/CMakeFiles/srslte_upper.dir/rlc_am.cc.o"
-  "/home/ite/srsLTE/lib/src/upper/rlc_tm.cc" "/home/ite/srsLTE/build/lib/src/upper/CMakeFiles/srslte_upper.dir/rlc_tm.cc.o"
-  "/home/ite/srsLTE/lib/src/upper/rlc_um.cc" "/home/ite/srsLTE/build/lib/src/upper/CMakeFiles/srslte_upper.dir/rlc_um.cc.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/upper/gtpu.cc" "/home/umbc/Dropbox/srsLTE/build/lib/src/upper/CMakeFiles/srslte_upper.dir/gtpu.cc.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/upper/pdcp.cc" "/home/umbc/Dropbox/srsLTE/build/lib/src/upper/CMakeFiles/srslte_upper.dir/pdcp.cc.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/upper/pdcp_entity.cc" "/home/umbc/Dropbox/srsLTE/build/lib/src/upper/CMakeFiles/srslte_upper.dir/pdcp_entity.cc.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/upper/rlc.cc" "/home/umbc/Dropbox/srsLTE/build/lib/src/upper/CMakeFiles/srslte_upper.dir/rlc.cc.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/upper/rlc_am.cc" "/home/umbc/Dropbox/srsLTE/build/lib/src/upper/CMakeFiles/srslte_upper.dir/rlc_am.cc.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/upper/rlc_tm.cc" "/home/umbc/Dropbox/srsLTE/build/lib/src/upper/CMakeFiles/srslte_upper.dir/rlc_tm.cc.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/upper/rlc_um.cc" "/home/umbc/Dropbox/srsLTE/build/lib/src/upper/CMakeFiles/srslte_upper.dir/rlc_um.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -18,10 +18,12 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "ENABLE_GUI"
   "HAVE_MBEDTLS"
+  "HAVE_PCSC"
   )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/include/PCSC"
   "/usr/local/include"
   "lib/include"
   "../lib/include"
@@ -29,8 +31,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ite/srsLTE/build/lib/src/common/CMakeFiles/srslte_common.dir/DependInfo.cmake"
-  "/home/ite/srsLTE/build/lib/src/asn1/CMakeFiles/srslte_asn1.dir/DependInfo.cmake"
+  "/home/umbc/Dropbox/srsLTE/build/lib/src/common/CMakeFiles/srslte_common.dir/DependInfo.cmake"
+  "/home/umbc/Dropbox/srsLTE/build/lib/src/asn1/CMakeFiles/srslte_asn1.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

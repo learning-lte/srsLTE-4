@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/agc/agc.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/agc/agc.c
 string.h
 -
 strings.h
@@ -18,13 +18,13 @@ math.h
 complex.h
 -
 srslte/phy/utils/debug.h
-/home/ite/srsLTE/lib/src/phy/agc/srslte/phy/utils/debug.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/agc/srslte/phy/utils/debug.h
 srslte/phy/agc/agc.h
-/home/ite/srsLTE/lib/src/phy/agc/srslte/phy/agc/agc.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/agc/srslte/phy/agc/agc.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/agc/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/agc/srslte/phy/utils/vector.h
 srslte/phy/utils/debug.h
-/home/ite/srsLTE/lib/src/phy/agc/srslte/phy/utils/debug.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/agc/srslte/phy/utils/debug.h
 
 /usr/local/include/srslte/config.h
 

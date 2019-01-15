@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/ch_estimation/test/chest_test_dl.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/test/chest_test_dl.c
 stdio.h
 -
 stdlib.h
@@ -20,7 +20,7 @@ complex.h
 srslte/phy/common/phy_common.h
 -
 srslte/srslte.h
-/home/ite/srsLTE/lib/src/phy/ch_estimation/test/srslte/srslte.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation/test/srslte/srslte.h
 
 /usr/local/include/srslte/config.h
 

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/ue/ue_cell_search.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ue/ue_cell_search.c
 stdlib.h
 -
 string.h
@@ -20,21 +20,21 @@ unistd.h
 srslte/srslte.h
 -
 srslte/phy/ue/ue_cell_search.h
-/home/ite/srsLTE/lib/src/phy/ue/srslte/phy/ue/ue_cell_search.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ue/srslte/phy/ue/ue_cell_search.h
 srslte/phy/utils/debug.h
-/home/ite/srsLTE/lib/src/phy/ue/srslte/phy/utils/debug.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ue/srslte/phy/utils/debug.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/ue/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ue/srslte/phy/utils/vector.h
 
-/home/ite/srsLTE/lib/src/phy/ue/ue_dl.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ue/ue_dl.c
 srslte/phy/ue/ue_dl.h
-/home/ite/srsLTE/lib/src/phy/ue/srslte/phy/ue/ue_dl.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ue/srslte/phy/ue/ue_dl.h
 string.h
 -
 srslte/srslte.h
 -
 
-/home/ite/srsLTE/lib/src/phy/ue/ue_mib.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ue/ue_mib.c
 stdlib.h
 -
 string.h
@@ -46,13 +46,13 @@ assert.h
 unistd.h
 -
 srslte/phy/ue/ue_mib.h
-/home/ite/srsLTE/lib/src/phy/ue/srslte/phy/ue/ue_mib.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ue/srslte/phy/ue/ue_mib.h
 srslte/phy/utils/debug.h
-/home/ite/srsLTE/lib/src/phy/ue/srslte/phy/utils/debug.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ue/srslte/phy/utils/debug.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/ue/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ue/srslte/phy/utils/vector.h
 
-/home/ite/srsLTE/lib/src/phy/ue/ue_sync.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ue/ue_sync.c
 stdlib.h
 -
 string.h
@@ -64,17 +64,17 @@ assert.h
 unistd.h
 -
 srslte/srslte.h
-/home/ite/srsLTE/lib/src/phy/ue/srslte/srslte.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ue/srslte/srslte.h
 srslte/phy/ue/ue_sync.h
-/home/ite/srsLTE/lib/src/phy/ue/srslte/phy/ue/ue_sync.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ue/srslte/phy/ue/ue_sync.h
 srslte/phy/io/filesource.h
-/home/ite/srsLTE/lib/src/phy/ue/srslte/phy/io/filesource.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ue/srslte/phy/io/filesource.h
 srslte/phy/utils/debug.h
-/home/ite/srsLTE/lib/src/phy/ue/srslte/phy/utils/debug.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ue/srslte/phy/utils/debug.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/ue/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ue/srslte/phy/utils/vector.h
 
-/home/ite/srsLTE/lib/src/phy/ue/ue_ul.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ue/ue_ul.c
 complex.h
 -
 math.h
@@ -82,7 +82,7 @@ math.h
 string.h
 -
 srslte/phy/ue/ue_ul.h
-/home/ite/srsLTE/lib/src/phy/ue/srslte/phy/ue/ue_ul.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/ue/srslte/phy/ue/ue_ul.h
 
 /usr/local/include/srslte/config.h
 

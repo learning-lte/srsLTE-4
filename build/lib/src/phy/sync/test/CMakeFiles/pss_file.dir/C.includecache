@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/sync/test/pss_file.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/sync/test/pss_file.c
 stdio.h
 -
 stdlib.h
@@ -24,9 +24,9 @@ time.h
 stdbool.h
 -
 srslte/srslte.h
-/home/ite/srsLTE/lib/src/phy/sync/test/srslte/srslte.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/sync/test/srslte/srslte.h
 srsgui/srsgui.h
-/home/ite/srsLTE/lib/src/phy/sync/test/srsgui/srsgui.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/sync/test/srsgui/srsgui.h
 
 /usr/local/include/srsgui/plot/key_value.h
 stdbool.h

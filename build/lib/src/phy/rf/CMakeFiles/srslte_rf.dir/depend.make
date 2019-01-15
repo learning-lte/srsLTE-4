@@ -206,9 +206,7 @@ lib/src/phy/rf/CMakeFiles/srslte_rf.dir/rf_uhd_imp.c.o: /usr/local/include/uhd/u
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/rf_uhd_imp.c.o: /usr/local/include/uhd/usrp/subdev_spec.hpp
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/rf_uhd_imp.c.o: /usr/local/include/uhd/usrp/usrp.h
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/rf_uhd_imp.c.o: /usr/local/include/uhd/usrp_clock/usrp_clock.h
-lib/src/phy/rf/CMakeFiles/srslte_rf.dir/rf_uhd_imp.c.o: /usr/local/include/uhd/utils/log.h
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/rf_uhd_imp.c.o: /usr/local/include/uhd/utils/thread_priority.h
-lib/src/phy/rf/CMakeFiles/srslte_rf.dir/rf_uhd_imp.c.o: /usr/local/include/uhd/version.hpp
 
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: ../lib/src/phy/rf/uhd_c_api.cpp
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: ../lib/src/phy/rf/uhd_c_api.h
@@ -219,6 +217,7 @@ lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/config.hpp
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/deprecated.hpp
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/device.hpp
+lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/device_deprecated.ipp
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/error.h
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/exception.hpp
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/property_tree.hpp
@@ -250,8 +249,6 @@ lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/usrp/dboard_eeprom.hpp
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/usrp/dboard_id.hpp
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/usrp/dboard_iface.hpp
-lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/usrp/fe_connection.hpp
-lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/usrp/gpio_defs.hpp
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/usrp/mboard_eeprom.h
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/usrp/mboard_eeprom.hpp
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/usrp/multi_usrp.hpp
@@ -259,9 +256,8 @@ lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/usrp/subdev_spec.hpp
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/usrp/usrp.h
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/usrp_clock/usrp_clock.h
-lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/utils/log.h
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/utils/log.hpp
+lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/utils/msg.hpp
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/utils/pimpl.hpp
 lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/utils/thread_priority.h
-lib/src/phy/rf/CMakeFiles/srslte_rf.dir/uhd_c_api.cpp.o: /usr/local/include/uhd/version.hpp
 

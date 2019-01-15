@@ -22,7 +22,7 @@ srslte/common/threads.h
 srslte/asn1/gtpc.h
 ../srsepc/hdr/mbms-gw/srslte/asn1/gtpc.h
 
-/home/ite/srsLTE/srsepc/src/mbms-gw/main.cc
+/home/umbc/Dropbox/srsLTE/srsepc/src/mbms-gw/main.cc
 iostream
 -
 fstream
@@ -36,11 +36,11 @@ boost/program_options.hpp
 boost/algorithm/string.hpp
 -
 srslte/common/config_file.h
-/home/ite/srsLTE/srsepc/src/mbms-gw/srslte/common/config_file.h
+/home/umbc/Dropbox/srsLTE/srsepc/src/mbms-gw/srslte/common/config_file.h
 srsepc/hdr/mbms-gw/mbms-gw.h
-/home/ite/srsLTE/srsepc/src/mbms-gw/srsepc/hdr/mbms-gw/mbms-gw.h
+/home/umbc/Dropbox/srsLTE/srsepc/src/mbms-gw/srsepc/hdr/mbms-gw/mbms-gw.h
 
-/home/ite/srsLTE/srsepc/src/mbms-gw/mbms-gw.cc
+/home/umbc/Dropbox/srsLTE/srsepc/src/mbms-gw/mbms-gw.cc
 iostream
 -
 algorithm
@@ -62,9 +62,9 @@ netinet/udp.h
 linux/ip.h
 -
 srsepc/hdr/mbms-gw/mbms-gw.h
-/home/ite/srsLTE/srsepc/src/mbms-gw/srsepc/hdr/mbms-gw/mbms-gw.h
+/home/umbc/Dropbox/srsLTE/srsepc/src/mbms-gw/srsepc/hdr/mbms-gw/mbms-gw.h
 srslte/upper/gtpu.h
-/home/ite/srsLTE/srsepc/src/mbms-gw/srslte/upper/gtpu.h
+/home/umbc/Dropbox/srsLTE/srsepc/src/mbms-gw/srslte/upper/gtpu.h
 
 /usr/local/include/srslte/asn1/gtpc.h
 stdint.h

@@ -48,18 +48,18 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ite/srsLTE
+CMAKE_SOURCE_DIR = /home/umbc/Dropbox/srsLTE
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ite/srsLTE/build
+CMAKE_BINARY_DIR = /home/umbc/Dropbox/srsLTE/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -136,7 +136,7 @@ install/local/fast: install/local
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ite/srsLTE/build/CPackSourceConfig.cmake
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/umbc/Dropbox/srsLTE/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -157,9 +157,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ite/srsLTE/build/CMakeFiles /home/ite/srsLTE/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/umbc/Dropbox/srsLTE/build/CMakeFiles /home/umbc/Dropbox/srsLTE/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ite/srsLTE/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/umbc/Dropbox/srsLTE/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -1852,6 +1852,32 @@ mac_test/fast:
 .PHONY : mac_test/fast
 
 #=============================================================================
+# Target rules for targets named pcsc_usim_test
+
+# Build rule for target.
+pcsc_usim_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pcsc_usim_test
+.PHONY : pcsc_usim_test
+
+# fast build rule for target.
+pcsc_usim_test/fast:
+	$(MAKE) -f srsue/test/upper/CMakeFiles/pcsc_usim_test.dir/build.make srsue/test/upper/CMakeFiles/pcsc_usim_test.dir/build
+.PHONY : pcsc_usim_test/fast
+
+#=============================================================================
+# Target rules for targets named usim_test
+
+# Build rule for target.
+usim_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 usim_test
+.PHONY : usim_test
+
+# fast build rule for target.
+usim_test/fast:
+	$(MAKE) -f srsue/test/upper/CMakeFiles/usim_test.dir/build.make srsue/test/upper/CMakeFiles/usim_test.dir/build
+.PHONY : usim_test/fast
+
+#=============================================================================
 # Target rules for targets named nas_test
 
 # Build rule for target.
@@ -1876,19 +1902,6 @@ rrc_reconfig_test: cmake_check_build_system
 rrc_reconfig_test/fast:
 	$(MAKE) -f srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/build.make srsue/test/upper/CMakeFiles/rrc_reconfig_test.dir/build
 .PHONY : rrc_reconfig_test/fast
-
-#=============================================================================
-# Target rules for targets named usim_test
-
-# Build rule for target.
-usim_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 usim_test
-.PHONY : usim_test
-
-# fast build rule for target.
-usim_test/fast:
-	$(MAKE) -f srsue/test/upper/CMakeFiles/usim_test.dir/build.make srsue/test/upper/CMakeFiles/usim_test.dir/build
-.PHONY : usim_test/fast
 
 #=============================================================================
 # Target rules for targets named srsenb
@@ -2202,9 +2215,10 @@ help:
 	@echo "... srsue_upper"
 	@echo "... metrics_test"
 	@echo "... mac_test"
+	@echo "... pcsc_usim_test"
+	@echo "... usim_test"
 	@echo "... nas_test"
 	@echo "... rrc_reconfig_test"
-	@echo "... usim_test"
 	@echo "... srsenb"
 	@echo "... srsenb_phy"
 	@echo "... srsenb_mac"

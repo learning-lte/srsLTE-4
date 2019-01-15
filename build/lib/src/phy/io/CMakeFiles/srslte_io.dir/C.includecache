@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/io/binsource.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/io/binsource.c
 sys/time.h
 -
 stdlib.h
@@ -14,11 +14,11 @@ stdlib.h
 strings.h
 -
 srslte/phy/io/binsource.h
-/home/ite/srsLTE/lib/src/phy/io/srslte/phy/io/binsource.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/io/srslte/phy/io/binsource.h
 srslte/phy/utils/bit.h
-/home/ite/srsLTE/lib/src/phy/io/srslte/phy/utils/bit.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/io/srslte/phy/utils/bit.h
 
-/home/ite/srsLTE/lib/src/phy/io/filesink.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/io/filesink.c
 stdio.h
 -
 stdlib.h
@@ -28,9 +28,9 @@ math.h
 strings.h
 -
 srslte/phy/io/filesink.h
-/home/ite/srsLTE/lib/src/phy/io/srslte/phy/io/filesink.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/io/srslte/phy/io/filesink.h
 
-/home/ite/srsLTE/lib/src/phy/io/filesource.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/io/filesource.c
 stdio.h
 -
 stdlib.h
@@ -38,9 +38,9 @@ stdlib.h
 strings.h
 -
 srslte/phy/io/filesource.h
-/home/ite/srsLTE/lib/src/phy/io/srslte/phy/io/filesource.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/io/srslte/phy/io/filesource.h
 
-/home/ite/srsLTE/lib/src/phy/io/netsink.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/io/netsink.c
 sys/socket.h
 -
 netinet/in.h
@@ -62,9 +62,9 @@ errno.h
 fcntl.h
 -
 srslte/phy/io/netsink.h
-/home/ite/srsLTE/lib/src/phy/io/srslte/phy/io/netsink.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/io/srslte/phy/io/netsink.h
 
-/home/ite/srsLTE/lib/src/phy/io/netsource.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/io/netsource.c
 sys/socket.h
 -
 netinet/in.h
@@ -84,7 +84,7 @@ strings.h
 errno.h
 -
 srslte/phy/io/netsource.h
-/home/ite/srsLTE/lib/src/phy/io/srslte/phy/io/netsource.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/io/srslte/phy/io/netsource.h
 
 /usr/local/include/srslte/config.h
 

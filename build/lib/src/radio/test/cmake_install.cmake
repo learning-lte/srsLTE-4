@@ -1,4 +1,4 @@
-# Install script for directory: /home/ite/srsLTE/lib/src/radio/test
+# Install script for directory: /home/umbc/Dropbox/srsLTE/lib/src/radio/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -10,15 +10,15 @@
 stdint.h
 -
 
-/home/ite/srsLTE/srsenb/test/upper/plmn_test.cc
+/home/umbc/Dropbox/srsLTE/srsenb/test/upper/plmn_test.cc
 assert.h
 -
 srsenb/hdr/upper/common_enb.h
-/home/ite/srsLTE/srsenb/test/upper/srsenb/hdr/upper/common_enb.h
+/home/umbc/Dropbox/srsLTE/srsenb/test/upper/srsenb/hdr/upper/common_enb.h
 srslte/asn1/liblte_rrc.h
-/home/ite/srsLTE/srsenb/test/upper/srslte/asn1/liblte_rrc.h
+/home/umbc/Dropbox/srsLTE/srsenb/test/upper/srslte/asn1/liblte_rrc.h
 srslte/common/bcd_helpers.h
-/home/ite/srsLTE/srsenb/test/upper/srslte/common/bcd_helpers.h
+/home/umbc/Dropbox/srsLTE/srsenb/test/upper/srslte/common/bcd_helpers.h
 
 /usr/local/include/srslte/asn1/liblte_common.h
 stdint.h

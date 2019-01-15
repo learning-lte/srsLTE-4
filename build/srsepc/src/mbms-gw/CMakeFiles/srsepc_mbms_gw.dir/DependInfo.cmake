@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ite/srsLTE/srsepc/src/mbms-gw/main.cc" "/home/ite/srsLTE/build/srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/main.cc.o"
-  "/home/ite/srsLTE/srsepc/src/mbms-gw/mbms-gw.cc" "/home/ite/srsLTE/build/srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o"
+  "/home/umbc/Dropbox/srsLTE/srsepc/src/mbms-gw/main.cc" "/home/umbc/Dropbox/srsLTE/build/srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/main.cc.o"
+  "/home/umbc/Dropbox/srsLTE/srsepc/src/mbms-gw/mbms-gw.cc" "/home/umbc/Dropbox/srsLTE/build/srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -13,10 +13,12 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "ENABLE_GUI"
   "HAVE_MBEDTLS"
+  "HAVE_PCSC"
   )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/include/PCSC"
   "/usr/local/include"
   "lib/include"
   "../lib/include"

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/examples/cell_measurement.c
+/home/umbc/Dropbox/srsLTE/lib/examples/cell_measurement.c
 stdio.h
 -
 stdlib.h
@@ -28,13 +28,13 @@ assert.h
 signal.h
 -
 srslte/srslte.h
-/home/ite/srsLTE/lib/examples/srslte/srslte.h
+/home/umbc/Dropbox/srsLTE/lib/examples/srslte/srslte.h
 srslte/phy/rf/rf.h
-/home/ite/srsLTE/lib/examples/srslte/phy/rf/rf.h
+/home/umbc/Dropbox/srsLTE/lib/examples/srslte/phy/rf/rf.h
 srslte/phy/rf/rf_utils.h
-/home/ite/srsLTE/lib/examples/srslte/phy/rf/rf_utils.h
+/home/umbc/Dropbox/srsLTE/lib/examples/srslte/phy/rf/rf_utils.h
 srslte/common/crash_handler.h
-/home/ite/srsLTE/lib/examples/srslte/common/crash_handler.h
+/home/umbc/Dropbox/srsLTE/lib/examples/srslte/common/crash_handler.h
 
 /usr/local/include/srslte/common/crash_handler.h
 stdio.h

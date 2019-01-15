@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/test/upper/rlc_stress_test.cc
+/home/umbc/Dropbox/srsLTE/lib/test/upper/rlc_stress_test.cc
 iostream
 -
 cstdlib
@@ -14,15 +14,15 @@ cstdlib
 pthread.h
 -
 srslte/common/log_filter.h
-/home/ite/srsLTE/lib/test/upper/srslte/common/log_filter.h
+/home/umbc/Dropbox/srsLTE/lib/test/upper/srslte/common/log_filter.h
 srslte/common/logger_stdout.h
-/home/ite/srsLTE/lib/test/upper/srslte/common/logger_stdout.h
+/home/umbc/Dropbox/srsLTE/lib/test/upper/srslte/common/logger_stdout.h
 srslte/common/threads.h
-/home/ite/srsLTE/lib/test/upper/srslte/common/threads.h
+/home/umbc/Dropbox/srsLTE/lib/test/upper/srslte/common/threads.h
 srslte/common/rlc_pcap.h
-/home/ite/srsLTE/lib/test/upper/srslte/common/rlc_pcap.h
+/home/umbc/Dropbox/srsLTE/lib/test/upper/srslte/common/rlc_pcap.h
 srslte/upper/rlc.h
-/home/ite/srsLTE/lib/test/upper/srslte/upper/rlc.h
+/home/umbc/Dropbox/srsLTE/lib/test/upper/srslte/upper/rlc.h
 boost/program_options.hpp
 -
 boost/program_options/parsers.hpp
@@ -32,7 +32,7 @@ cassert
 srslte/upper/rlc_interface.h
 -
 srslte/common/crash_handler.h
-/home/ite/srsLTE/lib/test/upper/srslte/common/crash_handler.h
+/home/umbc/Dropbox/srsLTE/lib/test/upper/srslte/common/crash_handler.h
 
 /usr/local/include/srslte/asn1/liblte_common.h
 stdint.h

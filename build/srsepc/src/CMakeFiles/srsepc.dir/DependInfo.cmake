@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ite/srsLTE/srsepc/src/main.cc" "/home/ite/srsLTE/build/srsepc/src/CMakeFiles/srsepc.dir/main.cc.o"
+  "/home/umbc/Dropbox/srsLTE/srsepc/src/main.cc" "/home/umbc/Dropbox/srsLTE/build/srsepc/src/CMakeFiles/srsepc.dir/main.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -12,10 +12,12 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "ENABLE_GUI"
   "HAVE_MBEDTLS"
+  "HAVE_PCSC"
   )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/include/PCSC"
   "/usr/local/include"
   "lib/include"
   "../lib/include"
@@ -24,12 +26,12 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ite/srsLTE/build/srsepc/src/mme/CMakeFiles/srsepc_mme.dir/DependInfo.cmake"
-  "/home/ite/srsLTE/build/srsepc/src/hss/CMakeFiles/srsepc_hss.dir/DependInfo.cmake"
-  "/home/ite/srsLTE/build/srsepc/src/spgw/CMakeFiles/srsepc_sgw.dir/DependInfo.cmake"
-  "/home/ite/srsLTE/build/lib/src/upper/CMakeFiles/srslte_upper.dir/DependInfo.cmake"
-  "/home/ite/srsLTE/build/lib/src/common/CMakeFiles/srslte_common.dir/DependInfo.cmake"
-  "/home/ite/srsLTE/build/lib/src/asn1/CMakeFiles/srslte_asn1.dir/DependInfo.cmake"
+  "/home/umbc/Dropbox/srsLTE/build/srsepc/src/mme/CMakeFiles/srsepc_mme.dir/DependInfo.cmake"
+  "/home/umbc/Dropbox/srsLTE/build/srsepc/src/hss/CMakeFiles/srsepc_hss.dir/DependInfo.cmake"
+  "/home/umbc/Dropbox/srsLTE/build/srsepc/src/spgw/CMakeFiles/srsepc_sgw.dir/DependInfo.cmake"
+  "/home/umbc/Dropbox/srsLTE/build/lib/src/upper/CMakeFiles/srslte_upper.dir/DependInfo.cmake"
+  "/home/umbc/Dropbox/srsLTE/build/lib/src/common/CMakeFiles/srslte_common.dir/DependInfo.cmake"
+  "/home/umbc/Dropbox/srsLTE/build/lib/src/asn1/CMakeFiles/srslte_asn1.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

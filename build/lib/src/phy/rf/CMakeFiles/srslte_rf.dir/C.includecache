@@ -6,43 +6,43 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/rf/rf_blade_imp.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/rf_blade_imp.h
 srslte/config.h
-/home/ite/srsLTE/lib/src/phy/rf/srslte/config.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/srslte/config.h
 srslte/phy/rf/rf.h
-/home/ite/srsLTE/lib/src/phy/rf/srslte/phy/rf/rf.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/srslte/phy/rf/rf.h
 
-/home/ite/srsLTE/lib/src/phy/rf/rf_dev.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/rf_dev.h
 rf_uhd_imp.h
-/home/ite/srsLTE/lib/src/phy/rf/rf_uhd_imp.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/rf_uhd_imp.h
 rf_blade_imp.h
-/home/ite/srsLTE/lib/src/phy/rf/rf_blade_imp.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/rf_blade_imp.h
 rf_soapy_imp.h
-/home/ite/srsLTE/lib/src/phy/rf/rf_soapy_imp.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/rf_soapy_imp.h
 
-/home/ite/srsLTE/lib/src/phy/rf/rf_helper.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/rf_helper.h
 
-/home/ite/srsLTE/lib/src/phy/rf/rf_imp.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/rf_imp.c
 string.h
 -
 srslte/phy/rf/rf.h
-/home/ite/srsLTE/lib/src/phy/rf/srslte/phy/rf/rf.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/srslte/phy/rf/rf.h
 srslte/srslte.h
-/home/ite/srsLTE/lib/src/phy/rf/srslte/srslte.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/srslte/srslte.h
 rf_dev.h
-/home/ite/srsLTE/lib/src/phy/rf/rf_dev.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/rf_dev.h
 
-/home/ite/srsLTE/lib/src/phy/rf/rf_soapy_imp.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/rf_soapy_imp.h
 stdbool.h
 -
 stdint.h
 -
 srslte/config.h
-/home/ite/srsLTE/lib/src/phy/rf/srslte/config.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/srslte/config.h
 srslte/phy/rf/rf.h
-/home/ite/srsLTE/lib/src/phy/rf/srslte/phy/rf/rf.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/srslte/phy/rf/rf.h
 
-/home/ite/srsLTE/lib/src/phy/rf/rf_uhd_imp.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/rf_uhd_imp.c
 uhd.h
 -
 sys/time.h
@@ -54,31 +54,31 @@ unistd.h
 pthread.h
 -
 srslte/srslte.h
-/home/ite/srsLTE/lib/src/phy/rf/srslte/srslte.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/srslte/srslte.h
 rf_uhd_imp.h
-/home/ite/srsLTE/lib/src/phy/rf/rf_uhd_imp.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/rf_uhd_imp.h
 rf_helper.h
-/home/ite/srsLTE/lib/src/phy/rf/rf_helper.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/rf_helper.h
 uhd_c_api.h
-/home/ite/srsLTE/lib/src/phy/rf/uhd_c_api.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/uhd_c_api.h
 
-/home/ite/srsLTE/lib/src/phy/rf/rf_uhd_imp.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/rf_uhd_imp.h
 stdbool.h
 -
 stdint.h
 -
 srslte/config.h
-/home/ite/srsLTE/lib/src/phy/rf/srslte/config.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/srslte/config.h
 srslte/phy/rf/rf.h
-/home/ite/srsLTE/lib/src/phy/rf/srslte/phy/rf/rf.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/srslte/phy/rf/rf.h
 
-/home/ite/srsLTE/lib/src/phy/rf/uhd_c_api.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/uhd_c_api.h
 uhd.h
 -
 srslte/config.h
-/home/ite/srsLTE/lib/src/phy/rf/srslte/config.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/srslte/config.h
 srslte/phy/rf/rf.h
-/home/ite/srsLTE/lib/src/phy/rf/srslte/phy/rf/rf.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/rf/srslte/phy/rf/rf.h
 
 /usr/local/include/srslte/config.h
 
@@ -1221,8 +1221,6 @@ uhd/usrp_clock/usrp_clock.h
 -
 uhd/utils/thread_priority.h
 -
-uhd/utils/log.h
--
 
 /usr/local/include/uhd/config.h
 iso646.h
@@ -1273,8 +1271,6 @@ vector
 -
 string
 -
-map
--
 
 /usr/local/include/uhd/types/dict.hpp
 uhd/config.hpp
@@ -1321,7 +1317,7 @@ uhd/config.hpp
 -
 uhd/types/time_spec.hpp
 -
-stdint.h
+boost/cstdint.hpp
 -
 string
 -
@@ -1361,8 +1357,6 @@ string
 /usr/local/include/uhd/types/sensors.hpp
 uhd/config.hpp
 -
-map
--
 string
 -
 
@@ -1371,7 +1365,7 @@ uhd/config.hpp
 -
 boost/shared_ptr.hpp
 -
-stdint.h
+boost/cstdint.hpp
 -
 vector
 -
@@ -1453,7 +1447,7 @@ string
 /usr/local/include/uhd/usrp/dboard_id.hpp
 uhd/config.hpp
 -
-stdint.h
+boost/cstdint.hpp
 -
 boost/operators.hpp
 -
@@ -1471,7 +1465,11 @@ string
 -
 
 /usr/local/include/uhd/usrp/mboard_eeprom.hpp
+uhd/config.hpp
+-
 uhd/types/dict.hpp
+-
+uhd/types/serial.hpp
 -
 string
 -
@@ -1523,8 +1521,6 @@ uhd/usrp/dboard_eeprom.h
 -
 uhd/usrp/subdev_spec.h
 -
-uhd/version.hpp
--
 stdbool.h
 -
 stdlib.h
@@ -1550,19 +1546,9 @@ stdint.h
 time.h
 -
 
-/usr/local/include/uhd/utils/log.h
-uhd/config.h
--
-
 /usr/local/include/uhd/utils/thread_priority.h
 uhd/config.h
 -
 uhd/error.h
--
-
-/usr/local/include/uhd/version.hpp
-uhd/config.hpp
--
-string
 -
 

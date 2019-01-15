@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/radio/radio.cc
+/home/umbc/Dropbox/srsLTE/lib/src/radio/radio.cc
 srslte/srslte.h
-/home/ite/srsLTE/lib/src/radio/srslte/srslte.h
+/home/umbc/Dropbox/srsLTE/lib/src/radio/srslte/srslte.h
 srslte/phy/rf/rf.h
-/home/ite/srsLTE/lib/src/radio/srslte/phy/rf/rf.h
+/home/umbc/Dropbox/srsLTE/lib/src/radio/srslte/phy/rf/rf.h
 srslte/radio/radio.h
-/home/ite/srsLTE/lib/src/radio/srslte/radio/radio.h
+/home/umbc/Dropbox/srsLTE/lib/src/radio/srslte/radio/radio.h
 string.h
 -
 unistd.h
 -
 
-/home/ite/srsLTE/lib/src/radio/radio_multi.cc
+/home/umbc/Dropbox/srsLTE/lib/src/radio/radio_multi.cc
 srslte/radio/radio_multi.h
-/home/ite/srsLTE/lib/src/radio/srslte/radio/radio_multi.h
+/home/umbc/Dropbox/srsLTE/lib/src/radio/srslte/radio/radio_multi.h
 
 /usr/local/include/srslte/common/trace.h
 stdio.h

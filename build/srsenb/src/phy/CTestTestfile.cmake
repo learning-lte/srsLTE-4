@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/ite/srsLTE/srsenb/src/phy
-# Build directory: /home/ite/srsLTE/build/srsenb/src/phy
+# Source directory: /home/umbc/Dropbox/srsLTE/srsenb/src/phy
+# Build directory: /home/umbc/Dropbox/srsLTE/build/srsenb/src/phy
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

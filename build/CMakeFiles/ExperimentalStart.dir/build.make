@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ite/srsLTE
+CMAKE_SOURCE_DIR = /home/umbc/Dropbox/srsLTE
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ite/srsLTE/build
+CMAKE_BINARY_DIR = /home/umbc/Dropbox/srsLTE/build
 
 # Utility rule file for ExperimentalStart.
 
@@ -71,6 +71,6 @@ CMakeFiles/ExperimentalStart.dir/clean:
 .PHONY : CMakeFiles/ExperimentalStart.dir/clean
 
 CMakeFiles/ExperimentalStart.dir/depend:
-	cd /home/ite/srsLTE/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ite/srsLTE /home/ite/srsLTE /home/ite/srsLTE/build /home/ite/srsLTE/build /home/ite/srsLTE/build/CMakeFiles/ExperimentalStart.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/umbc/Dropbox/srsLTE/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/umbc/Dropbox/srsLTE /home/umbc/Dropbox/srsLTE /home/umbc/Dropbox/srsLTE/build /home/umbc/Dropbox/srsLTE/build /home/umbc/Dropbox/srsLTE/build/CMakeFiles/ExperimentalStart.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ExperimentalStart.dir/depend
 

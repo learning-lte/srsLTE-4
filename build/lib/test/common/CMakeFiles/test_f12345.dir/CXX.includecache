@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/test/common/test_f12345.cc
+/home/umbc/Dropbox/srsLTE/lib/test/common/test_f12345.cc
 stdlib.h
 -
 stdio.h
@@ -14,7 +14,7 @@ stdio.h
 assert.h
 -
 srslte/common/liblte_security.h
-/home/ite/srsLTE/lib/test/common/srslte/common/liblte_security.h
+/home/umbc/Dropbox/srsLTE/lib/test/common/srslte/common/liblte_security.h
 
 /usr/local/include/srslte/asn1/liblte_common.h
 stdint.h

@@ -1,4 +1,4 @@
-# Install script for directory: /home/ite/srsLTE/lib/src
+# Install script for directory: /home/umbc/Dropbox/srsLTE/lib/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,11 +34,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ite/srsLTE/build/lib/src/asn1/cmake_install.cmake")
-  include("/home/ite/srsLTE/build/lib/src/common/cmake_install.cmake")
-  include("/home/ite/srsLTE/build/lib/src/phy/cmake_install.cmake")
-  include("/home/ite/srsLTE/build/lib/src/radio/cmake_install.cmake")
-  include("/home/ite/srsLTE/build/lib/src/upper/cmake_install.cmake")
+  include("/home/umbc/Dropbox/srsLTE/build/lib/src/asn1/cmake_install.cmake")
+  include("/home/umbc/Dropbox/srsLTE/build/lib/src/common/cmake_install.cmake")
+  include("/home/umbc/Dropbox/srsLTE/build/lib/src/phy/cmake_install.cmake")
+  include("/home/umbc/Dropbox/srsLTE/build/lib/src/radio/cmake_install.cmake")
+  include("/home/umbc/Dropbox/srsLTE/build/lib/src/upper/cmake_install.cmake")
 
 endif()
 

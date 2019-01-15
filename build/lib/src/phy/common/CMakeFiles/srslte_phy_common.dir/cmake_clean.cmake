@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/srslte_phy_common.dir/sequence.c.o"
-  "CMakeFiles/srslte_phy_common.dir/phy_common.c.o"
   "CMakeFiles/srslte_phy_common.dir/timestamp.c.o"
+  "CMakeFiles/srslte_phy_common.dir/phy_common.c.o"
+  "CMakeFiles/srslte_phy_common.dir/sequence.c.o"
   "CMakeFiles/srslte_phy_common.dir/phy_logger.c.o"
 )
 

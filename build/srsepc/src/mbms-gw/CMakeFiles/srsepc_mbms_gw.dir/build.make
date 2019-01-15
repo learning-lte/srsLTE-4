@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ite/srsLTE
+CMAKE_SOURCE_DIR = /home/umbc/Dropbox/srsLTE
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ite/srsLTE/build
+CMAKE_BINARY_DIR = /home/umbc/Dropbox/srsLTE/build
 
 # Include any dependencies generated for this target.
 include srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/depend.make
@@ -57,42 +57,18 @@ include srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/progress.make
 # Include the compile flags for this target's objects.
 include srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/flags.make
 
-srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o: srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/flags.make
-srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o: ../srsepc/src/mbms-gw/mbms-gw.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ite/srsLTE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o"
-	cd /home/ite/srsLTE/build/srsepc/src/mbms-gw && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o -c /home/ite/srsLTE/srsepc/src/mbms-gw/mbms-gw.cc
-
-srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.i"
-	cd /home/ite/srsLTE/build/srsepc/src/mbms-gw && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ite/srsLTE/srsepc/src/mbms-gw/mbms-gw.cc > CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.i
-
-srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.s"
-	cd /home/ite/srsLTE/build/srsepc/src/mbms-gw && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ite/srsLTE/srsepc/src/mbms-gw/mbms-gw.cc -o CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.s
-
-srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o.requires:
-
-.PHONY : srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o.requires
-
-srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o.provides: srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o.requires
-	$(MAKE) -f srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/build.make srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o.provides.build
-.PHONY : srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o.provides
-
-srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o.provides.build: srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o
-
-
 srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/main.cc.o: srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/flags.make
 srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/main.cc.o: ../srsepc/src/mbms-gw/main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ite/srsLTE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/main.cc.o"
-	cd /home/ite/srsLTE/build/srsepc/src/mbms-gw && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/srsepc_mbms_gw.dir/main.cc.o -c /home/ite/srsLTE/srsepc/src/mbms-gw/main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/umbc/Dropbox/srsLTE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/main.cc.o"
+	cd /home/umbc/Dropbox/srsLTE/build/srsepc/src/mbms-gw && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/srsepc_mbms_gw.dir/main.cc.o -c /home/umbc/Dropbox/srsLTE/srsepc/src/mbms-gw/main.cc
 
 srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsepc_mbms_gw.dir/main.cc.i"
-	cd /home/ite/srsLTE/build/srsepc/src/mbms-gw && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ite/srsLTE/srsepc/src/mbms-gw/main.cc > CMakeFiles/srsepc_mbms_gw.dir/main.cc.i
+	cd /home/umbc/Dropbox/srsLTE/build/srsepc/src/mbms-gw && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/umbc/Dropbox/srsLTE/srsepc/src/mbms-gw/main.cc > CMakeFiles/srsepc_mbms_gw.dir/main.cc.i
 
 srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsepc_mbms_gw.dir/main.cc.s"
-	cd /home/ite/srsLTE/build/srsepc/src/mbms-gw && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ite/srsLTE/srsepc/src/mbms-gw/main.cc -o CMakeFiles/srsepc_mbms_gw.dir/main.cc.s
+	cd /home/umbc/Dropbox/srsLTE/build/srsepc/src/mbms-gw && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/umbc/Dropbox/srsLTE/srsepc/src/mbms-gw/main.cc -o CMakeFiles/srsepc_mbms_gw.dir/main.cc.s
 
 srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/main.cc.o.requires:
 
@@ -105,37 +81,61 @@ srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/main.cc.o.provides: srsepc/src/
 srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/main.cc.o.provides.build: srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/main.cc.o
 
 
+srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o: srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/flags.make
+srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o: ../srsepc/src/mbms-gw/mbms-gw.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/umbc/Dropbox/srsLTE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o"
+	cd /home/umbc/Dropbox/srsLTE/build/srsepc/src/mbms-gw && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o -c /home/umbc/Dropbox/srsLTE/srsepc/src/mbms-gw/mbms-gw.cc
+
+srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.i"
+	cd /home/umbc/Dropbox/srsLTE/build/srsepc/src/mbms-gw && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/umbc/Dropbox/srsLTE/srsepc/src/mbms-gw/mbms-gw.cc > CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.i
+
+srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.s"
+	cd /home/umbc/Dropbox/srsLTE/build/srsepc/src/mbms-gw && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/umbc/Dropbox/srsLTE/srsepc/src/mbms-gw/mbms-gw.cc -o CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.s
+
+srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o.requires:
+
+.PHONY : srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o.requires
+
+srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o.provides: srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o.requires
+	$(MAKE) -f srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/build.make srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o.provides.build
+.PHONY : srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o.provides
+
+srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o.provides.build: srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o
+
+
 # Object files for target srsepc_mbms_gw
 srsepc_mbms_gw_OBJECTS = \
-"CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o" \
-"CMakeFiles/srsepc_mbms_gw.dir/main.cc.o"
+"CMakeFiles/srsepc_mbms_gw.dir/main.cc.o" \
+"CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o"
 
 # External object files for target srsepc_mbms_gw
 srsepc_mbms_gw_EXTERNAL_OBJECTS =
 
-srsepc/src/mbms-gw/libsrsepc_mbms_gw.a: srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o
 srsepc/src/mbms-gw/libsrsepc_mbms_gw.a: srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/main.cc.o
+srsepc/src/mbms-gw/libsrsepc_mbms_gw.a: srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o
 srsepc/src/mbms-gw/libsrsepc_mbms_gw.a: srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/build.make
 srsepc/src/mbms-gw/libsrsepc_mbms_gw.a: srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ite/srsLTE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libsrsepc_mbms_gw.a"
-	cd /home/ite/srsLTE/build/srsepc/src/mbms-gw && $(CMAKE_COMMAND) -P CMakeFiles/srsepc_mbms_gw.dir/cmake_clean_target.cmake
-	cd /home/ite/srsLTE/build/srsepc/src/mbms-gw && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/srsepc_mbms_gw.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/umbc/Dropbox/srsLTE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libsrsepc_mbms_gw.a"
+	cd /home/umbc/Dropbox/srsLTE/build/srsepc/src/mbms-gw && $(CMAKE_COMMAND) -P CMakeFiles/srsepc_mbms_gw.dir/cmake_clean_target.cmake
+	cd /home/umbc/Dropbox/srsLTE/build/srsepc/src/mbms-gw && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/srsepc_mbms_gw.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/build: srsepc/src/mbms-gw/libsrsepc_mbms_gw.a
 
 .PHONY : srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/build
 
-srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/requires: srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o.requires
 srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/requires: srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/main.cc.o.requires
+srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/requires: srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/mbms-gw.cc.o.requires
 
 .PHONY : srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/requires
 
 srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/clean:
-	cd /home/ite/srsLTE/build/srsepc/src/mbms-gw && $(CMAKE_COMMAND) -P CMakeFiles/srsepc_mbms_gw.dir/cmake_clean.cmake
+	cd /home/umbc/Dropbox/srsLTE/build/srsepc/src/mbms-gw && $(CMAKE_COMMAND) -P CMakeFiles/srsepc_mbms_gw.dir/cmake_clean.cmake
 .PHONY : srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/clean
 
 srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/depend:
-	cd /home/ite/srsLTE/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ite/srsLTE /home/ite/srsLTE/srsepc/src/mbms-gw /home/ite/srsLTE/build /home/ite/srsLTE/build/srsepc/src/mbms-gw /home/ite/srsLTE/build/srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/umbc/Dropbox/srsLTE/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/umbc/Dropbox/srsLTE /home/umbc/Dropbox/srsLTE/srsepc/src/mbms-gw /home/umbc/Dropbox/srsLTE/build /home/umbc/Dropbox/srsLTE/build/srsepc/src/mbms-gw /home/umbc/Dropbox/srsLTE/build/srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : srsepc/src/mbms-gw/CMakeFiles/srsepc_mbms_gw.dir/depend
 

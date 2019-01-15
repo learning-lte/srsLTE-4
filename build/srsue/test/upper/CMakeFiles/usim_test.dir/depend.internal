@@ -4,7 +4,7 @@
 srsue/test/upper/CMakeFiles/usim_test.dir/usim_test.cc.o
  ..//srsue/hdr/upper/usim.h
  ../srsue/hdr/upper/usim_base.h
- /home/ite/srsLTE/srsue/test/upper/usim_test.cc
+ /home/umbc/Dropbox/srsLTE/srsue/test/upper/usim_test.cc
  /usr/local/include/srslte/asn1/liblte_common.h
  /usr/local/include/srslte/asn1/liblte_rrc.h
  /usr/local/include/srslte/common/common.h

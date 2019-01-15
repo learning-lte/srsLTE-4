@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/fec/test/crc_test.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/test/crc_test.c
 stdio.h
 -
 stdlib.h
@@ -22,15 +22,15 @@ math.h
 time.h
 -
 srslte/srslte.h
-/home/ite/srsLTE/lib/src/phy/fec/test/srslte/srslte.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/test/srslte/srslte.h
 crc_test.h
-/home/ite/srsLTE/lib/src/phy/fec/test/crc_test.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/test/crc_test.h
 
-/home/ite/srsLTE/lib/src/phy/fec/test/crc_test.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/test/crc_test.h
 stdbool.h
 -
 srslte/phy/fec/crc.h
-/home/ite/srsLTE/lib/src/phy/fec/test/srslte/phy/fec/crc.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/test/srslte/phy/fec/crc.h
 
 /usr/local/include/srslte/config.h
 

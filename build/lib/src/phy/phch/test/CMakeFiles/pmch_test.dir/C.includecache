@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/phch/test/pmch_test.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/phch/test/pmch_test.c
 stdio.h
 -
 stdlib.h
@@ -20,7 +20,7 @@ sys/time.h
 srslte/phy/phch/ra.h
 -
 srslte/srslte.h
-/home/ite/srsLTE/lib/src/phy/phch/test/srslte/srslte.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/phch/test/srslte/srslte.h
 
 /usr/local/include/srslte/config.h
 

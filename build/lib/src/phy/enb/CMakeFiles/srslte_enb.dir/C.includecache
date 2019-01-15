@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/enb/enb_dl.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/enb/enb_dl.c
 srslte/phy/enb/enb_dl.h
-/home/ite/srsLTE/lib/src/phy/enb/srslte/phy/enb/enb_dl.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/enb/srslte/phy/enb/enb_dl.h
 complex.h
 -
 math.h
@@ -20,9 +20,9 @@ srslte/phy/common/phy_common.h
 srslte/srslte.h
 -
 
-/home/ite/srsLTE/lib/src/phy/enb/enb_ul.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/enb/enb_ul.c
 srslte/phy/enb/enb_ul.h
-/home/ite/srsLTE/lib/src/phy/enb/srslte/phy/enb/enb_ul.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/enb/srslte/phy/enb/enb_ul.h
 complex.h
 -
 math.h

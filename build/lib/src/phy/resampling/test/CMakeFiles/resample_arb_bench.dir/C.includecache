@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/resampling/test/resample_arb_bench.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/resampling/test/resample_arb_bench.c
 stdio.h
 -
 stdlib.h
@@ -20,9 +20,9 @@ math.h
 time.h
 -
 srslte/srslte.h
-/home/ite/srsLTE/lib/src/phy/resampling/test/srslte/srslte.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/resampling/test/srslte/srslte.h
 srslte/phy/resampling/resample_arb.h
-/home/ite/srsLTE/lib/src/phy/resampling/test/srslte/phy/resampling/resample_arb.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/resampling/test/srslte/phy/resampling/resample_arb.h
 
 /usr/local/include/srslte/config.h
 

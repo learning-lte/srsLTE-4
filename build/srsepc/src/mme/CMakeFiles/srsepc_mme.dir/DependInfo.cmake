@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ite/srsLTE/srsepc/src/mme/mme.cc" "/home/ite/srsLTE/build/srsepc/src/mme/CMakeFiles/srsepc_mme.dir/mme.cc.o"
-  "/home/ite/srsLTE/srsepc/src/mme/mme_gtpc.cc" "/home/ite/srsLTE/build/srsepc/src/mme/CMakeFiles/srsepc_mme.dir/mme_gtpc.cc.o"
-  "/home/ite/srsLTE/srsepc/src/mme/s1ap.cc" "/home/ite/srsLTE/build/srsepc/src/mme/CMakeFiles/srsepc_mme.dir/s1ap.cc.o"
-  "/home/ite/srsLTE/srsepc/src/mme/s1ap_ctx_mngmt_proc.cc" "/home/ite/srsLTE/build/srsepc/src/mme/CMakeFiles/srsepc_mme.dir/s1ap_ctx_mngmt_proc.cc.o"
-  "/home/ite/srsLTE/srsepc/src/mme/s1ap_mngmt_proc.cc" "/home/ite/srsLTE/build/srsepc/src/mme/CMakeFiles/srsepc_mme.dir/s1ap_mngmt_proc.cc.o"
-  "/home/ite/srsLTE/srsepc/src/mme/s1ap_nas_transport.cc" "/home/ite/srsLTE/build/srsepc/src/mme/CMakeFiles/srsepc_mme.dir/s1ap_nas_transport.cc.o"
+  "/home/umbc/Dropbox/srsLTE/srsepc/src/mme/mme.cc" "/home/umbc/Dropbox/srsLTE/build/srsepc/src/mme/CMakeFiles/srsepc_mme.dir/mme.cc.o"
+  "/home/umbc/Dropbox/srsLTE/srsepc/src/mme/mme_gtpc.cc" "/home/umbc/Dropbox/srsLTE/build/srsepc/src/mme/CMakeFiles/srsepc_mme.dir/mme_gtpc.cc.o"
+  "/home/umbc/Dropbox/srsLTE/srsepc/src/mme/s1ap.cc" "/home/umbc/Dropbox/srsLTE/build/srsepc/src/mme/CMakeFiles/srsepc_mme.dir/s1ap.cc.o"
+  "/home/umbc/Dropbox/srsLTE/srsepc/src/mme/s1ap_ctx_mngmt_proc.cc" "/home/umbc/Dropbox/srsLTE/build/srsepc/src/mme/CMakeFiles/srsepc_mme.dir/s1ap_ctx_mngmt_proc.cc.o"
+  "/home/umbc/Dropbox/srsLTE/srsepc/src/mme/s1ap_mngmt_proc.cc" "/home/umbc/Dropbox/srsLTE/build/srsepc/src/mme/CMakeFiles/srsepc_mme.dir/s1ap_mngmt_proc.cc.o"
+  "/home/umbc/Dropbox/srsLTE/srsepc/src/mme/s1ap_nas_transport.cc" "/home/umbc/Dropbox/srsLTE/build/srsepc/src/mme/CMakeFiles/srsepc_mme.dir/s1ap_nas_transport.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,10 +17,12 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "ENABLE_GUI"
   "HAVE_MBEDTLS"
+  "HAVE_PCSC"
   )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/include/PCSC"
   "/usr/local/include"
   "lib/include"
   "../lib/include"

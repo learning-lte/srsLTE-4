@@ -46,7 +46,7 @@ srslte/asn1/liblte_mme.h
 netinet/sctp.h
 -
 
-/home/ite/srsLTE/srsepc/src/spgw/spgw.cc
+/home/umbc/Dropbox/srsLTE/srsepc/src/spgw/spgw.cc
 iostream
 -
 algorithm
@@ -68,11 +68,11 @@ linux/ip.h
 inttypes.h
 -
 srsepc/hdr/spgw/spgw.h
-/home/ite/srsLTE/srsepc/src/spgw/srsepc/hdr/spgw/spgw.h
+/home/umbc/Dropbox/srsLTE/srsepc/src/spgw/srsepc/hdr/spgw/spgw.h
 srsepc/hdr/mme/mme_gtpc.h
-/home/ite/srsLTE/srsepc/src/spgw/srsepc/hdr/mme/mme_gtpc.h
+/home/umbc/Dropbox/srsLTE/srsepc/src/spgw/srsepc/hdr/mme/mme_gtpc.h
 srslte/upper/gtpu.h
-/home/ite/srsLTE/srsepc/src/spgw/srslte/upper/gtpu.h
+/home/umbc/Dropbox/srsLTE/srsepc/src/spgw/srslte/upper/gtpu.h
 
 /usr/local/include/srslte/asn1/gtpc.h
 stdint.h

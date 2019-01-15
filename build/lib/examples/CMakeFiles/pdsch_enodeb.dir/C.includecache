@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/examples/pdsch_enodeb.c
+/home/umbc/Dropbox/srsLTE/lib/examples/pdsch_enodeb.c
 stdio.h
 -
 stdlib.h
@@ -26,19 +26,19 @@ semaphore.h
 signal.h
 -
 srslte/common/crash_handler.h
-/home/ite/srsLTE/lib/examples/srslte/common/crash_handler.h
+/home/umbc/Dropbox/srsLTE/lib/examples/srslte/common/crash_handler.h
 srslte/phy/common/phy_common.h
 -
 srslte/phy/phch/pdsch_cfg.h
 -
 srslte/common/gen_mch_tables.h
-/home/ite/srsLTE/lib/examples/srslte/common/gen_mch_tables.h
+/home/umbc/Dropbox/srsLTE/lib/examples/srslte/common/gen_mch_tables.h
 srslte/srslte.h
-/home/ite/srsLTE/lib/examples/srslte/srslte.h
+/home/umbc/Dropbox/srsLTE/lib/examples/srslte/srslte.h
 srslte/phy/rf/rf.h
-/home/ite/srsLTE/lib/examples/srslte/phy/rf/rf.h
+/home/umbc/Dropbox/srsLTE/lib/examples/srslte/phy/rf/rf.h
 srslte/phy/common/phy_common.h
-/home/ite/srsLTE/lib/examples/srslte/phy/common/phy_common.h
+/home/umbc/Dropbox/srsLTE/lib/examples/srslte/phy/common/phy_common.h
 
 /usr/local/include/srslte/common/crash_handler.h
 stdio.h

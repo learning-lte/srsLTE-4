@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/test/asn1/srslte_asn1_rrc_mcch_test.cc
+/home/umbc/Dropbox/srsLTE/lib/test/asn1/srslte_asn1_rrc_mcch_test.cc
 assert.h
 -
 srslte/asn1/liblte_rrc.h
-/home/ite/srsLTE/lib/test/asn1/srslte/asn1/liblte_rrc.h
+/home/umbc/Dropbox/srsLTE/lib/test/asn1/srslte/asn1/liblte_rrc.h
 srslte/common/log_filter.h
-/home/ite/srsLTE/lib/test/asn1/srslte/common/log_filter.h
+/home/umbc/Dropbox/srsLTE/lib/test/asn1/srslte/common/log_filter.h
 srslte/phy/utils/bit.h
-/home/ite/srsLTE/lib/test/asn1/srslte/phy/utils/bit.h
+/home/umbc/Dropbox/srsLTE/lib/test/asn1/srslte/phy/utils/bit.h
 
 /usr/local/include/srslte/asn1/liblte_common.h
 stdint.h

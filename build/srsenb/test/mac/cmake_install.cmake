@@ -1,4 +1,4 @@
-# Install script for directory: /home/ite/srsLTE/srsenb/test/mac
+# Install script for directory: /home/umbc/Dropbox/srsLTE/srsenb/test/mac
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

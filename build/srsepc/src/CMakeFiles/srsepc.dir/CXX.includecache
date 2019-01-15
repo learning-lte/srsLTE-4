@@ -160,7 +160,7 @@ srsepc/hdr/hss/hss.h
 mme_gtpc.h
 ../srsepc/hdr/mme/mme_gtpc.h
 
-/home/ite/srsLTE/srsepc/src/main.cc
+/home/umbc/Dropbox/srsLTE/srsepc/src/main.cc
 iostream
 -
 sstream
@@ -176,19 +176,19 @@ boost/program_options.hpp
 boost/algorithm/string.hpp
 -
 srslte/common/crash_handler.h
-/home/ite/srsLTE/srsepc/src/srslte/common/crash_handler.h
+/home/umbc/Dropbox/srsLTE/srsepc/src/srslte/common/crash_handler.h
 srslte/common/bcd_helpers.h
-/home/ite/srsLTE/srsepc/src/srslte/common/bcd_helpers.h
+/home/umbc/Dropbox/srsLTE/srsepc/src/srslte/common/bcd_helpers.h
 srslte/common/config_file.h
-/home/ite/srsLTE/srsepc/src/srslte/common/config_file.h
+/home/umbc/Dropbox/srsLTE/srsepc/src/srslte/common/config_file.h
 srslte/build_info.h
-/home/ite/srsLTE/srsepc/src/srslte/build_info.h
+/home/umbc/Dropbox/srsLTE/srsepc/src/srslte/build_info.h
 srsepc/hdr/mme/mme.h
-/home/ite/srsLTE/srsepc/src/srsepc/hdr/mme/mme.h
+/home/umbc/Dropbox/srsLTE/srsepc/src/srsepc/hdr/mme/mme.h
 srsepc/hdr/hss/hss.h
-/home/ite/srsLTE/srsepc/src/srsepc/hdr/hss/hss.h
+/home/umbc/Dropbox/srsLTE/srsepc/src/srsepc/hdr/hss/hss.h
 srsepc/hdr/spgw/spgw.h
-/home/ite/srsLTE/srsepc/src/srsepc/hdr/spgw/spgw.h
+/home/umbc/Dropbox/srsLTE/srsepc/src/srsepc/hdr/spgw/spgw.h
 
 /usr/local/include/srslte/asn1/gtpc.h
 stdint.h

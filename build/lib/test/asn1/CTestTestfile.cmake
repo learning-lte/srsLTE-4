@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/ite/srsLTE/lib/test/asn1
-# Build directory: /home/ite/srsLTE/build/lib/test/asn1
+# Source directory: /home/umbc/Dropbox/srsLTE/lib/test/asn1
+# Build directory: /home/umbc/Dropbox/srsLTE/build/lib/test/asn1
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

@@ -11,7 +11,7 @@ srsepc/src/CMakeFiles/srsepc.dir/main.cc.o
  ../srsepc/hdr/mme/s1ap_ctx_mngmt_proc.h
  ../srsepc/hdr/mme/s1ap_mngmt_proc.h
  ../srsepc/hdr/mme/s1ap_nas_transport.h
- /home/ite/srsLTE/srsepc/src/main.cc
+ /home/umbc/Dropbox/srsLTE/srsepc/src/main.cc
  /usr/local/include/srslte/asn1/gtpc.h
  /usr/local/include/srslte/asn1/gtpc_ies.h
  /usr/local/include/srslte/asn1/gtpc_msg.h

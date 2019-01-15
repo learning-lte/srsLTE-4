@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/mimo/test/pmi_select_test.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/mimo/test/pmi_select_test.c
 stdio.h
 -
 stdlib.h
@@ -26,15 +26,15 @@ stdbool.h
 complex.h
 -
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/mimo/test/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/mimo/test/srslte/phy/utils/vector.h
 srslte/phy/mimo/precoding.h
-/home/ite/srsLTE/lib/src/phy/mimo/test/srslte/phy/mimo/precoding.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/mimo/test/srslte/phy/mimo/precoding.h
 pmi_select_test.h
-/home/ite/srsLTE/lib/src/phy/mimo/test/pmi_select_test.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/mimo/test/pmi_select_test.h
 srslte/phy/utils/debug.h
-/home/ite/srsLTE/lib/src/phy/mimo/test/srslte/phy/utils/debug.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/mimo/test/srslte/phy/utils/debug.h
 
-/home/ite/srsLTE/lib/src/phy/mimo/test/pmi_select_test.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/mimo/test/pmi_select_test.h
 
 /usr/local/include/srslte/config.h
 

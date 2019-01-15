@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/test/upper/rlc_um_data_test.cc
+/home/umbc/Dropbox/srsLTE/lib/test/upper/rlc_um_data_test.cc
 iostream
 -
 srslte/upper/rlc_um.h
-/home/ite/srsLTE/lib/test/upper/srslte/upper/rlc_um.h
+/home/umbc/Dropbox/srsLTE/lib/test/upper/srslte/upper/rlc_um.h
 assert.h
 -
 

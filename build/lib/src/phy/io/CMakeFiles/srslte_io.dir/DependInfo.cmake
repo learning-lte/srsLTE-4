@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/ite/srsLTE/lib/src/phy/io/binsource.c" "/home/ite/srsLTE/build/lib/src/phy/io/CMakeFiles/srslte_io.dir/binsource.c.o"
-  "/home/ite/srsLTE/lib/src/phy/io/filesink.c" "/home/ite/srsLTE/build/lib/src/phy/io/CMakeFiles/srslte_io.dir/filesink.c.o"
-  "/home/ite/srsLTE/lib/src/phy/io/filesource.c" "/home/ite/srsLTE/build/lib/src/phy/io/CMakeFiles/srslte_io.dir/filesource.c.o"
-  "/home/ite/srsLTE/lib/src/phy/io/netsink.c" "/home/ite/srsLTE/build/lib/src/phy/io/CMakeFiles/srslte_io.dir/netsink.c.o"
-  "/home/ite/srsLTE/lib/src/phy/io/netsource.c" "/home/ite/srsLTE/build/lib/src/phy/io/CMakeFiles/srslte_io.dir/netsource.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/io/binsource.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/io/CMakeFiles/srslte_io.dir/binsource.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/io/filesink.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/io/CMakeFiles/srslte_io.dir/filesink.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/io/filesource.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/io/CMakeFiles/srslte_io.dir/filesource.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/io/netsink.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/io/CMakeFiles/srslte_io.dir/netsink.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/io/netsource.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/io/CMakeFiles/srslte_io.dir/netsource.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -16,10 +16,12 @@ set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_TARGET_DEFINITIONS_C
   "ENABLE_GUI"
   "HAVE_MBEDTLS"
+  "HAVE_PCSC"
   )
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "/usr/include/PCSC"
   "/usr/local/include"
   "lib/include"
   "../lib/include"

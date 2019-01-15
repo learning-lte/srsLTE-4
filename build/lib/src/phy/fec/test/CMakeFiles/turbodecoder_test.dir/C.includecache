@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/fec/test/turbodecoder_test.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/test/turbodecoder_test.c
 stdio.h
 -
 stdlib.h
@@ -26,11 +26,11 @@ sys/time.h
 time.h
 -
 srslte/srslte.h
-/home/ite/srsLTE/lib/src/phy/fec/test/srslte/srslte.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/test/srslte/srslte.h
 turbodecoder_test.h
-/home/ite/srsLTE/lib/src/phy/fec/test/turbodecoder_test.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/test/turbodecoder_test.h
 
-/home/ite/srsLTE/lib/src/phy/fec/test/turbodecoder_test.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/fec/test/turbodecoder_test.h
 stdbool.h
 -
 

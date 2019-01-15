@@ -20,7 +20,7 @@ srsue/test/mac/CMakeFiles/mac_test.dir/mac_test.cc.o
  ../srsue/hdr/phy/phch_worker.h
  ../srsue/hdr/phy/phy_metrics.h
  ../srsue/hdr/phy/prach.h
- /home/ite/srsLTE/srsue/test/mac/mac_test.cc
+ /home/umbc/Dropbox/srsLTE/srsue/test/mac/mac_test.cc
  /usr/local/include/srslte/asn1/liblte_common.h
  /usr/local/include/srslte/asn1/liblte_rrc.h
  /usr/local/include/srslte/common/block_queue.h

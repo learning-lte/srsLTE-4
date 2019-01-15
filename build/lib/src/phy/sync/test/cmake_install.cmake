@@ -1,4 +1,4 @@
-# Install script for directory: /home/ite/srsLTE/lib/src/phy/sync/test
+# Install script for directory: /home/umbc/Dropbox/srsLTE/lib/src/phy/sync/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

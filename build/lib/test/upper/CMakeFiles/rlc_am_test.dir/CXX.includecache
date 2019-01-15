@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/test/upper/rlc_am_test.cc
+/home/umbc/Dropbox/srsLTE/lib/test/upper/rlc_am_test.cc
 iostream
 -
 srslte/common/log_filter.h
-/home/ite/srsLTE/lib/test/upper/srslte/common/log_filter.h
+/home/umbc/Dropbox/srsLTE/lib/test/upper/srslte/common/log_filter.h
 srslte/common/logger_stdout.h
-/home/ite/srsLTE/lib/test/upper/srslte/common/logger_stdout.h
+/home/umbc/Dropbox/srsLTE/lib/test/upper/srslte/common/logger_stdout.h
 srslte/common/threads.h
-/home/ite/srsLTE/lib/test/upper/srslte/common/threads.h
+/home/umbc/Dropbox/srsLTE/lib/test/upper/srslte/common/threads.h
 srslte/upper/rlc_am.h
-/home/ite/srsLTE/lib/test/upper/srslte/upper/rlc_am.h
+/home/umbc/Dropbox/srsLTE/lib/test/upper/srslte/upper/rlc_am.h
 srslte/common/rlc_pcap.h
-/home/ite/srsLTE/lib/test/upper/srslte/common/rlc_pcap.h
+/home/umbc/Dropbox/srsLTE/lib/test/upper/srslte/common/rlc_pcap.h
 assert.h
 -
 

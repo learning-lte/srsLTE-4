@@ -68,9 +68,9 @@ phy/phy_metrics.h
 
 ../srsue/hdr/upper/gw_metrics.h
 
-/home/ite/srsLTE/srsue/src/metrics_csv.cc
+/home/umbc/Dropbox/srsLTE/srsue/src/metrics_csv.cc
 srsue/hdr/metrics_csv.h
-/home/ite/srsLTE/srsue/src/srsue/hdr/metrics_csv.h
+/home/umbc/Dropbox/srsLTE/srsue/src/srsue/hdr/metrics_csv.h
 unistd.h
 -
 sstream
@@ -88,9 +88,9 @@ iostream
 stdio.h
 -
 
-/home/ite/srsLTE/srsue/src/metrics_stdout.cc
+/home/umbc/Dropbox/srsLTE/srsue/src/metrics_stdout.cc
 srsue/hdr/metrics_stdout.h
-/home/ite/srsLTE/srsue/src/srsue/hdr/metrics_stdout.h
+/home/umbc/Dropbox/srsLTE/srsue/src/srsue/hdr/metrics_stdout.h
 unistd.h
 -
 sstream
@@ -108,7 +108,7 @@ iostream
 stdio.h
 -
 
-/home/ite/srsLTE/srsue/test/metrics_test.cc
+/home/umbc/Dropbox/srsLTE/srsue/test/metrics_test.cc
 iostream
 -
 stdio.h
@@ -120,13 +120,13 @@ strings.h
 unistd.h
 -
 srsue/hdr/ue_metrics_interface.h
-/home/ite/srsLTE/srsue/test/srsue/hdr/ue_metrics_interface.h
+/home/umbc/Dropbox/srsLTE/srsue/test/srsue/hdr/ue_metrics_interface.h
 srslte/common/metrics_hub.h
-/home/ite/srsLTE/srsue/test/srslte/common/metrics_hub.h
+/home/umbc/Dropbox/srsLTE/srsue/test/srslte/common/metrics_hub.h
 srsue/hdr/metrics_stdout.h
-/home/ite/srsLTE/srsue/test/srsue/hdr/metrics_stdout.h
+/home/umbc/Dropbox/srsLTE/srsue/test/srsue/hdr/metrics_stdout.h
 srsue/hdr/metrics_csv.h
-/home/ite/srsLTE/srsue/test/srsue/hdr/metrics_csv.h
+/home/umbc/Dropbox/srsLTE/srsue/test/srsue/hdr/metrics_csv.h
 
 /usr/local/include/srslte/common/common.h
 stdint.h

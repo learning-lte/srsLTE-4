@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/ite/srsLTE/lib/src/phy/enb/enb_dl.c" "/home/ite/srsLTE/build/lib/src/phy/enb/CMakeFiles/srslte_enb.dir/enb_dl.c.o"
-  "/home/ite/srsLTE/lib/src/phy/enb/enb_ul.c" "/home/ite/srsLTE/build/lib/src/phy/enb/CMakeFiles/srslte_enb.dir/enb_ul.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/enb/enb_dl.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/enb/CMakeFiles/srslte_enb.dir/enb_dl.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/enb/enb_ul.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/enb/CMakeFiles/srslte_enb.dir/enb_ul.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -13,10 +13,12 @@ set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_TARGET_DEFINITIONS_C
   "ENABLE_GUI"
   "HAVE_MBEDTLS"
+  "HAVE_PCSC"
   )
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "/usr/include/PCSC"
   "/usr/local/include"
   "lib/include"
   "../lib/include"

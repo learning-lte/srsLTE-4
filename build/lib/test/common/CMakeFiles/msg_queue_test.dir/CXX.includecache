@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/test/common/msg_queue_test.cc
+/home/umbc/Dropbox/srsLTE/lib/test/common/msg_queue_test.cc
 stdio.h
 -
 srslte/upper/rlc_tx_queue.h
-/home/ite/srsLTE/lib/test/common/srslte/upper/rlc_tx_queue.h
+/home/umbc/Dropbox/srsLTE/lib/test/common/srslte/upper/rlc_tx_queue.h
 
 /usr/local/include/srslte/common/block_queue.h
 queue

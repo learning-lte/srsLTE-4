@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/srslte_enb.dir/enb_ul.c.o"
   "CMakeFiles/srslte_enb.dir/enb_dl.c.o"
+  "CMakeFiles/srslte_enb.dir/enb_ul.c.o"
 )
 
 # Per-language clean rules from dependency scanning.

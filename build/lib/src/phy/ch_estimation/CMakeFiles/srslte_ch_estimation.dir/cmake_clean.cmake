@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/srslte_ch_estimation.dir/chest_common.c.o"
+  "CMakeFiles/srslte_ch_estimation.dir/chest_ul.c.o"
   "CMakeFiles/srslte_ch_estimation.dir/refsignal_dl.c.o"
   "CMakeFiles/srslte_ch_estimation.dir/refsignal_ul.c.o"
-  "CMakeFiles/srslte_ch_estimation.dir/chest_ul.c.o"
   "CMakeFiles/srslte_ch_estimation.dir/chest_dl.c.o"
 )
 

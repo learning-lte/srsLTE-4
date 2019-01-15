@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/mimo/test/layermap_test.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/mimo/test/layermap_test.c
 stdio.h
 -
 stdlib.h
@@ -24,7 +24,7 @@ time.h
 stdbool.h
 -
 srslte/srslte.h
-/home/ite/srsLTE/lib/src/phy/mimo/test/srslte/srslte.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/mimo/test/srslte/srslte.h
 
 /usr/local/include/srslte/config.h
 

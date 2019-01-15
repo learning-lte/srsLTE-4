@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/srsue_upper.dir/rrc.cc.o"
   "CMakeFiles/srsue_upper.dir/usim_base.cc.o"
   "CMakeFiles/srsue_upper.dir/usim.cc.o"
+  "CMakeFiles/srsue_upper.dir/pcsc_usim.cc.o"
   "libsrsue_upper.pdb"
   "libsrsue_upper.a"
 )

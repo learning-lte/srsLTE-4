@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/examples/pdsch_ue.c
+/home/umbc/Dropbox/srsLTE/lib/examples/pdsch_ue.c
 stdio.h
 -
 stdlib.h
@@ -32,21 +32,21 @@ pthread.h
 semaphore.h
 -
 srslte/common/gen_mch_tables.h
-/home/ite/srsLTE/lib/examples/srslte/common/gen_mch_tables.h
+/home/umbc/Dropbox/srsLTE/lib/examples/srslte/common/gen_mch_tables.h
 srslte/common/crash_handler.h
-/home/ite/srsLTE/lib/examples/srslte/common/crash_handler.h
+/home/umbc/Dropbox/srsLTE/lib/examples/srslte/common/crash_handler.h
 srslte/phy/common/phy_common.h
 -
 srslte/phy/io/filesink.h
-/home/ite/srsLTE/lib/examples/srslte/phy/io/filesink.h
+/home/umbc/Dropbox/srsLTE/lib/examples/srslte/phy/io/filesink.h
 srslte/srslte.h
-/home/ite/srsLTE/lib/examples/srslte/srslte.h
+/home/umbc/Dropbox/srsLTE/lib/examples/srslte/srslte.h
 srslte/phy/rf/rf.h
-/home/ite/srsLTE/lib/examples/srslte/phy/rf/rf.h
+/home/umbc/Dropbox/srsLTE/lib/examples/srslte/phy/rf/rf.h
 srslte/phy/rf/rf_utils.h
-/home/ite/srsLTE/lib/examples/srslte/phy/rf/rf_utils.h
+/home/umbc/Dropbox/srsLTE/lib/examples/srslte/phy/rf/rf_utils.h
 srsgui/srsgui.h
-/home/ite/srsLTE/lib/examples/srsgui/srsgui.h
+/home/umbc/Dropbox/srsLTE/lib/examples/srsgui/srsgui.h
 
 /usr/local/include/srsgui/plot/key_value.h
 stdbool.h

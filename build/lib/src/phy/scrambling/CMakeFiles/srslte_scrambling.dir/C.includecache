@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/scrambling/scrambling.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/scrambling/scrambling.c
 stdio.h
 -
 stdlib.h
@@ -16,11 +16,11 @@ string.h
 assert.h
 -
 srslte/phy/utils/bit.h
-/home/ite/srsLTE/lib/src/phy/scrambling/srslte/phy/utils/bit.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/scrambling/srslte/phy/utils/bit.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/scrambling/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/scrambling/srslte/phy/utils/vector.h
 srslte/phy/scrambling/scrambling.h
-/home/ite/srsLTE/lib/src/phy/scrambling/srslte/phy/scrambling/scrambling.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/scrambling/srslte/phy/scrambling/scrambling.h
 
 /usr/local/include/srslte/config.h
 

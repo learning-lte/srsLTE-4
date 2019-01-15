@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/test/upper/rlc_um_test.cc
+/home/umbc/Dropbox/srsLTE/lib/test/upper/rlc_um_test.cc
 iostream
 -
 srslte/common/log_filter.h
-/home/ite/srsLTE/lib/test/upper/srslte/common/log_filter.h
+/home/umbc/Dropbox/srsLTE/lib/test/upper/srslte/common/log_filter.h
 srslte/upper/rlc_um.h
-/home/ite/srsLTE/lib/test/upper/srslte/upper/rlc_um.h
+/home/umbc/Dropbox/srsLTE/lib/test/upper/srslte/upper/rlc_um.h
 assert.h
 -
 

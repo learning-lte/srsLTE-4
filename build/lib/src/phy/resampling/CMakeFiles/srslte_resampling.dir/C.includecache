@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/resampling/decim.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/resampling/decim.c
 complex.h
 -
 math.h
 -
 srslte/phy/resampling/decim.h
-/home/ite/srsLTE/lib/src/phy/resampling/srslte/phy/resampling/decim.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/resampling/srslte/phy/resampling/decim.h
 srslte/phy/utils/debug.h
-/home/ite/srsLTE/lib/src/phy/resampling/srslte/phy/utils/debug.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/resampling/srslte/phy/utils/debug.h
 
-/home/ite/srsLTE/lib/src/phy/resampling/interp.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/resampling/interp.c
 complex.h
 -
 math.h
@@ -28,23 +28,23 @@ strings.h
 srslte/srslte.h
 -
 srslte/phy/resampling/interp.h
-/home/ite/srsLTE/lib/src/phy/resampling/srslte/phy/resampling/interp.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/resampling/srslte/phy/resampling/interp.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/resampling/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/resampling/srslte/phy/utils/vector.h
 srslte/phy/utils/debug.h
-/home/ite/srsLTE/lib/src/phy/resampling/srslte/phy/utils/debug.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/resampling/srslte/phy/utils/debug.h
 
-/home/ite/srsLTE/lib/src/phy/resampling/resample_arb.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/resampling/resample_arb.c
 math.h
 -
 string.h
 -
 srslte/phy/resampling/resample_arb.h
-/home/ite/srsLTE/lib/src/phy/resampling/srslte/phy/resampling/resample_arb.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/resampling/srslte/phy/resampling/resample_arb.h
 srslte/phy/utils/debug.h
-/home/ite/srsLTE/lib/src/phy/resampling/srslte/phy/utils/debug.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/resampling/srslte/phy/utils/debug.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/resampling/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/resampling/srslte/phy/utils/vector.h
 
 /usr/local/include/srslte/config.h
 

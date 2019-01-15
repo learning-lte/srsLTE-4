@@ -1,4 +1,4 @@
-# Install script for directory: /home/ite/srsLTE
+# Install script for directory: /home/umbc/Dropbox/srsLTE
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,15 +33,15 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES "/home/ite/srsLTE/build/srslte_install_configs.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES "/home/umbc/Dropbox/srsLTE/build/srslte_install_configs.sh")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ite/srsLTE/build/lib/cmake_install.cmake")
-  include("/home/ite/srsLTE/build/srsue/cmake_install.cmake")
-  include("/home/ite/srsLTE/build/srsenb/cmake_install.cmake")
-  include("/home/ite/srsLTE/build/srsepc/cmake_install.cmake")
+  include("/home/umbc/Dropbox/srsLTE/build/lib/cmake_install.cmake")
+  include("/home/umbc/Dropbox/srsLTE/build/srsue/cmake_install.cmake")
+  include("/home/umbc/Dropbox/srsLTE/build/srsenb/cmake_install.cmake")
+  include("/home/umbc/Dropbox/srsLTE/build/srsepc/cmake_install.cmake")
 
 endif()
 
@@ -53,5 +53,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ite/srsLTE/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/umbc/Dropbox/srsLTE/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

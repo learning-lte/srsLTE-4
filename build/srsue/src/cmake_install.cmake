@@ -1,4 +1,4 @@
-# Install script for directory: /home/ite/srsLTE/srsue/src
+# Install script for directory: /home/umbc/Dropbox/srsLTE/srsue/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,12 +39,12 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/srsue"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/ite/srsLTE/build/srsue/src/srsue")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/umbc/Dropbox/srsLTE/build/srsue/src/srsue")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/srsue" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/srsue")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/srsue"
-         OLD_RPATH "/home/ite/srsLTE/build/lib/src/phy/rf:/usr/local/lib:"
+         OLD_RPATH "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/rf:/usr/local/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/srsue")
@@ -59,12 +59,12 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/srsue"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/ite/srsLTE/build/srsue/src/srsue")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/umbc/Dropbox/srsLTE/build/srsue/src/srsue")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/srsue" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/srsue")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/srsue"
-         OLD_RPATH "/home/ite/srsLTE/build/lib/src/phy/rf:/usr/local/lib:"
+         OLD_RPATH "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/rf:/usr/local/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/srsue")
@@ -74,9 +74,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ite/srsLTE/build/srsue/src/phy/cmake_install.cmake")
-  include("/home/ite/srsLTE/build/srsue/src/mac/cmake_install.cmake")
-  include("/home/ite/srsLTE/build/srsue/src/upper/cmake_install.cmake")
+  include("/home/umbc/Dropbox/srsLTE/build/srsue/src/phy/cmake_install.cmake")
+  include("/home/umbc/Dropbox/srsLTE/build/srsue/src/mac/cmake_install.cmake")
+  include("/home/umbc/Dropbox/srsLTE/build/srsue/src/upper/cmake_install.cmake")
 
 endif()
 

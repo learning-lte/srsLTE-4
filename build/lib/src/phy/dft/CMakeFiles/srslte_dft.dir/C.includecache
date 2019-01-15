@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/dft/dft_fftw.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/dft/dft_fftw.c
 math.h
 -
 complex.h
@@ -18,11 +18,11 @@ string.h
 srslte/srslte.h
 -
 srslte/phy/dft/dft.h
-/home/ite/srsLTE/lib/src/phy/dft/srslte/phy/dft/dft.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/dft/srslte/phy/dft/dft.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/dft/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/dft/srslte/phy/utils/vector.h
 
-/home/ite/srsLTE/lib/src/phy/dft/dft_precoding.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/dft/dft_precoding.c
 stdint.h
 -
 stdio.h
@@ -40,17 +40,17 @@ assert.h
 math.h
 -
 srslte/phy/common/phy_common.h
-/home/ite/srsLTE/lib/src/phy/dft/srslte/phy/common/phy_common.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/dft/srslte/phy/common/phy_common.h
 srslte/phy/utils/debug.h
-/home/ite/srsLTE/lib/src/phy/dft/srslte/phy/utils/debug.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/dft/srslte/phy/utils/debug.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/dft/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/dft/srslte/phy/utils/vector.h
 srslte/phy/dft/dft.h
-/home/ite/srsLTE/lib/src/phy/dft/srslte/phy/dft/dft.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/dft/srslte/phy/dft/dft.h
 srslte/phy/dft/dft_precoding.h
-/home/ite/srsLTE/lib/src/phy/dft/srslte/phy/dft/dft_precoding.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/dft/srslte/phy/dft/dft_precoding.h
 
-/home/ite/srsLTE/lib/src/phy/dft/ofdm.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/dft/ofdm.c
 string.h
 -
 strings.h
@@ -64,15 +64,17 @@ math.h
 srslte/srslte.h
 -
 srslte/phy/common/phy_common.h
-/home/ite/srsLTE/lib/src/phy/dft/srslte/phy/common/phy_common.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/dft/srslte/phy/common/phy_common.h
 srslte/phy/dft/dft.h
-/home/ite/srsLTE/lib/src/phy/dft/srslte/phy/dft/dft.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/dft/srslte/phy/dft/dft.h
 srslte/phy/dft/ofdm.h
-/home/ite/srsLTE/lib/src/phy/dft/srslte/phy/dft/ofdm.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/dft/srslte/phy/dft/ofdm.h
 srslte/phy/utils/debug.h
-/home/ite/srsLTE/lib/src/phy/dft/srslte/phy/utils/debug.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/dft/srslte/phy/utils/debug.h
 srslte/phy/utils/vector.h
-/home/ite/srsLTE/lib/src/phy/dft/srslte/phy/utils/vector.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/dft/srslte/phy/utils/vector.h
+srslte/phy/io/filesink.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/dft/srslte/phy/io/filesink.h
 
 /usr/local/include/srslte/config.h
 

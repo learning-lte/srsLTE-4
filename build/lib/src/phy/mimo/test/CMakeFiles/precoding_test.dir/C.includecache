@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/phy/mimo/test/precoder_test.c
+/home/umbc/Dropbox/srsLTE/lib/src/phy/mimo/test/precoder_test.c
 stdio.h
 -
 stdlib.h
@@ -24,9 +24,9 @@ time.h
 stdbool.h
 -
 srslte/srslte.h
-/home/ite/srsLTE/lib/src/phy/mimo/test/srslte/srslte.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/mimo/test/srslte/srslte.h
 srslte/phy/channel/ch_awgn.h
-/home/ite/srsLTE/lib/src/phy/mimo/test/srslte/phy/channel/ch_awgn.h
+/home/umbc/Dropbox/srsLTE/lib/src/phy/mimo/test/srslte/phy/channel/ch_awgn.h
 
 /usr/local/include/srslte/config.h
 

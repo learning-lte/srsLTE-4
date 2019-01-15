@@ -1,4 +1,4 @@
-# Install script for directory: /home/ite/srsLTE/lib/src/phy/ch_estimation
+# Install script for directory: /home/umbc/Dropbox/srsLTE/lib/src/phy/ch_estimation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ite/srsLTE/build/lib/src/phy/ch_estimation/test/cmake_install.cmake")
+  include("/home/umbc/Dropbox/srsLTE/build/lib/src/phy/ch_estimation/test/cmake_install.cmake")
 
 endif()
 

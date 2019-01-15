@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/test/asn1/srslte_asn1_rrc_meas_test.cc
+/home/umbc/Dropbox/srsLTE/lib/test/asn1/srslte_asn1_rrc_meas_test.cc
 assert.h
 -
 iostream
@@ -14,9 +14,9 @@ iostream
 srslte/srslte.h
 -
 srslte/common/log_filter.h
-/home/ite/srsLTE/lib/test/asn1/srslte/common/log_filter.h
+/home/umbc/Dropbox/srsLTE/lib/test/asn1/srslte/common/log_filter.h
 srslte/asn1/liblte_rrc.h
-/home/ite/srsLTE/lib/test/asn1/srslte/asn1/liblte_rrc.h
+/home/umbc/Dropbox/srsLTE/lib/test/asn1/srslte/asn1/liblte_rrc.h
 
 /usr/local/include/srslte/asn1/liblte_common.h
 stdint.h

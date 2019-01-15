@@ -1,4 +1,4 @@
-# Install script for directory: /home/ite/srsLTE/srsepc/src/mme
+# Install script for directory: /home/umbc/Dropbox/srsLTE/srsepc/src/mme
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,6 +33,6 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/ite/srsLTE/build/srsepc/src/mme/libsrsepc_mme.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/umbc/Dropbox/srsLTE/build/srsepc/src/mme/libsrsepc_mme.a")
 endif()
 

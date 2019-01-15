@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/src/common/crash_handler.c
+/home/umbc/Dropbox/srsLTE/lib/src/common/crash_handler.c
 pthread.h
 -
 stdio.h
@@ -18,15 +18,15 @@ signal.h
 stdlib.h
 -
 srslte/version.h
-/home/ite/srsLTE/lib/src/common/srslte/version.h
+/home/umbc/Dropbox/srsLTE/lib/src/common/srslte/version.h
 srslte/common/crash_handler.h
-/home/ite/srsLTE/lib/src/common/srslte/common/crash_handler.h
+/home/umbc/Dropbox/srsLTE/lib/src/common/srslte/common/crash_handler.h
 
-/home/ite/srsLTE/lib/src/common/gen_mch_tables.c
+/home/umbc/Dropbox/srsLTE/lib/src/common/gen_mch_tables.c
 srslte/common/gen_mch_tables.h
-/home/ite/srsLTE/lib/src/common/srslte/common/gen_mch_tables.h
+/home/umbc/Dropbox/srsLTE/lib/src/common/srslte/common/gen_mch_tables.h
 
-/home/ite/srsLTE/lib/src/common/threads.c
+/home/umbc/Dropbox/srsLTE/lib/src/common/threads.c
 errno.h
 -
 pthread.h
@@ -40,11 +40,11 @@ string.h
 sys/types.h
 -
 srslte/common/threads.h
-/home/ite/srsLTE/lib/src/common/srslte/common/threads.h
+/home/umbc/Dropbox/srsLTE/lib/src/common/srslte/common/threads.h
 
-/home/ite/srsLTE/lib/src/common/version.c
+/home/umbc/Dropbox/srsLTE/lib/src/common/version.c
 srslte/version.h
-/home/ite/srsLTE/lib/src/common/srslte/version.h
+/home/umbc/Dropbox/srsLTE/lib/src/common/srslte/version.h
 
 /usr/local/include/srslte/common/crash_handler.h
 stdio.h

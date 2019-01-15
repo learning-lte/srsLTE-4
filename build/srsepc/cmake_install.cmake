@@ -1,4 +1,4 @@
-# Install script for directory: /home/ite/srsLTE/srsepc
+# Install script for directory: /home/umbc/Dropbox/srsLTE/srsepc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,24 +33,24 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/srslte" TYPE FILE FILES "/home/ite/srsLTE/srsepc/epc.conf.example")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/srslte" TYPE FILE FILES "/home/umbc/Dropbox/srsLTE/srsepc/epc.conf.example")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/srslte" TYPE FILE FILES "/home/ite/srsLTE/srsepc/mbms.conf.example")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/srslte" TYPE FILE FILES "/home/umbc/Dropbox/srsLTE/srsepc/mbms.conf.example")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/srslte" TYPE FILE FILES "/home/ite/srsLTE/srsepc/user_db.csv.example")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/srslte" TYPE FILE FILES "/home/umbc/Dropbox/srsLTE/srsepc/user_db.csv.example")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES "/home/ite/srsLTE/srsepc/srsepc_if_masq.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES "/home/umbc/Dropbox/srsLTE/srsepc/srsepc_if_masq.sh")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ite/srsLTE/build/srsepc/src/cmake_install.cmake")
+  include("/home/umbc/Dropbox/srsLTE/build/srsepc/src/cmake_install.cmake")
 
 endif()
 

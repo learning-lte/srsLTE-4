@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/ite/srsLTE/lib/test/common/bcd_helpers_test.cc
+/home/umbc/Dropbox/srsLTE/lib/test/common/bcd_helpers_test.cc
 assert.h
 -
 srslte/common/bcd_helpers.h
-/home/ite/srsLTE/lib/test/common/srslte/common/bcd_helpers.h
+/home/umbc/Dropbox/srsLTE/lib/test/common/srslte/common/bcd_helpers.h
 
 /usr/local/include/srslte/asn1/liblte_common.h
 stdint.h

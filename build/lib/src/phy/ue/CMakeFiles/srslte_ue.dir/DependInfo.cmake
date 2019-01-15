@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/ite/srsLTE/lib/src/phy/ue/ue_cell_search.c" "/home/ite/srsLTE/build/lib/src/phy/ue/CMakeFiles/srslte_ue.dir/ue_cell_search.c.o"
-  "/home/ite/srsLTE/lib/src/phy/ue/ue_dl.c" "/home/ite/srsLTE/build/lib/src/phy/ue/CMakeFiles/srslte_ue.dir/ue_dl.c.o"
-  "/home/ite/srsLTE/lib/src/phy/ue/ue_mib.c" "/home/ite/srsLTE/build/lib/src/phy/ue/CMakeFiles/srslte_ue.dir/ue_mib.c.o"
-  "/home/ite/srsLTE/lib/src/phy/ue/ue_sync.c" "/home/ite/srsLTE/build/lib/src/phy/ue/CMakeFiles/srslte_ue.dir/ue_sync.c.o"
-  "/home/ite/srsLTE/lib/src/phy/ue/ue_ul.c" "/home/ite/srsLTE/build/lib/src/phy/ue/CMakeFiles/srslte_ue.dir/ue_ul.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/ue/ue_cell_search.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/ue/CMakeFiles/srslte_ue.dir/ue_cell_search.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/ue/ue_dl.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/ue/CMakeFiles/srslte_ue.dir/ue_dl.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/ue/ue_mib.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/ue/CMakeFiles/srslte_ue.dir/ue_mib.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/ue/ue_sync.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/ue/CMakeFiles/srslte_ue.dir/ue_sync.c.o"
+  "/home/umbc/Dropbox/srsLTE/lib/src/phy/ue/ue_ul.c" "/home/umbc/Dropbox/srsLTE/build/lib/src/phy/ue/CMakeFiles/srslte_ue.dir/ue_ul.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -16,10 +16,12 @@ set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_TARGET_DEFINITIONS_C
   "ENABLE_GUI"
   "HAVE_MBEDTLS"
+  "HAVE_PCSC"
   )
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "/usr/include/PCSC"
   "/usr/local/include"
   "lib/include"
   "../lib/include"
