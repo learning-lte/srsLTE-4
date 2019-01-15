@@ -33,6 +33,9 @@
 #include "srslte/phy/utils/bit.h"
 #include "srslte/phy/modem/mod.h"
 
+#define QPSK_LEVEL      1/sqrt(2)
+#define QAM64_LEVEL_4  7/sqrt(42)
+
 /** Low-level API */
 
 int srslte_mod_modulate(srslte_modem_table_t* q, uint8_t *bits, cf_t* symbols, uint32_t nbits) {
@@ -124,6 +127,69 @@ void mod_64qam_bytes(srslte_modem_table_t* q, uint8_t *bits, cf_t* symbols, uint
   }
 }
 
+/*Modified modulation for pdsch*/
+void mod_bpsk_bytes_modified_pdsch(srslte_modem_table_t* q, uint8_t *bits, cf_t* symbols, uint32_t nbits) {
+  uint8_t mask_bpsk[8]  = {0x80, 0x40, 0x20, 0x10, 0x08, 0x04, 0x02, 0x01};
+  uint8_t shift_bpsk[8] = {7, 6, 5, 4, 3, 2, 1, 0};
+
+  for (int i=0;i<nbits/8;i++) {
+    memcpy(&symbols[8*i], &q->symbol_table_bpsk[1], sizeof(bpsk_packed_t));
+  }
+  for (int i=0;i<nbits%8;i++) {
+    symbols[8*(nbits/8)+i] = q->symbol_table[1];
+  }    
+}
+
+void mod_qpsk_bytes_modified_pdsch(srslte_modem_table_t* q, uint8_t *bits, cf_t* symbols, uint32_t nbits) {
+  uint8_t mask_qpsk[4]  = {0xc0, 0x30, 0x0c, 0x03};
+  uint8_t shift_qpsk[4]  = {6, 4, 2, 0};
+ // printf("nbits=%d\n",nbits);
+  // for (int i=0;i<nbits/8;i++) {
+  //   memcpy(&symbols[4*i], &q->symbol_table_qpsk[bits[i]], sizeof(qpsk_packed_t));
+    
+  // }
+  // // Encode last 1, 2 or 3 bit pairs if not multiple of 8
+  // for (int i=0;i<(nbits%8)/2;i++) {
+  //   symbols[4*(nbits/8)+i] = q->symbol_table[(bits[nbits/8]&mask_qpsk[i])>>shift_qpsk[i]];
+  // }
+
+//        for (int i=0;i<10;i++) printf("symbol index=%d,sfsymbols=%f+%fi\n",i,creal(symbols[i]), cimag(symbols[i]));
+
+   for (int i=0;i<nbits/2;i++) {
+  //  symbols[i]= -QPSK_LEVEL - QPSK_LEVEL*_Complex_I;
+   if(i%2==0) symbols[i]= -QPSK_LEVEL - QPSK_LEVEL*_Complex_I;
+   else symbols[i]= QPSK_LEVEL + QPSK_LEVEL*_Complex_I;
+  //   printf("symbols[%d]=%f+%fi\n",i,creal(symbols[i]), cimag(symbols[i]));
+   }
+//   for (int i=0;i<10;i++) printf("after modulation. symbol index=%d,sfsymbols=%f+%fi\n",i,creal(symbols[i]), cimag(symbols[i]));
+}
+
+void mod_16qam_bytes_modified_pdsch(srslte_modem_table_t* q, uint8_t *bits, cf_t* symbols, uint32_t nbits) {
+for (int i=0;i<nbits/8;i++) {
+    memcpy(&symbols[2*i], &q->symbol_table_16qam[bits[i]], sizeof(qam16_packed_t));
+  }
+  // Encode last 4 bits if not multiple of 8
+  if (nbits%8) {
+    symbols[2*(nbits/8)] = q->symbol_table[(bits[nbits/8]&0xf0)>>4];
+  }
+}
+
+
+
+void mod_64qam_bytes_modified_pdsch(srslte_modem_table_t* q, uint8_t *bits, cf_t* symbols, uint32_t nbits) {
+  uint8_t in0, in1, in2, in3; 
+  uint32_t in80, in81, in82;
+
+  for (int i=0;i<nbits/6+1;i++) {
+    symbols[i]= QAM64_LEVEL_4 + QAM64_LEVEL_4*_Complex_I;
+ //   if(i%2) symbols[i]= -QPSK_LEVEL - QPSK_LEVEL*_Complex_I;
+ //   else symbols[i]= QPSK_LEVEL + QPSK_LEVEL*_Complex_I;
+ //    printf("symbols[%d]=%f+%fi\n",i,creal(symbols[i]), cimag(symbols[i]));
+   }
+}
+
+/****************************/
+
 /* Assumes packet bits as input */
 int srslte_mod_modulate_bytes(srslte_modem_table_t* q, uint8_t *bits, cf_t* symbols, uint32_t nbits) 
 {
@@ -155,3 +221,39 @@ int srslte_mod_modulate_bytes(srslte_modem_table_t* q, uint8_t *bits, cf_t* symb
   }
   return nbits/q->nbits_x_symbol;
 }
+
+
+/*Modified modulation for pdsch*/
+int srslte_mod_modulate_bytes_modified_pdsch(srslte_modem_table_t* q, uint8_t *bits, cf_t* symbols, uint32_t nbits) 
+{
+
+  if (!q->byte_tables_init) {
+    fprintf(stderr, "Error need to initiated modem tables for packeted bits before calling srslte_mod_modulate_bytes()\n");
+    return -1; 
+  }
+  if (nbits % q->nbits_x_symbol) {
+    fprintf(stderr, "Error modulator expects number of bits (%d) to be multiple of %d\n", nbits, q->nbits_x_symbol);
+    return -1; 
+  }
+   switch(q->nbits_x_symbol) {
+    case 1:
+      mod_bpsk_bytes(q, bits, symbols, nbits);
+      break;
+    case 2:
+      mod_qpsk_bytes_modified_pdsch(q, bits, symbols, nbits);
+      break;
+    case 4:
+      mod_16qam_bytes_modified_pdsch(q, bits, symbols, nbits);
+      break;
+    case 6:
+      mod_64qam_bytes_modified_pdsch(q, bits, symbols, nbits);
+      break;      
+    default:
+      fprintf(stderr, "srslte_mod_modulate_bytes() accepts QPSK/16QAM/64QAM modulations only\n");
+      return -1; 
+  }
+
+  return nbits/q->nbits_x_symbol;
+}
+
+/****************************/

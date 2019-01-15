@@ -52,4 +52,21 @@ SRSLTE_API int srslte_mod_modulate_bytes(srslte_modem_table_t* q,
                                          cf_t* symbols, 
                                          uint32_t nbits); 
 
+SRSLTE_API int srslte_mod_modulate_bytes(srslte_modem_table_t* q, 
+                                         uint8_t *bits, 
+                                         cf_t* symbols, 
+                                         uint32_t nbits); 
+
+/*Modified modulation for pdsch*/
+
+
+SRSLTE_API int srslte_mod_modulate_bytes_modified_pdsch(srslte_modem_table_t* q, 
+                                         uint8_t *bits, 
+                                         cf_t* symbols, 
+                                         uint32_t nbits); 
+
+
+
+/****************************/
+
 #endif // SRSLTE_MOD_H

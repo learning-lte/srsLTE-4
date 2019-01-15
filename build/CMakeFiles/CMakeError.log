@@ -1,0 +1,105 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ite/srsLTE/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b3e2c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b3e2c.dir/build.make CMakeFiles/cmTC_b3e2c.dir/build
+make[1]: Entering directory '/home/ite/srsLTE/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b3e2c.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_b3e2c.dir/CheckSymbolExists.c.o   -c /home/ite/srsLTE/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_b3e2c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b3e2c.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_b3e2c.dir/CheckSymbolExists.c.o  -o cmTC_b3e2c -rdynamic 
+CMakeFiles/cmTC_b3e2c.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_b3e2c.dir/build.make:97: recipe for target 'cmTC_b3e2c' failed
+make[1]: *** [cmTC_b3e2c] Error 1
+make[1]: Leaving directory '/home/ite/srsLTE/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b3e2c/fast' failed
+make: *** [cmTC_b3e2c/fast] Error 2
+
+File /home/ite/srsLTE/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ite/srsLTE/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_15639/fast"
+/usr/bin/make -f CMakeFiles/cmTC_15639.dir/build.make CMakeFiles/cmTC_15639.dir/build
+make[1]: Entering directory '/home/ite/srsLTE/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_15639.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_15639.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_15639
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15639.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_15639.dir/CheckFunctionExists.c.o  -o cmTC_15639 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_15639.dir/build.make:97: recipe for target 'cmTC_15639' failed
+make[1]: *** [cmTC_15639] Error 1
+make[1]: Leaving directory '/home/ite/srsLTE/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_15639/fast' failed
+make: *** [cmTC_15639/fast] Error 2
+
+
+Performing C SOURCE FILE Test HAVE_AVX512 failed with the following output:
+Change Dir: /home/ite/srsLTE/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e69f1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e69f1.dir/build.make CMakeFiles/cmTC_e69f1.dir/build
+make[1]: Entering directory '/home/ite/srsLTE/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e69f1.dir/src.c.o
+/usr/bin/cc    -DHAVE_AVX512 -mavx512f   -o CMakeFiles/cmTC_e69f1.dir/src.c.o   -c /home/ite/srsLTE/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e69f1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e69f1.dir/link.txt --verbose=1
+/usr/bin/cc   -DHAVE_AVX512 -mavx512f    CMakeFiles/cmTC_e69f1.dir/src.c.o  -o cmTC_e69f1 -rdynamic 
+make[1]: Leaving directory '/home/ite/srsLTE/build/CMakeFiles/CMakeTmp'
+
+Return value: FAILED_TO_RUN
+Source file was:
+
+          #include <immintrin.h>
+          int main()
+          {
+            __m512i a, b, c;
+            const int src[16] = { 0x0, 0x1, 0x2, 0x3, 0x4, 0x5, 0x6, 0x7, 0x8 , 0x9, 0xA, 0xB, 0xC, 0xD, 0xE, 0xF};
+            int dst[16];
+            a =  _mm512_loadu_si512( (__m512i*)src );
+            b =  _mm512_loadu_si512( (__m512i*)src );
+            c = _mm512_add_epi32( a, b );
+            _mm512_storeu_si512( (__m512i*)dst, c );
+            int i = 0;
+            for( i = 0; i < 16; i++ ){
+              if( ( src[i] + src[i] ) != dst[i] ){
+                return -1;
+              }
+            }
+            return 0;
+          }
+Performing C++ SOURCE FILE Test HAVE_VISIBILITY_HIDDEN failed with the following output:
+Change Dir: /home/ite/srsLTE/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_85513/fast"
+/usr/bin/make -f CMakeFiles/cmTC_85513.dir/build.make CMakeFiles/cmTC_85513.dir/build
+make[1]: Entering directory '/home/ite/srsLTE/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_85513.dir/src.cxx.o
+/usr/bin/c++     -march=native -Wall -Wno-comment -Wno-reorder -Wno-unused-but-set-variable -Wno-unused-variable -Wformat -Wmissing-field-initializers -Wtype-limits -std=c++03 -mfpmath=sse -mavx2 -DLV_HAVE_AVX2 -DLV_HAVE_AVX -DLV_HAVE_SSE -O3 -fno-trapping-math -fno-math-errno -DBUILD_TYPE_RELEASE -DHAVE_VISIBILITY_HIDDEN  -march=native -Wall -Wno-comment -Wno-write-strings -Winline -Wno-unused-result -Wformat -Wmissing-field-initializers -Wtype-limits -std=c99 -D_GNU_SOURCE -O3 -fno-trapping-math -fno-math-errno -DBUILD_TYPE_RELEASE -mfpmath=sse -mavx2 -DLV_HAVE_AVX2 -DLV_HAVE_AVX -DLV_HAVE_SSE -mfma -DLV_HAVE_FMA -Ofast -funroll-loops   -fvisibility=hidden -o CMakeFiles/cmTC_85513.dir/src.cxx.o -c /home/ite/srsLTE/build/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: warning: command line option '-std=c99' is valid for C/ObjC but not for C++
+Linking CXX executable cmTC_85513
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85513.dir/link.txt --verbose=1
+/usr/bin/c++    -march=native -Wall -Wno-comment -Wno-reorder -Wno-unused-but-set-variable -Wno-unused-variable -Wformat -Wmissing-field-initializers -Wtype-limits -std=c++03 -mfpmath=sse -mavx2 -DLV_HAVE_AVX2 -DLV_HAVE_AVX -DLV_HAVE_SSE -O3 -fno-trapping-math -fno-math-errno -DBUILD_TYPE_RELEASE -DHAVE_VISIBILITY_HIDDEN  -march=native -Wall -Wno-comment -Wno-write-strings -Winline -Wno-unused-result -Wformat -Wmissing-field-initializers -Wtype-limits -std=c99 -D_GNU_SOURCE -O3 -fno-trapping-math -fno-math-errno -DBUILD_TYPE_RELEASE -mfpmath=sse -mavx2 -DLV_HAVE_AVX2 -DLV_HAVE_AVX -DLV_HAVE_SSE -mfma -DLV_HAVE_FMA -Ofast -funroll-loops    CMakeFiles/cmTC_85513.dir/src.cxx.o  -o cmTC_85513 -rdynamic 
+make[1]: Leaving directory '/home/ite/srsLTE/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }

@@ -662,7 +662,7 @@ static int srslte_pdsch_codeword_encode(srslte_pdsch_t *q, srslte_pdsch_cfg_t *c
     srslte_scrambling_bytes(seq, (uint8_t *) q->e[codeword_idx], nbits->nof_bits);
 
     /* Bit mapping */
-    srslte_mod_modulate_bytes(&q->mod[mcs->mod],
+    srslte_mod_modulate_bytes_modified_pdsch(&q->mod[mcs->mod],
                               (uint8_t *) q->e[codeword_idx],
                               q->d[codeword_idx], nbits->nof_bits);
 

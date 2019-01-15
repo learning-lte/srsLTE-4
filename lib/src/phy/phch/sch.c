@@ -470,6 +470,8 @@ static int decode_tb(srslte_sch_t *q,
     // Process Codeblocks
     crc_ok = decode_tb_cb(q, softbuffer, cb_segm, Qm, rv, nof_e_bits, e_bits, data);
 
+//    printf("CRC=%d\n", crc_ok);
+
     if (crc_ok) {
 
       uint32_t par_rx = 0, par_tx = 0;

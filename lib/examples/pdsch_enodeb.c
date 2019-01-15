@@ -841,7 +841,8 @@ int main(int argc, char **argv) {
   bool start_of_burst = true; 
 #endif
 
-  while ((nf < nof_frames || nof_frames == -1) && !go_exit) {
+  while ((nf < nof_frames || nof_frames == -1) && !go_exit) 
+  {
     for (sf_idx = 0; sf_idx < SRSLTE_NSUBFRAMES_X_FRAME && (nf < nof_frames || nof_frames == -1); sf_idx++) {
       /* Set Antenna port resource elements to zero */
       bzero(sf_symbols[0], sizeof(cf_t) * sf_n_re);
@@ -865,13 +866,22 @@ int main(int argc, char **argv) {
           srslte_refsignal_cs_put_sf(cell, (uint32_t) i, csr_refs.pilots[i / 2][sf_idx], sf_symbols[i]);
         }
       }
-      
+     
+    // printf("subframe #%d, reference added\n",sf_idx); 
+    // for (int ii=0;ii<12;ii++) printf("symbol index=%d,sfsymbols=%f+%fi\n",ii,creal(*(sf_symbols[0]+ii)), cimag(*(sf_symbols[0]+ii)));
+  
+
+
       srslte_pbch_mib_pack(&cell, sfn, bch_payload);
       if (sf_idx == 0) {
         srslte_pbch_encode(&pbch, bch_payload, slot1_symbols, nf%4);
       }
 
       srslte_pcfich_encode(&pcfich, cfi, sf_symbols, sf_idx);
+
+    // printf("subframe #%d, PCFICH added\n",sf_idx); 
+    // for (int ii=0;ii<12;ii++) printf("symbol index=%d,sfsymbols=%f+%fi\n",ii,creal(*(sf_symbols[0]+ii)), cimag(*(sf_symbols[0]+ii)));
+
 
       /* Update DL resource allocation from control port */
       if (update_control(sf_idx)) {
@@ -897,9 +907,9 @@ int main(int argc, char **argv) {
         if (sf_idx != 0 && sf_idx != 5) {
           send_data = true; 
         } else {
-          send_data = false;           
+          send_data = false;        
         }
-      }      
+      }     
       if (send_data) {
         if(mch_table[sf_idx] == 0 || mbsfn_area_id < 0) { // PDCCH + PDSCH
           srslte_dci_format_t dci_format;
@@ -939,11 +949,29 @@ int main(int argc, char **argv) {
             exit(-1);
           }
 
+      //       if(sf_idx==1)
+      //       {
+      // //      for (int ii=144;ii<144+72;ii++) *(sf_symbols[0]+ii)=0+0*_Complex_I;
+      //      printf("subframe #%d, PDCCH added\n",sf_idx); 
+      //      for (int ii=144;ii<144+72;ii++) printf("symbol index=%d,sfsymbols=%f+%fi,sfbuffer=%f+%f\n",ii,creal(*(sf_symbols[0]+ii)), cimag(*(sf_symbols[0]+ii)),creal(*(sf_buffer[0]+ii)), cimag(*(sf_buffer[0]+ii)));
+      //       }
+
           /* Encode PDSCH */
           if (srslte_pdsch_encode(&pdsch, &pdsch_cfg, softbuffers, data, UE_CRNTI, sf_symbols)) {
             fprintf(stderr, "Error encoding PDSCH\n");
             exit(-1);
-          }        
+          }
+
+          // if(sf_idx==1)
+          //   {
+          //  printf("subframe #%d, PDSCH added\n",sf_idx); 
+          //  for (int ii=144;ii<144+72;ii++) printf("symbol index=%d,sfsymbols=%f+%fi,sfbuffer=%f+%f\n",ii,creal(*(sf_symbols[0]+ii)), cimag(*(sf_symbols[0]+ii)),creal(*(sf_buffer[0]+ii)), cimag(*(sf_buffer[0]+ii)));
+          //   }
+
+
+ //         for (i=0;i<100;i++) printf("symbol index=%d,sfsymbols=%f+%fi\n",i,creal(sf_symbols[i]), cimag(sf_symbols[i]));
+
+
           if (net_port > 0 && net_packet_ready) {
             if (null_file_sink) {
               for (uint32_t tb = 0; tb < SRSLTE_MAX_CODEWORDS; tb++) {
@@ -1013,6 +1041,7 @@ int main(int argc, char **argv) {
       if(mch_table[sf_idx] == 0 || mbsfn_area_id < 0){
         for (i = 0; i < cell.nof_ports; i++) {
           srslte_ofdm_tx_sf(&ifft[i]);
+      //    printf("%d/%d antenna fft\n",i,cell.nof_ports);
         }
       }else{
         srslte_ofdm_tx_sf(&ifft_mbsfn);
