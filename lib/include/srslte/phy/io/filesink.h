@@ -74,6 +74,6 @@ SRSLTE_API int srslte_filesink_write_multi(srslte_filesink_t *q,
                                            int nsamples,
                                            int nchannels);
 
-srslte_filesink_t raw_fsink = {.f=NULL};
+static srslte_filesink_t raw_fsink = {.f=NULL};
 
 #endif // SRSLTE_FILESINK_H

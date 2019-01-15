@@ -36,7 +36,7 @@
 #include "srslte/phy/dft/ofdm.h"
 #include "srslte/phy/utils/debug.h"
 #include "srslte/phy/utils/vector.h"
-#include "srslte/phy/io/filesink.h"
+//#include "srslte/phy/io/filesink.h"
 
 /* Uncomment next line for avoiding Guru DFT call */
 //#define AVOID_GURU
