@@ -406,7 +406,7 @@ void srslte_ofdm_rx_slot(srslte_ofdm_t *q, int slot_in_sf) {
   cf_t *output = q->out_buffer + slot_in_sf * q->nof_re * q->nof_symbols;
   if(!raw_fsink.f){
       printf("initiating file sink before_equ.txt\n");
-      srslte_filesink_init(&raw_fsink, "before_equ.txt", SRSLTE_COMPLEX_FLOAT);
+      srslte_filesink_init(&raw_fsink, "before_equ.txt", SRSLTE_COMPLEX_FLOAT_BIN);
       printf("initiated file sink\n");
 //      srslte_filesink_free(&raw_fsink);
   }

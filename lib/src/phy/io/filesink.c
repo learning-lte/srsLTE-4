@@ -100,7 +100,7 @@ int srslte_filesink_write(srslte_filesink_t *q, void *buffer, int nsamples) {
 }
 
 int srslte_filesink_write_with_sample_no(srslte_filesink_t *q, void *buffer, int nsamples){
-    fprintf(q->f,"NO. of samples %d\n", nsamples);
+ //   fprintf(q->f,"NO. of samples %d\n", nsamples);
     return srslte_filesink_write(q, buffer, nsamples);
 }
 
@@ -108,7 +108,7 @@ int srslte_filesink_write_with_symbol_no(srslte_filesink_t *q,
                                          void *buffer,
                                          int size,
                                          int n_symbols){
-  fprintf(q->f,"NO. of symbols %d\n", n_symbols);
+//  fprintf(q->f,"NO. of symbols %d\n", n_symbols);
   return srslte_filesink_write(q, buffer, size);
 }
 
