@@ -867,8 +867,8 @@ int main(int argc, char **argv) {
         }
       }
      
-    // printf("subframe #%d, reference added\n",sf_idx); 
-    // for (int ii=0;ii<12;ii++) printf("symbol index=%d,sfsymbols=%f+%fi\n",ii,creal(*(sf_symbols[0]+ii)), cimag(*(sf_symbols[0]+ii)));
+   //  printf("subframe #%d, reference added\n",sf_idx); 
+   //  for (int ii=0;ii<12;ii++) printf("symbol index=%d,sfsymbols=%f+%fi\n",ii,creal(*(sf_symbols[0]+ii)), cimag(*(sf_symbols[0]+ii)));
   
 
 
