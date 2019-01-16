@@ -37,6 +37,8 @@
 #include "srslte/phy/utils/debug.h"
 #include "srslte/phy/common/sequence.h"
 
+#define QPSK_LEVEL      1/sqrt(2)
+
 uint32_t srslte_refsignal_cs_v(uint32_t port_id, uint32_t ref_symbol_idx)
 {
   uint32_t v = 0;
@@ -350,10 +352,10 @@ int srslte_refsignal_cs_put_sf(srslte_cell_t cell, uint32_t port_id, cf_t *pilot
       uint32_t nsymbol = srslte_refsignal_cs_nsymbol(l, cell.cp, port_id);
       /* Compute offset frequency index */
       fidx = ((srslte_refsignal_cs_v(port_id, l) + (cell.id % 6)) % 6); 
- //     for (i=0;i<10;i++) printf("symbol index=%d,sfsymbols=%f+%fi\n",i,creal(sf_symbols[i]), cimag(sf_symbols[i]));
+  //    for (i=0;i<10;i++) printf("symbol index=%d,sfsymbols=%f+%fi\n",i,creal(sf_symbols[i]), cimag(sf_symbols[i]));
       for (i = 0; i < 2*cell.nof_prb; i++) {
         sf_symbols[SRSLTE_RE_IDX(cell.nof_prb, nsymbol, fidx)] = pilots[SRSLTE_REFSIGNAL_PILOT_IDX(i,l,cell)];
-        printf("symbol index=%d,pilot index=%d,sfsymbols=%f+%fi\n",SRSLTE_RE_IDX(cell.nof_prb, nsymbol, fidx),SRSLTE_REFSIGNAL_PILOT_IDX(i,l,cell),creal(sf_symbols[SRSLTE_RE_IDX(cell.nof_prb, nsymbol, fidx)]), cimag(sf_symbols[SRSLTE_RE_IDX(cell.nof_prb, nsymbol, fidx)]));
+  //      printf("symbol index=%d,pilot index=%d,sfsymbols=%f+%fi\n",SRSLTE_RE_IDX(cell.nof_prb, nsymbol, fidx),SRSLTE_REFSIGNAL_PILOT_IDX(i,l,cell),creal(sf_symbols[SRSLTE_RE_IDX(cell.nof_prb, nsymbol, fidx)]), cimag(sf_symbols[SRSLTE_RE_IDX(cell.nof_prb, nsymbol, fidx)]));
         fidx += SRSLTE_NRE/2;       // 1 reference every 6 RE        
       }    
     }
