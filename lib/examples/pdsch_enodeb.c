@@ -867,8 +867,8 @@ int main(int argc, char **argv) {
         }
       }
      
-    // printf("subframe #%d, reference added\n",sf_idx); 
-    // for (int ii=0;ii<12;ii++) printf("symbol index=%d,sfsymbols=%f+%fi\n",ii,creal(*(sf_symbols[0]+ii)), cimag(*(sf_symbols[0]+ii)));
+   //  printf("subframe #%d, reference added\n",sf_idx); 
+   //  for (int ii=0;ii<12;ii++) printf("symbol index=%d,sfsymbols=%f+%fi\n",ii,creal(*(sf_symbols[0]+ii)), cimag(*(sf_symbols[0]+ii)));
   
 
 
@@ -964,9 +964,9 @@ int main(int argc, char **argv) {
 
           // if(sf_idx==1)
           //   {
-          //  printf("subframe #%d, PDSCH added\n",sf_idx); 
-          //  for (int ii=144;ii<144+72;ii++) printf("symbol index=%d,sfsymbols=%f+%fi,sfbuffer=%f+%f\n",ii,creal(*(sf_symbols[0]+ii)), cimag(*(sf_symbols[0]+ii)),creal(*(sf_buffer[0]+ii)), cimag(*(sf_buffer[0]+ii)));
-          //   }
+       //    printf("subframe #%d, PDSCH added\n",sf_idx); 
+       //    for (int ii=0;ii<360;ii++) printf("symbol index=%d,sfsymbols=%f+%fi,sfbuffer=%f+%f\n",ii,creal(*(sf_symbols[0]+ii)), cimag(*(sf_symbols[0]+ii)),creal(*(sf_buffer[0]+ii)), cimag(*(sf_buffer[0]+ii)));
+            //}
 
 
  //         for (i=0;i<100;i++) printf("symbol index=%d,sfsymbols=%f+%fi\n",i,creal(sf_symbols[i]), cimag(sf_symbols[i]));

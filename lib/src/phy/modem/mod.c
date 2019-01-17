@@ -156,9 +156,9 @@ void mod_qpsk_bytes_modified_pdsch(srslte_modem_table_t* q, uint8_t *bits, cf_t*
 //        for (int i=0;i<10;i++) printf("symbol index=%d,sfsymbols=%f+%fi\n",i,creal(symbols[i]), cimag(symbols[i]));
 
    for (int i=0;i<nbits/2;i++) {
-  //  symbols[i]= -QPSK_LEVEL - QPSK_LEVEL*_Complex_I;
-   if(i%2==0) symbols[i]= -QPSK_LEVEL - QPSK_LEVEL*_Complex_I;
-   else symbols[i]= QPSK_LEVEL + QPSK_LEVEL*_Complex_I;
+    symbols[i]= -QPSK_LEVEL - QPSK_LEVEL*_Complex_I;
+  // if(i%2==0) symbols[i]= -QPSK_LEVEL - QPSK_LEVEL*_Complex_I;
+  // else symbols[i]= QPSK_LEVEL + QPSK_LEVEL*_Complex_I;
   //   printf("symbols[%d]=%f+%fi\n",i,creal(symbols[i]), cimag(symbols[i]));
    }
 //   for (int i=0;i<10;i++) printf("after modulation. symbol index=%d,sfsymbols=%f+%fi\n",i,creal(symbols[i]), cimag(symbols[i]));
