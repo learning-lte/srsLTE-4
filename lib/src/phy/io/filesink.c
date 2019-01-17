@@ -29,6 +29,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <strings.h>
+#include <complex.h>
 
 
 #include "srslte/phy/io/filesink.h"
@@ -108,7 +109,9 @@ int srslte_filesink_write_with_symbol_no(srslte_filesink_t *q,
                                          void *buffer,
                                          int size,
                                          int n_symbols){
-  fprintf(q->f,"NO. of symbols %d\n", n_symbols);
+    cf_t symbol_num= 3140 + n_symbols * I;
+    srslte_filesink_write(q, (void*)(&symbol_num), 1);
+//  fprintf(q->f,"NO. of symbols %d\n", n_symbols);
   return srslte_filesink_write(q, buffer, size);
 }
 
