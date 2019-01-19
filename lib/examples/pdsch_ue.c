@@ -73,6 +73,7 @@ bool enable_mbsfn_plot = false;
 #endif
 char *output_file_name;
 //srslte_filesink_t raw_fsink;
+srslte_filesink_t raw_fsink = {.f=NULL};
 char *raw_file_name;
 #define PRINT_CHANGE_SCHEDULIGN
 
@@ -375,9 +376,9 @@ int main(int argc, char **argv) {
   // prog_args is static for global access
   parse_args(&prog_args, argc, argv);
 
-//  printf("initiating file sink %s\n", raw_file_name);
-//  srslte_filesink_init(&raw_fsink, raw_file_name, SRSLTE_COMPLEX_FLOAT);
-//  printf("initiated file sink\n");
+  printf("initiating file sink %s\n", raw_file_name);
+  srslte_filesink_init(&raw_fsink, raw_file_name, SRSLTE_COMPLEX_FLOAT_BIN);
+  printf("initiated file sink\n");
   
 #ifndef DISABLE_GRAPHICS
   if(prog_args.mbsfn_area_id > -1) {
@@ -697,12 +698,17 @@ int main(int argc, char **argv) {
     /* srslte_ue_sync_get_buffer returns 1 if successfully read 1 aligned subframe */
     if (ret == 1) {
 
+        //print it
       uint32_t sfidx = srslte_ue_sync_get_sfidx(&ue_sync);
+      printf("Subframe index: %d\n", sfidx);
+      if(raw_fsink.f){
+          srslte_filesink_write_subframe_idx(&raw_fsink, sfidx);
+      }
 
       switch (state) {
         case DECODE_MIB:
           if (sfidx == 0) {
-            n = srslte_ue_mib_decode(&ue_mib, bch_payload, NULL, &sfn_offset);
+            n = srslte_ue_mib_decode(&ue_mib, bch_payload, NULL, &sfn_offset, raw_fsink);
             if (n < 0) {
               fprintf(stderr, "Error decoding UE MIB\n");
               exit(-1);
@@ -716,6 +722,7 @@ int main(int argc, char **argv) {
           }
           break;
         case DECODE_PDSCH:
+//            printf("DECODE_PDSCH\n");
           if (prog_args.rnti != SRSLTE_SIRNTI) {
             decode_pdsch = true;             
           } else {
@@ -732,22 +739,23 @@ int main(int argc, char **argv) {
             if(mch_table[sfidx] == 0 || prog_args.mbsfn_area_id < 0){ // Not an MBSFN subframe
               if (cell.nof_ports == 1) {
                 /* Transmission mode 1 */
-                n = srslte_ue_dl_decode(&ue_dl, data, 0, sfn*10+srslte_ue_sync_get_sfidx(&ue_sync), acks);
+                // file point into this
+                n = srslte_ue_dl_decode(&ue_dl, data, 0, sfn*10+srslte_ue_sync_get_sfidx(&ue_sync), acks, raw_fsink);
               } else {
                 /* Transmission mode 2 */
                 n = srslte_ue_dl_decode(&ue_dl, data, 1, sfn * 10 + srslte_ue_sync_get_sfidx(&ue_sync),
-                                        acks);
+                                        acks, raw_fsink);
 
                 if (n < 1) {
                   /* Transmission mode 3 */
                   n = srslte_ue_dl_decode(&ue_dl, data, 2, sfn * 10 + srslte_ue_sync_get_sfidx(&ue_sync),
-                                          acks);
+                                          acks, raw_fsink);
                 }
 
                 if (n < 1) {
                   /* Transmission mode 4 */
                   n = srslte_ue_dl_decode(&ue_dl, data, 3, sfn * 10 + srslte_ue_sync_get_sfidx(&ue_sync),
-                                          acks);
+                                          acks, raw_fsink);
                 }
               }
 
@@ -980,7 +988,7 @@ int main(int argc, char **argv) {
   }
 #endif
 
-//  srslte_filesink_free(&raw_fsink);
+  srslte_filesink_free(&raw_fsink);
   
   printf("\nBye\n");
   exit(0);

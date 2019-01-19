@@ -1069,7 +1069,8 @@ phch_recv::sfn_sync::ret_code phch_recv::sfn_sync::run_subframe(srslte_cell_t *c
       }
 
       int sfn_offset = 0;
-      int n = srslte_ue_mib_decode(&ue_mib, bch_payload, NULL, &sfn_offset);
+      srslte_filesink_t temp_fsink = {.f=NULL};
+      int n = srslte_ue_mib_decode(&ue_mib, bch_payload, NULL, &sfn_offset, temp_fsink);
       switch(n) {
         default:
           Error("SYNC:  Error decoding MIB while synchronising SFN");

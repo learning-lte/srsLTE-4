@@ -241,8 +241,8 @@ int main(int argc, char **argv) {
   }
 
   n = srslte_filesource_read(&fsrc, input_buffer, flen);
-
-  srslte_ofdm_rx_sf(&fft);
+  srslte_filesink_t temp_fsink = {.f=NULL};
+  srslte_ofdm_rx_sf(&fft,temp_fsink);
 
   if (fmatlab) {
     fprintf(fmatlab, "infft=");

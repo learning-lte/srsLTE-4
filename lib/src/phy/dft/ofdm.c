@@ -38,7 +38,7 @@
 #include "srslte/phy/utils/vector.h"
 #include "srslte/phy/io/filesink.h"
 
-srslte_filesink_t raw_fsink = {.f=NULL};
+
 /* Uncomment next line for avoiding Guru DFT call */
 //#define AVOID_GURU
 
@@ -357,8 +357,8 @@ int srslte_ofdm_tx_set_prb(srslte_ofdm_t *q, srslte_cp_t cp, uint32_t nof_prb) {
 
 void srslte_ofdm_rx_free(srslte_ofdm_t *q) {
   srslte_ofdm_free_(q);
-  srslte_filesink_free(&raw_fsink);
-  printf("free before_equ.txt\n");
+//  srslte_filesink_free(&raw_fsink);
+//  printf("free before_equ.txt\n");
 }
 /* Shifts the signal after the iFFT or before the FFT. 
  * Freq_shift is relative to inter-carrier spacing.
@@ -402,14 +402,14 @@ void srslte_ofdm_rx_slot_ng(srslte_ofdm_t *q, cf_t *input, cf_t *output) {
 /* Transforms input samples into output OFDM symbols.
  * Performs FFT on a each symbol and removes CP.
  */
-void srslte_ofdm_rx_slot(srslte_ofdm_t *q, int slot_in_sf) {
+void srslte_ofdm_rx_slot(srslte_ofdm_t *q, int slot_in_sf, srslte_filesink_t fsink) {
   cf_t *output = q->out_buffer + slot_in_sf * q->nof_re * q->nof_symbols;
-  if(!raw_fsink.f){
-      printf("initiating file sink before_equ.txt\n");
-      srslte_filesink_init(&raw_fsink, "before_equ.txt", SRSLTE_COMPLEX_FLOAT_BIN);
-      printf("initiated file sink\n");
-//      srslte_filesink_free(&raw_fsink);
-  }
+//  if(!raw_fsink.f){
+//      printf("initiating file sink before_equ.txt\n");
+//      srslte_filesink_init(&raw_fsink, "before_equ.txt", SRSLTE_COMPLEX_FLOAT_BIN);
+//      printf("initiated file sink\n");
+////      srslte_filesink_free(&raw_fsink);
+//  }
 
 #ifdef AVOID_GURU
   srslte_ofdm_rx_slot_ng(q, q->in_buffer + slot_in_sf * q->slot_sz, q->out_buffer + slot_in_sf * q->nof_re * q->nof_symbols);
@@ -428,9 +428,13 @@ void srslte_ofdm_rx_slot(srslte_ofdm_t *q, int slot_in_sf) {
       srslte_vec_sc_prod_cfc(output, norm, output, q->nof_re);
     }
 
-//    printf("raw_fsink.f: %d", (int)raw_fsink.f);
-    if(raw_fsink.f) {
-        srslte_filesink_write_with_symbol_no(&raw_fsink, (void *)(output), sizeof(cf_t) * q->nof_re / 2 + sizeof(cf_t) * q->nof_re / 2,i);
+//    printf("fsink.f: %d\n", (int)(fsink.f));
+    printf("Symbol number: %d\n", i);
+    if(fsink.f) {
+//        printf("wrote symbol number: %d\n", i);
+        srslte_filesink_write_symbol_no(&fsink, i);
+        srslte_filesink_write(&fsink, (void *)(output), sizeof(cf_t) * q->nof_re / 2 + sizeof(cf_t) * q->nof_re / 2);
+        printf("data amount: %d\n", sizeof(cf_t) * q->nof_re / 2 + sizeof(cf_t) * q->nof_re / 2);
     }
 
     tmp += q->symbol_sz;
@@ -468,24 +472,31 @@ void srslte_ofdm_rx_slot_zerocopy(srslte_ofdm_t *q, cf_t *input, cf_t *output) {
   }  
 }
 
-void srslte_ofdm_rx_sf(srslte_ofdm_t *q) {
+void srslte_ofdm_rx_sf(srslte_ofdm_t *q, srslte_filesink_t fsink) {
   uint32_t n;
   if (q->freq_shift) {
     srslte_vec_prod_ccc(q->in_buffer, q->shift_buffer, q->in_buffer, 2*q->slot_sz);
   }
   if(!q->mbsfn_subframe){
     for (n=0;n<2;n++) {
-      srslte_ofdm_rx_slot(q, n);
+        printf("Slot number: %d\n", n);
+//        printf("file pointer: %d\n", (int)(fsink.f));
+        if(fsink.f) {
+            srslte_filesink_write_slot_no(&fsink, n);
+        }
+
+            srslte_ofdm_rx_slot(q, n, fsink);
     }
   }
   else{
     srslte_ofdm_rx_slot_mbsfn(q, &q->in_buffer[0*q->slot_sz], &q->out_buffer[0*q->nof_re*q->nof_symbols]);
-    srslte_ofdm_rx_slot(q, 1);
+    srslte_ofdm_rx_slot(q, 1, fsink);
   }
 }
 
 void srslte_ofdm_rx_sf_ng(srslte_ofdm_t *q, cf_t *input, cf_t *output) {
   uint32_t n;
+    srslte_filesink_t temp_fsink = {.f=NULL};
   if (q->freq_shift) {
     srslte_vec_prod_ccc(q->in_buffer, q->shift_buffer, q->in_buffer, 2*q->slot_sz);
   }
@@ -496,7 +507,7 @@ void srslte_ofdm_rx_sf_ng(srslte_ofdm_t *q, cf_t *input, cf_t *output) {
   }
   else{
     srslte_ofdm_rx_slot_mbsfn(q, &q->in_buffer[0*q->slot_sz], &q->out_buffer[0*q->nof_re*q->nof_symbols]);
-    srslte_ofdm_rx_slot(q, 1);
+    srslte_ofdm_rx_slot(q, 1, temp_fsink);
   }
 }
 

@@ -35,6 +35,7 @@
 char *input_file_name = NULL;
 char *matlab_file_name = NULL;
 
+srslte_filesink_t temp_fsink = {.f=NULL};
 
 srslte_cell_t cell = {
   6,            // nof_prb
@@ -215,7 +216,7 @@ int main(int argc, char **argv) {
 
   n = srslte_filesource_read(&fsrc, input_buffer, flen);
 
-  srslte_ofdm_rx_sf(&fft);
+  srslte_ofdm_rx_sf(&fft, temp_fsink);
 
   if (fmatlab) {
     fprintf(fmatlab, "infft=");

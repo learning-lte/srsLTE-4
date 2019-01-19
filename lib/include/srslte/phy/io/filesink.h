@@ -68,10 +68,20 @@ SRSLTE_API int srslte_filesink_write_with_symbol_no(srslte_filesink_t *q,
                                                     int size,
                                                     int n_symbols);
 
+SRSLTE_API int srslte_filesink_write_symbol_no(srslte_filesink_t *q,
+                                                    int n_symbols);
+
+SRSLTE_API int srslte_filesink_write_subframe_idx(srslte_filesink_t *q,
+                                               int n_idx);
+
+SRSLTE_API int srslte_filesink_write_slot_no(srslte_filesink_t *q,
+                                                  int n_no);
 
 SRSLTE_API int srslte_filesink_write_multi(srslte_filesink_t *q,
                                            void **buffer,
                                            int nsamples,
                                            int nchannels);
+
+static srslte_filesink_t phony_fsink = {.f=NULL};
 
 #endif // SRSLTE_FILESINK_H

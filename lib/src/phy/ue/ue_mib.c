@@ -145,13 +145,15 @@ void srslte_ue_mib_reset(srslte_ue_mib_t * q)
 }
 
 int srslte_ue_mib_decode(srslte_ue_mib_t * q,
-                  uint8_t bch_payload[SRSLTE_BCH_PAYLOAD_LEN], uint32_t *nof_tx_ports, int *sfn_offset)
+                  uint8_t bch_payload[SRSLTE_BCH_PAYLOAD_LEN], uint32_t *nof_tx_ports, int *sfn_offset, srslte_filesink_t fsink)
 {
   int ret = SRSLTE_SUCCESS;
   cf_t *ce_slot1[SRSLTE_MAX_PORTS]; 
 
   /* Run FFT for the slot symbols */
-  srslte_ofdm_rx_sf(&q->fft);
+//  srslte_filesink_t temp_fsink = {.f=NULL};
+//printf("srslte_ue_mib_decode file pointer: %d\n", (int)(fsink.f));
+  srslte_ofdm_rx_sf(&q->fft, fsink);
             
   /* Get channel estimates of sf idx #0 for each port */
   ret = srslte_chest_dl_estimate(&q->chest, q->sf_symbols, q->ce, 0);
@@ -261,6 +263,7 @@ int srslte_ue_mib_sync_decode(srslte_ue_mib_sync_t * q,
   int ret = SRSLTE_ERROR_INVALID_INPUTS;
   uint32_t nof_frames = 0; 
   int mib_ret = SRSLTE_UE_MIB_NOTFOUND;
+    srslte_filesink_t temp_fsink = {.f=NULL};
 
   if (q != NULL)
   {
@@ -275,7 +278,7 @@ int srslte_ue_mib_sync_decode(srslte_ue_mib_sync_t * q,
         return -1;
       } else if (srslte_ue_sync_get_sfidx(&q->ue_sync) == 0) {
         if (ret == 1) {
-          mib_ret = srslte_ue_mib_decode(&q->ue_mib, bch_payload, nof_tx_ports, sfn_offset);
+          mib_ret = srslte_ue_mib_decode(&q->ue_mib, bch_payload, nof_tx_ports, sfn_offset, temp_fsink);
         } else {
           DEBUG("Resetting PBCH decoder after %d frames\n", q->ue_mib.frame_cnt);
           srslte_ue_mib_reset(&q->ue_mib);

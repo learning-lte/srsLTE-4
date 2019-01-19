@@ -92,7 +92,7 @@ SRSLTE_API void srslte_ue_mib_reset(srslte_ue_mib_t * q);
 SRSLTE_API int srslte_ue_mib_decode(srslte_ue_mib_t * q, 
                                     uint8_t bch_payload[SRSLTE_BCH_PAYLOAD_LEN], 
                                     uint32_t *nof_tx_ports, 
-                                    int *sfn_offset); 
+                                    int *sfn_offset, srslte_filesink_t fsink);
 
 
 /* This interface uses ue_mib and ue_sync to first get synchronized subframes 

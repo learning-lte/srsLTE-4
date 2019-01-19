@@ -368,7 +368,8 @@ int main(int argc, char **argv) {
      */
     INFO("--- Process Downlink ---\n");
     gettimeofday(&t[1], NULL);
-    int n = srslte_ue_dl_decode(&ue_dl, data_rx, transmission_mode - 1, sf_idx, acks);
+    srslte_filesink_t temp_fsink = {.f=NULL};
+    int n = srslte_ue_dl_decode(&ue_dl, data_rx, transmission_mode - 1, sf_idx, acks, temp_fsink);
     if (n < 0) {
       fprintf(stderr, "Error decoding PDSCH\n");
       goto quit;

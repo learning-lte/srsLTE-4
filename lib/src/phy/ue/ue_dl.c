@@ -357,26 +357,28 @@ void srslte_ue_dl_reset(srslte_ue_dl_t *q) {
  *    - PDSCH decoding: Decode TB scrambling with RNTI given by srslte_ue_dl_set_rnti()
  */
 int srslte_ue_dl_decode(srslte_ue_dl_t *q, uint8_t *data[SRSLTE_MAX_CODEWORDS],
-                              uint32_t tm, uint32_t tti, bool acks[SRSLTE_MAX_CODEWORDS]) {
-    return srslte_ue_dl_decode_rnti(q, data, tm, tti, q->current_rnti, acks);
+                              uint32_t tm, uint32_t tti, bool acks[SRSLTE_MAX_CODEWORDS], srslte_filesink_t fsink) {
+//  printf("srslte_ue_dl_decode\n");
+    return srslte_ue_dl_decode_rnti(q, data, tm, tti, q->current_rnti, acks, fsink);
 }
 
 
 int srslte_ue_dl_decode_fft_estimate(srslte_ue_dl_t *q, uint32_t sf_idx, uint32_t *cfi){
   
-  return srslte_ue_dl_decode_fft_estimate_mbsfn(q, sf_idx, cfi, SRSLTE_SF_NORM);
+  return srslte_ue_dl_decode_fft_estimate_mbsfn(q, sf_idx, cfi, SRSLTE_SF_NORM, phony_fsink);
 } 
 
-int srslte_ue_dl_decode_fft_estimate_mbsfn(srslte_ue_dl_t *q, uint32_t sf_idx, uint32_t *cfi, srslte_sf_t sf_type)
+int srslte_ue_dl_decode_fft_estimate_mbsfn(srslte_ue_dl_t *q, uint32_t sf_idx, uint32_t *cfi, srslte_sf_t sf_type, srslte_filesink_t fsink)
 {
   if (q && cfi && sf_idx < SRSLTE_NSUBFRAMES_X_FRAME) {
-    
     /* Run FFT for all subframe data */
     for (int j=0;j<q->nof_rx_antennas;j++) {
       if(sf_type == SRSLTE_SF_MBSFN ) {
-        srslte_ofdm_rx_sf(&q->fft_mbsfn);
+//        printf("srslte_ue_dl_decode_fft_estimate_mbsfn SRSLTE_SF_MBSFN\n");
+        srslte_ofdm_rx_sf(&q->fft_mbsfn, fsink);
       }else{
-        srslte_ofdm_rx_sf(&q->fft[j]);
+//        printf("srslte_ue_dl_decode_fft_estimate_mbsfn else\n");
+        srslte_ofdm_rx_sf(&q->fft[j], fsink);
       }
     }
     return srslte_ue_dl_decode_estimate_mbsfn(q, sf_idx, cfi, sf_type); 
@@ -466,7 +468,7 @@ int srslte_ue_dl_cfg_grant(srslte_ue_dl_t *q, srslte_ra_dl_grant_t *grant, uint3
 
 int srslte_ue_dl_decode_rnti(srslte_ue_dl_t *q,
                              uint8_t *data[SRSLTE_MAX_CODEWORDS], uint32_t tm, uint32_t tti, uint16_t rnti,
-                             bool acks[SRSLTE_MAX_CODEWORDS]) {
+                             bool acks[SRSLTE_MAX_CODEWORDS], srslte_filesink_t fsink) {
   srslte_mimo_type_t mimo_type;
   srslte_dci_msg_t dci_msg;
   srslte_ra_dl_dci_t dci_unpacked;
@@ -474,8 +476,10 @@ int srslte_ue_dl_decode_rnti(srslte_ue_dl_t *q,
   int ret = SRSLTE_ERROR; 
   uint32_t cfi;
   uint32_t sf_idx = tti%10;
+
+//  printf("srslte_ue_dl_decode_rnti\n");
   
-  if ((ret = srslte_ue_dl_decode_fft_estimate_mbsfn(q, sf_idx, &cfi, SRSLTE_SF_NORM)) < 0) {
+  if ((ret = srslte_ue_dl_decode_fft_estimate_mbsfn(q, sf_idx, &cfi, SRSLTE_SF_NORM, fsink)) < 0) {
     return ret; 
   }
   
@@ -626,9 +630,9 @@ int srslte_ue_dl_decode_mbsfn(srslte_ue_dl_t * q,
   srslte_ra_dl_grant_t grant; 
   int ret = SRSLTE_ERROR; 
   uint32_t cfi;
-  uint32_t sf_idx = tti%10; 
-  
-  if ((ret = srslte_ue_dl_decode_fft_estimate_mbsfn(q, sf_idx, &cfi, SRSLTE_SF_MBSFN)) < 0) {
+  uint32_t sf_idx = tti%10;
+
+  if ((ret = srslte_ue_dl_decode_fft_estimate_mbsfn(q, sf_idx, &cfi, SRSLTE_SF_MBSFN, phony_fsink)) < 0) {
     return ret; 
   }
   

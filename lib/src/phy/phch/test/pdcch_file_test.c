@@ -226,8 +226,8 @@ int main(int argc, char **argv) {
     srslte_filesource_read(&fsrc, input_buffer, flen);
 
     INFO("Reading %d samples sub-frame %d\n", flen, frame_cnt);
-
-    srslte_ofdm_rx_sf(&fft);
+    srslte_filesink_t temp_fsink = {.f=NULL};
+    srslte_ofdm_rx_sf(&fft,temp_fsink);
 
     /* Get channel estimates for each port */
     srslte_chest_dl_estimate(&chest, fft_buffer, ce, frame_cnt %10);

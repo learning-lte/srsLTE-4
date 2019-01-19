@@ -139,8 +139,9 @@ int main(int argc, char **argv) {
   printf(" Tx@%.1fMsps", (float)(SRSLTE_SLOT_LEN(srslte_symbol_sz(n_prb))*nof_repetitions)/elapsed_us(&start, &end));
 
   gettimeofday(&start, NULL);
+    srslte_filesink_t temp_fsink = {.f=NULL};
   for (int i = 0; i < nof_repetitions; i++) {
-    srslte_ofdm_rx_slot(&fft, 0);
+    srslte_ofdm_rx_slot(&fft, 0, temp_fsink);
   }
   gettimeofday(&end, NULL);\
   printf(" Rx@%.1fMsps", (float)(SRSLTE_SLOT_LEN(srslte_symbol_sz(n_prb))*nof_repetitions)/elapsed_us(&start, &end));

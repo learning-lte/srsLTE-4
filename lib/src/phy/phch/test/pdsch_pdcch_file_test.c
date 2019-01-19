@@ -181,13 +181,14 @@ int main(int argc, char **argv) {
     exit(-1);
   }
 
+  srslte_filesink_t temp_fsink = {.f=NULL};
   ret = -1;
   nof_frames = 0;
   do {
     srslte_filesource_read(&fsrc, input_buffer[0], flen);
     INFO("Reading %d samples sub-frame %d\n", flen, sf_idx);
 
-    ret = srslte_ue_dl_decode(&ue_dl, data, 0, sf_idx, acks);
+    ret = srslte_ue_dl_decode(&ue_dl, data, 0, sf_idx, acks, temp_fsink);
     if(ret > 0) {
       printf("PDSCH Decoded OK!\n");       
     } else if (ret == 0) {

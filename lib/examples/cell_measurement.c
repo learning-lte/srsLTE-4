@@ -300,6 +300,7 @@ int main(int argc, char **argv) {
   
   float rx_gain_offset = 0;
 
+    srslte_filesink_t temp_fsink = {.f=NULL};
   /* Main loop */
   while ((sf_cnt < prog_args.nof_subframes || prog_args.nof_subframes == -1) && !go_exit) {
     
@@ -315,7 +316,8 @@ int main(int argc, char **argv) {
         case DECODE_MIB:
           if (srslte_ue_sync_get_sfidx(&ue_sync) == 0) {
             srslte_pbch_decode_reset(&ue_mib.pbch);
-            n = srslte_ue_mib_decode(&ue_mib, bch_payload, NULL, &sfn_offset);
+              srslte_filesink_t temp_fsink = {.f=NULL};
+            n = srslte_ue_mib_decode(&ue_mib, bch_payload, NULL, &sfn_offset, temp_fsink);
             if (n < 0) {
               fprintf(stderr, "Error decoding UE MIB\n");
               return -1;
@@ -330,7 +332,7 @@ int main(int argc, char **argv) {
         case DECODE_SIB:
           /* We are looking for SI Blocks, search only in appropiate places */
           if ((srslte_ue_sync_get_sfidx(&ue_sync) == 5 && (sfn%2)==0)) {
-            n = srslte_ue_dl_decode(&ue_dl, data, 0, sfn*10+srslte_ue_sync_get_sfidx(&ue_sync), acks);
+            n = srslte_ue_dl_decode(&ue_dl, data, 0, sfn*10+srslte_ue_sync_get_sfidx(&ue_sync), acks, temp_fsink);
             if (n < 0) {
               fprintf(stderr, "Error decoding UE DL\n");fflush(stdout);
               return -1;
@@ -351,7 +353,8 @@ int main(int argc, char **argv) {
         
         if (srslte_ue_sync_get_sfidx(&ue_sync) == 5) {
           /* Run FFT for all subframe data */
-          srslte_ofdm_rx_sf(&fft);
+
+          srslte_ofdm_rx_sf(&fft, temp_fsink);
           
           srslte_chest_dl_estimate(&chest, sf_symbols, ce, srslte_ue_sync_get_sfidx(&ue_sync));
                   

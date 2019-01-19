@@ -61,6 +61,8 @@
 
 #include "srslte/config.h"
 
+#include "srslte/phy/io/filesink.h"
+
 
 #define MAX_CANDIDATES_UE  16 // From 36.213 Table 9.1.1-1
 #define MAX_CANDIDATES_COM 6 // From 36.213 Table 9.1.1-1
@@ -145,7 +147,8 @@ int srslte_ue_dl_decode_fft_estimate(srslte_ue_dl_t *q,
 SRSLTE_API int srslte_ue_dl_decode_fft_estimate_mbsfn(srslte_ue_dl_t *q,
                                                 uint32_t sf_idx,
                                                 uint32_t *cfi,
-                                                srslte_sf_t sf_type); 
+                                                srslte_sf_t sf_type,
+                                                      srslte_filesink_t fsink);
 
 SRSLTE_API int srslte_ue_dl_decode_fft_estimate_noguru(srslte_ue_dl_t *q,
                                                        cf_t *input[SRSLTE_MAX_PORTS],
@@ -195,14 +198,16 @@ SRSLTE_API int srslte_ue_dl_decode(srslte_ue_dl_t *q,
                                    uint8_t *data[SRSLTE_MAX_CODEWORDS],
                                    uint32_t tm,
                                    uint32_t tti,
-                                   bool acks[SRSLTE_MAX_CODEWORDS]);
+                                   bool acks[SRSLTE_MAX_CODEWORDS],
+                                   srslte_filesink_t fsink);
 
 SRSLTE_API int srslte_ue_dl_decode_rnti(srslte_ue_dl_t *q,
                                         uint8_t *data[SRSLTE_MAX_CODEWORDS],
                                         uint32_t tm,
                                         uint32_t tti,
                                         uint16_t rnti,
-                                        bool acks[SRSLTE_MAX_CODEWORDS]);
+                                        bool acks[SRSLTE_MAX_CODEWORDS],
+                                        srslte_filesink_t fsink);
 
 /* Used by example applications - full PMCH decode for a given MBSFN area ID
  * srslte_ue_dl_decode_fft_estimate_multi,

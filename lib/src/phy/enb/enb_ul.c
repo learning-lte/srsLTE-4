@@ -255,7 +255,8 @@ int srslte_enb_ul_cfg_ue(srslte_enb_ul_t *q, uint16_t rnti,
 
 void srslte_enb_ul_fft(srslte_enb_ul_t *q)
 {
-  srslte_ofdm_rx_sf(&q->fft);
+  srslte_filesink_t temp_fsink = {.f=NULL};
+  srslte_ofdm_rx_sf(&q->fft, temp_fsink);
 }
 
 int get_pucch(srslte_enb_ul_t *q, uint16_t rnti, 

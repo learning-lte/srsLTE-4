@@ -43,7 +43,9 @@ srslte_cell_t cell = {
   SRSLTE_PHICH_NORM    // PHICH length
 };
 
-int nof_frames = 1; 
+int nof_frames = 1;
+
+srslte_filesink_t temp_fsink = {.f=NULL};
 
 uint8_t bch_payload_file[SRSLTE_BCH_PAYLOAD_LEN] = {0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
@@ -203,7 +205,7 @@ int main(int argc, char **argv) {
 
     if (nread > 0) {
       // process 1st subframe only
-      srslte_ofdm_rx_sf(&fft);
+      srslte_ofdm_rx_sf(&fft, temp_fsink);
 
       /* Get channel estimates for each port */
       srslte_chest_dl_estimate(&chest, fft_buffer, ce, 0);

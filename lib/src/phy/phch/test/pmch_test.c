@@ -388,11 +388,12 @@ int main(int argc, char **argv) {
   
   int r=0;
   gettimeofday(&t[1], NULL);
+  srslte_filesink_t temp_fsink = {.f=NULL};
 
 #ifdef DO_OFDM
     /* For each Rx antenna demodulate OFDM */
     for (i = 0; i < nof_rx_antennas; i++) {
-      srslte_ofdm_rx_sf(&fft_mbsfn[i]);
+      srslte_ofdm_rx_sf(&fft_mbsfn[i],temp_fsink);
     }
 #endif
   for (i = 0; i < SRSLTE_MAX_CODEWORDS; i++) {

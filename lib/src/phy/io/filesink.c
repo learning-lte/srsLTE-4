@@ -59,6 +59,7 @@ int srslte_filesink_write(srslte_filesink_t *q, void *buffer, int nsamples) {
   _Complex short *sbuf = (_Complex short*) buffer;
   int size;
 
+//    printf("srslte_filesink_write(%d, %d, %d)\n", q, buffer, nsamples);
   switch(q->type) {
   case SRSLTE_FLOAT:
     for (i=0;i<nsamples;i++) {
@@ -88,6 +89,7 @@ int srslte_filesink_write(srslte_filesink_t *q, void *buffer, int nsamples) {
       size = sizeof(float);
     } else if (q->type == SRSLTE_COMPLEX_FLOAT_BIN) {
       size = sizeof(_Complex float);
+//        printf("size of SRSLTE_COMPLEX_FLOAT_BIN: %d\n", size);
     } else if (q->type == SRSLTE_COMPLEX_SHORT_BIN) {
       size = sizeof(_Complex short);
     }
@@ -113,6 +115,26 @@ int srslte_filesink_write_with_symbol_no(srslte_filesink_t *q,
     srslte_filesink_write(q, (void*)(&symbol_num), 1);
 //  fprintf(q->f,"NO. of symbols %d\n", n_symbols);
   return srslte_filesink_write(q, buffer, size);
+}
+
+int srslte_filesink_write_symbol_no(srslte_filesink_t *q,
+                                               int n_symbols){
+    cf_t symbol_num= 3140 + n_symbols * I;
+    return srslte_filesink_write(q, (void*)(&symbol_num), 1);
+}
+
+int srslte_filesink_write_subframe_idx(srslte_filesink_t *q,
+                                                  int n_idx){
+    cf_t subframe_idx= 9420 + n_idx * I;
+    return srslte_filesink_write(q, (void*)(&subframe_idx), 1);
+}
+
+int srslte_filesink_write_slot_no(srslte_filesink_t *q,
+                                             int n_no){
+    cf_t slot_num= 7280 + n_no * I;
+//    printf("file pointer: %d\n", (int)(q->f));
+//    printf("slot number: %d\n", n_no);
+    return srslte_filesink_write(q, (void*)(&slot_num), 1);
 }
 
 int srslte_filesink_write_multi(srslte_filesink_t *q, void **buffer, int nsamples, int nchannels) {

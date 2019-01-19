@@ -568,7 +568,7 @@ bool phch_worker::extract_fft_and_pdcch_llr(subframe_cfg_t sf_cfg) {
     int decode_fft = 0;
     if(SUBFRAME_TYPE_MBSFN == sf_cfg.sf_type) {
       srslte_ue_dl_set_non_mbsfn_region(&ue_dl, sf_cfg.non_mbsfn_region_length);
-      decode_fft = srslte_ue_dl_decode_fft_estimate_mbsfn(&ue_dl, tti%10, &cfi, SRSLTE_SF_MBSFN);
+      decode_fft = srslte_ue_dl_decode_fft_estimate_mbsfn(&ue_dl, tti%10, &cfi, SRSLTE_SF_MBSFN, phony_fsink);
     }else{
       decode_fft = srslte_ue_dl_decode_fft_estimate(&ue_dl, tti%10, &cfi);
     }

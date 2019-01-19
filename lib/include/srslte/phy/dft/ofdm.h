@@ -43,6 +43,8 @@
 #include "srslte/config.h"
 #include "srslte/phy/common/phy_common.h"
 #include "srslte/phy/dft/dft.h"
+#include "srslte/phy/io/filesink.h"
+
 
 /* This is common for both directions */
 typedef struct SRSLTE_API{
@@ -111,13 +113,13 @@ SRSLTE_API int srslte_ofdm_rx_set_prb(srslte_ofdm_t *q,
 SRSLTE_API void srslte_ofdm_rx_free(srslte_ofdm_t *q);
 
 SRSLTE_API void srslte_ofdm_rx_slot(srslte_ofdm_t *q,
-                                    int slot_in_sf);
+                                    int slot_in_sf, srslte_filesink_t fsink);
 
 SRSLTE_API void srslte_ofdm_rx_slot_ng(srslte_ofdm_t *q,
                                       cf_t *input,
                                        cf_t *output);
 
-SRSLTE_API void srslte_ofdm_rx_sf(srslte_ofdm_t *q);
+SRSLTE_API void srslte_ofdm_rx_sf(srslte_ofdm_t *q, srslte_filesink_t fsink);
 
 SRSLTE_API void srslte_ofdm_rx_sf_ng(srslte_ofdm_t *q,
                                      cf_t *input,
