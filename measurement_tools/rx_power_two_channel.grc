@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?grc format='1' created='3.7.12'?>
+<?grc format='1' created='3.7.13'?>
 <flow_graph>
   <timestamp>Thu Jan 10 14:34:37 2019</timestamp>
   <block>
@@ -140,7 +140,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>2477000000</value>
+      <value>751000000</value>
     </param>
   </block>
   <block>
@@ -167,7 +167,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>"/home/ite/Documents/traffic measure/test_ch1.txt"</value>
+      <value>"/home/ite367/Documents/traffic_data/test1.txt"</value>
     </param>
   </block>
   <block>
@@ -194,7 +194,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>"/home/ite/Documents/traffic measure/test_ch2.txt"</value>
+      <value>"/home/ite367/Documents/traffic_data/test2.txt"</value>
     </param>
   </block>
   <block>
@@ -1306,7 +1306,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1673,7 +1673,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -2036,7 +2036,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>fftsize</key>
@@ -2259,7 +2259,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>fftsize</key>

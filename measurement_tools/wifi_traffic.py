@@ -65,8 +65,8 @@ class top_block(gr.top_block, Qt.QWidget):
         self.samp_rate = samp_rate = 1000000
         self.center_fre_ch2 = center_fre_ch2 = 2429000000
         self.center_fre = center_fre = 2437000000
-        self.file2 = file2 = "/home/ite367/Documents/traffic_data/"+"Home_CH"+str(center_fre_ch2)+"at"+str(datetime.datetime.now().hour)+str(datetime.datetime.now().minute)+".txt"
-        self.file1 = file1 = "/home/ite367/Documents/traffic_data/"+"Home_CH"+str(center_fre)+"at"+str(datetime.datetime.now().hour)+str(datetime.datetime.now().minute)+".txt"
+        self.file2 = file2 = "/home/ite367/Documents/traffic_data/wifi/"+"Home_CH"+str(center_fre_ch2)+"at"+str(datetime.datetime.now().hour)+str(datetime.datetime.now().minute)+".txt"
+        self.file1 = file1 = "/home/ite367/Documents/traffic_data/wifi/"+"Home_CH"+str(center_fre)+"at"+str(datetime.datetime.now().hour)+str(datetime.datetime.now().minute)+".txt"
 
         ##################################################
         # Blocks

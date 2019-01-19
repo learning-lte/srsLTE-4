@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<?grc format='1' created='3.7.12'?>
+<?grc format='1' created='3.7.13'?>
 <flow_graph>
   <timestamp>Thu Jan 10 14:34:37 2019</timestamp>
   <block>
@@ -97,7 +97,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>2462000000</value>
+      <value>751000000</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -152,7 +152,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>100000</value>
+      <value>20000000</value>
     </param>
   </block>
   <block>
@@ -261,7 +261,7 @@
     </param>
     <param>
       <key>file</key>
-      <value>/home/ite/Documents/traffic measure/home_2.462_100k.txt</value>
+      <value>/home/ite367/Documents/test.txt</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1079,7 +1079,7 @@
     </param>
     <param>
       <key>fftsize</key>
-      <value>64</value>
+      <value>1024</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1302,7 +1302,7 @@
     </param>
     <param>
       <key>gain0</key>
-      <value>60</value>
+      <value>100</value>
     </param>
     <param>
       <key>lo_export0</key>
