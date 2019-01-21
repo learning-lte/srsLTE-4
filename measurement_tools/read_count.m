@@ -6,7 +6,7 @@ fb = fopen(file_name);
 
 x=fread(fb,'single');
 fclose(fb);
-plot(x(1:100000))
+plot(x(1:10000000))
 
 
 
