@@ -427,20 +427,21 @@ void srslte_ofdm_rx_slot(srslte_ofdm_t *q, int slot_in_sf, srslte_filesink_t fsi
     if (q->fft_plan.norm) {
       srslte_vec_sc_prod_cfc(output, norm, output, q->nof_re);
     }
-    for (int j=0;j<q->nof_re;j++)
-    {
-      printf("symbol index=%d,symbols=%f+%fi\n",j,creal(output[j]), cimag(output[j])); //the results of this print if right, but seems the values write to the file is wrong
-    }
+    
 
 //    printf("fsink.f: %d\n", (int)(fsink.f));
-    printf("Symbol number: %d\n", i);
+//    printf("Symbol number: %d\n", i);
     if(fsink.f) {
 //        printf("wrote symbol number: %d\n", i);
         srslte_filesink_write_symbol_no(&fsink, i);
         srslte_filesink_write(&fsink, (void *)(output), q->nof_re); //Seems the total number of "output" is "q->nof_re"
-        printf("data amount: %d\n", q->nof_re);
+//        printf("data amount: %d\n", q->nof_re);
    //     printf("there is %d symbols\n",q->nof_re / 2);
     }
+    // for (int j=0;j<q->nof_re;j++)
+    // {
+    //   printf("symbol index=%d,symbols=%f+%fi\n",j,creal(output[j]), cimag(output[j])); //the results of this print if right, but seems the values write to the file is wrong
+    // }
 
     tmp += q->symbol_sz;
     output += q->nof_re;
@@ -484,7 +485,7 @@ void srslte_ofdm_rx_sf(srslte_ofdm_t *q, srslte_filesink_t fsink) {
   }
   if(!q->mbsfn_subframe){
     for (n=0;n<2;n++) {
-        printf("Slot number: %d\n", n);
+ //       printf("Slot number: %d\n", n);
 //        printf("file pointer: %d\n", (int)(fsink.f));
         if(fsink.f) {
             srslte_filesink_write_slot_no(&fsink, n);
