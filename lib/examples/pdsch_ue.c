@@ -702,7 +702,7 @@ int main(int argc, char **argv) {
 
         //print it
       uint32_t sfidx = srslte_ue_sync_get_sfidx(&ue_sync);
-      printf("Subframe index: %d\n", sfidx);
+   //   printf("Subframe index: %d\n", sfidx);
       if(raw_fsink.f){
           srslte_filesink_write_subframe_idx(&raw_fsink, sfidx);
       }
