@@ -3,7 +3,7 @@ function subframeCell = getSubframeStructure(filename)
 %   Detailed explanation goes here
 
 s=10000000000000;
-fb = fopen('./build/lib/examples/testdata.txt');
+fb = fopen(filename);
 
 B=fread(fb,[2,s],'single');
 fclose(fb);
@@ -28,31 +28,35 @@ for subframe_idx = (1:length(subframe_indices))
     slots_in_this_frame_idx = find(slot_indices > subframe_indices(subframe_idx) & slot_indices < subframe_end_index);
     
     slots_cell = {};
-    for slot_idx = (1:length(slots_in_this_frame_idx))
-        temp_slot_str = sprintf('slot %d', imag(rx(slot_indices(slot_idx))));      
+    for slot_idx = slots_in_this_frame_idx(1:end)
+        temp_slot_str = sprintf('slot %d', imag(rx(slot_indices(slot_idx))));
         
         slot_end_index = 0;
-        if slot_idx < length(slots_in_this_frame_idx)
+        if slot_idx < slots_in_this_frame_idx(end)
             slot_end_index = slot_indices(slot_idx + 1);
         else
-            if subframe_idx < length(subframe_indices)
-                slot_end_index = subframe_indices(subframe_idx + 1);
-            else
-                subframe_end_index = length(rx) + 1;
-            end
+            %             if subframe_idx < length(subframe_indices)
+            slot_end_index = subframe_end_index;
+            %             else
+            %                 slot_end_index = length(rx) + 1;
+            %             end
         end
         symbols_in_this_slot_idx = find(symbol_indices > slot_indices(slot_idx) & symbol_indices < slot_end_index);
         
         symbols_cell = {};
-        for symbol_idx = (1:length(symbols_in_this_slot_idx))
+        for symbol_idx = symbols_in_this_slot_idx(1:end)
             temp_symbol_str = sprintf('symbol %d', imag(rx(symbol_indices(symbol_idx))));
             
             temp_data = [];
-            if symbol_idx < length(symbols_in_this_slot_idx)
-                temp_data = rx(symbol_indices(symbol_idx)+1:symbol_indices(symbol_idx+1)-1);
+            symbol_end_index = 0;
+            if symbol_idx < symbols_in_this_slot_idx(end)
+                symbol_end_index = symbol_indices(symbol_idx+1);
+%                 temp_data = rx(symbol_indices(symbol_idx)+1:symbol_indices(symbol_idx+1)-1);
             else
-                temp_data = rx(symbol_indices(symbol_idx)+1:slot_end_index);
+                symbol_end_index = slot_end_index;
+%                 temp_data = rx(symbol_indices(symbol_idx)+1:slot_end_index-1);
             end
+            temp_data = rx(symbol_indices(symbol_idx)+1:symbol_end_index-1);
             
             temp_symbol_cell = {temp_symbol_str, temp_data};
             symbols_cell{end+1} = temp_symbol_cell;
