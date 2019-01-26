@@ -1,0 +1,14 @@
+function ber = calBer(dcdData)
+
+    tagData = [1,1,1,0,0,0,0,1,1,1,1,1,0,0,1,0,...
+               1,0,1,1,1,0,0,0,1,1,1,1,1,0,0,1,...
+               0,1,1,0,0,0,1,1,1,0,1,1,1,1,1,1
+    ];
+
+    lt = length(tagData);
+    ld = length(dcdData);
+  
+    for n = 1:1:ld
+        tagData(1, n:n+length())
+    end
+end
