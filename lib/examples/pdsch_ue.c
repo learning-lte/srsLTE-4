@@ -76,6 +76,7 @@ char *output_file_name;
 srslte_filesink_t raw_fsink = {.f=NULL};
 char *raw_file_name;
 srslte_filesink_t equ_fsink = {.f=NULL};
+char *equ_file_name;
 #define PRINT_CHANGE_SCHEDULIGN
 
 //#define CORRECT_SAMPLE_OFFSET
@@ -94,6 +95,7 @@ typedef struct {
   uint16_t rnti;
   char *input_file_name;
   char *raw_file_name;
+  char *equ_file_name;
   int file_offset_time; 
   float file_offset_freq;
   uint32_t file_nof_prb;
@@ -177,6 +179,7 @@ void usage(prog_args_t *args, char *prog) {
   printf("\t-R Average channel estimates on 1 ms [Default %s]\n", !args->average_subframe?"Disabled":"Enabled");
   printf("\t-t Add time offset [Default %d]\n", args->time_offset);
   printf("\t-w Raw data filename \n");
+    printf("\t-e Equalized data filename \n");
 #ifndef DISABLE_GRAPHICS
   printf("\t-d disable plots [Default enabled]\n");
   printf("\t-D disable all but constellation plots [Default enabled]\n");
@@ -197,7 +200,7 @@ void usage(prog_args_t *args, char *prog) {
 void parse_args(prog_args_t *args, int argc, char **argv) {
   int opt;
   args_default(args);
-  while ((opt = getopt(argc, argv, "aAoglipPcOCtdDFRnvrfuUsSZyWwMNB")) != -1) {
+  while ((opt = getopt(argc, argv, "aAeoglipPcOCtdDFRnvrfuUsSZyWwMNB")) != -1) {
     switch (opt) {
     case 'i':
       args->input_file_name = argv[optind];
@@ -285,6 +288,10 @@ void parse_args(prog_args_t *args, int argc, char **argv) {
           raw_file_name = argv[optind];
           printf("raw file name %s\n", raw_file_name);
           break;
+        case 'e':
+            equ_file_name = argv[optind];
+            printf("raw file name %s\n", equ_file_name);
+            break;
     case 'M':
       args->mbsfn_area_id = atoi(argv[optind]);
       break;
@@ -377,10 +384,17 @@ int main(int argc, char **argv) {
   // prog_args is static for global access
   parse_args(&prog_args, argc, argv);
 
-  printf("initiating file sink %s\n", raw_file_name);
-  srslte_filesink_init(&raw_fsink, raw_file_name, SRSLTE_COMPLEX_FLOAT_BIN);
-  printf("initiated file sink\n");
-  srslte_filesink_init(&equ_fsink, "after_equ.bin", SRSLTE_COMPLEX_FLOAT_BIN);
+  if(raw_file_name) {
+      printf("initiating file sink %s\n", raw_file_name);
+      srslte_filesink_init(&raw_fsink, raw_file_name, SRSLTE_COMPLEX_FLOAT_BIN);
+      printf("initiated file sink\n");
+  }
+
+  if(equ_file_name) {
+      printf("initiating file sink %s\n", equ_file_name);
+      srslte_filesink_init(&equ_fsink, equ_file_name, SRSLTE_COMPLEX_FLOAT_BIN);
+      printf("initiated file sink\n");
+  }
   
 #ifndef DISABLE_GRAPHICS
   if(prog_args.mbsfn_area_id > -1) {
@@ -990,8 +1004,13 @@ int main(int argc, char **argv) {
   }
 #endif
 
-  srslte_filesink_free(&raw_fsink);
-  srslte_filesink_free(&equ_fsink);
+  if(raw_fsink.f) {
+      srslte_filesink_free(&raw_fsink);
+  }
+
+  if(equ_fsink.f) {
+      srslte_filesink_free(&equ_fsink);
+  }
   
   printf("\nBye\n");
   exit(0);
@@ -1112,7 +1131,9 @@ void *plot_thread_run(void *arg) {
 //        printf("NO. of symbols %d\n", nof_symbols);
 //        last_nof_symbols = nof_symbols;
 //    }
-    srslte_filesink_write_with_sample_no(&equ_fsink, (void *)(ue_dl.pdsch.d[0]), nof_symbols);
+if(equ_fsink.f) {
+    srslte_filesink_write_with_sample_no(&equ_fsink, (void *) (ue_dl.pdsch.d[0]), nof_symbols);
+}
 //    for(int i = 0; i < 72*3; i++){
 //      printf("%f + i*%f\n", creal(ue_dl.pdsch.d[0][i]), cimag(ue_dl.pdsch.d[0][i]));
 //    }

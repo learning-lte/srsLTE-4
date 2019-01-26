@@ -1,5 +1,5 @@
 s=10000000000000;
-fb = fopen('before_equ.bin');
+fb = fopen('build/lib/examples/after_equ.bin');
 
 B=fread(fb,[2,s],'single');
 fclose(fb);
